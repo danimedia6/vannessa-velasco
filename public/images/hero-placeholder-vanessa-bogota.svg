@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder para retrato editorial de Vanessa Velasco en Bogotá</title>
+  <desc id="desc">Imagen neutra temporal. Debe reemplazarse por fotografía real desde public/images.</desc>
+  <rect width="1200" height="1500" fill="#d8d2c8"/>
+  <rect x="0" y="930" width="1200" height="570" fill="#c8c1b6"/>
+  <path d="M0 905 C165 820 255 830 402 875 C554 922 659 895 816 804 C963 719 1083 722 1200 774 L1200 956 L0 956 Z" fill="#aaa397" opacity=".55"/>
+  <path d="M0 984 L1200 828" stroke="#4d514f" stroke-width="2" opacity=".18"/>
+  <path d="M136 1036 L1035 921" stroke="#4d514f" stroke-width="1.5" opacity=".16"/>
+  <path d="M228 1118 L1120 1030" stroke="#4d514f" stroke-width="1.2" opacity=".12"/>
+  <path d="M680 0 L540 1500" stroke="#f6f1e8" stroke-width="1.2" opacity=".35"/>
+  <path d="M760 0 L650 1500" stroke="#f6f1e8" stroke-width="1" opacity=".28"/>
+  <rect x="94" y="1140" width="250" height="1" fill="#4d514f" opacity=".18"/>
+  <rect x="94" y="1176" width="170" height="1" fill="#4d514f" opacity=".14"/>
+  <text x="94" y="1238" fill="#4d514f" font-family="Arial, sans-serif" font-size="22" letter-spacing="6" opacity=".5">FOTOGRAFIA REAL PENDIENTE</text>
+</svg>
