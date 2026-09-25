@@ -10,6 +10,8 @@ import { VideoInterlude } from './sections/VideoInterlude.jsx'
 import { FeaturedProjectsSection } from './sections/FeaturedProjectsSection.jsx'
 import { Footer } from './components/Footer.jsx'
 import { ExperienceTimeline } from './sections/ExperienceTimeline.jsx'
+import { WorldBankBounce } from "./components/WorldBankBounce";
+import { PublicationsSection } from "./sections/PublicationsSection.jsx"
 
 export default function App() {
   useScrollTraceProgress()
@@ -34,6 +36,12 @@ export default function App() {
         <ExperienceTimeline content={pageContent} />
 
         <FeaturedProjectsSection content={pageContent} />
+
+        <WorldBankBounce
+          content={pageContent.experience.worldBank}
+        />
+
+        <PublicationsSection content={pageContent} />
       </main>
       <Footer />
     </div>

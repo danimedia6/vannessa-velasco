@@ -1,3 +1,5 @@
+import "./Hero.css"
+
 export function Hero({ content }) {
   const { hero } = content
 
@@ -18,6 +20,13 @@ export function Hero({ content }) {
           <p>Board Member · IDU · RENOBO · EAAB</p>
         </div>
 
+        <figure className="hero-figure">
+          <img
+            src={hero.image.src}
+            alt="Vanessa Velasco"
+          />
+        </figure>
+
         <blockquote className="hero-statement">
           <p>
             Housing as a driver of economic and social
@@ -29,18 +38,12 @@ export function Hero({ content }) {
           Hablemos de ciudad
           <span aria-hidden="true">↘</span>
         </a>
+
         <a className="hero-cta hero-cta--secondary" href="#">
           Press kit
           <span aria-hidden="true">↓</span>
         </a>
       </div>
-
-      <figure className="hero-figure">
-        <img
-          src={hero.image.src}
-          alt="Vanessa Velasco"
-        />
-      </figure>
     </section>
   )
 }

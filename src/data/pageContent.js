@@ -135,9 +135,9 @@ export const pageContent = {
 
     worldBank: {
       label: 'Prior Work · World Bank Group',
-      headline: 'Seven years. Seven countries.',
+      headline: '2015 - 2024\nMulti-country impact',
       intro:
-        "As Urban Specialist at the World Bank from 2017 to 2024, Vanessa Velasco co-led analytical and operational work across Latin America, Southeast Asia, and the Caribbean — building the technical and policy expertise she now applies to lead Bogotá's urban transformation.",
+        "From 2015 to 2024, Vanessa Velasco contributed to analytical and operational work across Latin America, the Caribbean, and Southeast Asia, specializing in housing, land value capture, urban regeneration, territorial development, and transit-oriented development.",
       projects: [
         {
           geography: 'Colombia',
@@ -145,18 +145,30 @@ export const pageContent = {
           description:
             "Co-led support for Colombia's national territorial development policy, including bond structuring and institutional design.",
           amount: 'USD 500M',
+          file: {
+            label: 'View document',
+            href: '/documents/1.pdf'
+          }
         },
         {
           geography: 'Colombia · Barranquilla + Medellín',
           name: 'Tax Increment Finance Districts',
           description:
             'Led TIF implementation for Malecón del Río Barranquilla, Corredor de la 80, and Innovation District Medellín. Land value capture instruments and bond-issuance frameworks.',
+          file: {
+            label: 'View document',
+            href: '/documents/2.pdf'
+          }
         },
         {
           geography: 'Colombia · Bogotá + Medellín',
           name: 'Transit-Oriented Development',
           description:
             'Co-led TOD strategy for Metro Bogotá Línea 1, Regiotram de Occidente, Corredor Carrera 80 Medellín, and Estación Calle 26 urban regeneration.',
+          file: {
+            label: 'View document',
+            href: '/documents/1.pdf'
+          }
         },
         {
           geography: 'Ecuador',
@@ -164,18 +176,30 @@ export const pageContent = {
           description:
             'Co-led financing and technical support including home improvement, urban upgrading, infrastructure for social cohesion, and rental housing for vulnerable populations.',
           amount: 'USD 235M',
+          file: {
+            label: 'View document',
+            href: 'https://blogs.worldbank.org/es/ppps/como-podemos-ayudar-financiar-el-desarrollo-urbano-en-las-ciudades-latinoamericanas?utm_source=chatgpt.com'
+          }
         },
         {
           geography: 'Peru',
           name: 'Land Value Capture & Cadastre',
           description:
             'Led LVC instruments development. Team member for cadastre system and territorial development policies. Analytical studies for Metro de Lima Line 2 TOD areas.',
+          file: {
+            label: 'View document',
+            href: 'https://blogs.worldbank.org/es/ppps/como-podemos-ayudar-financiar-el-desarrollo-urbano-en-las-ciudades-latinoamericanas?utm_source=chatgpt.com'
+          }
         },
         {
           geography: 'Mexico · Jamaica · Indonesia',
           name: 'Housing & Risk Across Regions',
           description:
             'Led affordable housing technical assistance in Mexico; defined housing land bank pilot in Mérida. Co-led disaster risk project in Jamaica. LVC analytical studies for Indonesia.',
+          file: {
+            label: 'View document',
+            href: 'https://documents1.worldbank.org/curated/en/911381540835286885/pdf/131472-WP-SPANISH-PUBLIC-MigracindesdeVenezuelaaColombia.pdf?utm_source=chatgpt.com'
+          }
         },
       ],
       // Ambigüedad de fuente: el HTML dice "nearly seven years" y periodo 2017–2024, pero esta métrica dice "12 years".
@@ -339,77 +363,153 @@ export const pageContent = {
     ],
   },
 
-  publications: {
-    label: 'Publications & Thinking',
-    headline: 'Policy in writing',
-    featured: {
-      label: 'Featured · World Urban Forum 13 · 2026',
-      title:
-        'Mi Casa en Bogotá: Housing as a driver of economic and social transformation in the Global South',
-      meta: 'Concept Note · SDHT Bogotá + UN-Habitat · May 2026 · EN',
-      actionLabel: 'Download PDF',
+ publications: {
+  label: 'Publications & Thinking',
+
+  headline: 'Policy in writing',
+
+  featured: {
+    label: 'Featured · World Urban Forum 13 · 2026',
+
+    title:
+      'Mi Casa en Bogotá: Housing as a driver of economic and social transformation in the Global South',
+
+    meta:
+      'Concept Note · SDHT Bogotá + UN-Habitat · May 2026 · EN',
+
+    file: {
+      label: 'Download PDF',
       href: '#',
     },
-    filters: ['All', 'World Bank', 'Policy briefs', 'Op-eds', 'Academic'],
-    items: [
-      {
-        type: 'Policy Brief',
-        source: 'World Bank Group · Colombia',
-        title:
-          'Tax Increment Finance Districts: implementation framework for urban regeneration in Barranquilla and Medellín',
-        excerpt:
-          'Analytical study covering bond-size estimation, legal and administrative schemes, and urban project proforma for TIF implementation.',
-        href: '#',
-      },
-      {
-        type: 'Technical Note',
-        source: 'World Bank Group · Colombia · Peru',
-        title:
-          'Land value capture instruments: analytical studies for transit-oriented development',
-        excerpt:
-          'Framework for LVC as financing source for urban infrastructure across Metro Bogotá, Regiotram, and Lima Metro Line 2 corridors.',
-        href: '#',
-      },
-      {
-        type: 'Technical Note',
-        source: 'World Bank Group · Ecuador',
-        title:
-          'Inclusive and resilient housing: co-financing for home improvement, urban upgrading, and rental housing',
-        excerpt:
-          'Operational and analytical framework for the USD 235M resilient housing project serving vulnerable populations including migrants.',
-        href: '#',
-      },
-      {
-        type: 'Research',
-        source: 'Lincoln Institute of Land Policy · 2012',
-        title:
-          'Methodology for identifying additional infrastructure costs in urban redevelopment projects — Bogotá',
-        excerpt:
-          'Academic research study defining cost identification methodology for urban redevelopment, produced as Urban Researcher at Lincoln Institute.',
-        href: '#',
-      },
-      {
-        type: 'Policy Brief',
-        source: 'SDHT Bogotá · 2024–2025',
-        title:
-          'Revitaliza tu Barrio: governance and management model for urban revitalization in Bogotá',
-        excerpt:
-          'Additionality-based urban revitalization framework coordinating public entities, private sector, and civil society within 400m transit buffer zones.',
-        href: '#',
-      },
-      {
-        type: 'Technical Note',
-        source: 'World Bank Group · Peru',
-        title:
-          'Urban land national program — analytical studies to update housing and land management regulations',
-        excerpt:
-          "Contribution to updating Peru's PGSU (Programa General de Suelo Urbano) as part of the Ministry of Housing analytical framework.",
-        href: '#',
-      },
-    ],
-    note:
-      '"Original thought pieces, op-eds, and academic contributions in progress — section will expand as new work is published."',
   },
+
+  filters: [
+    'All',
+    'World Bank',
+    'Policy briefs',
+    'Op-eds',
+    'Academic',
+  ],
+
+  items: [
+    {
+      type: 'Policy Brief',
+
+      source: 'World Bank Group · Colombia',
+
+      title:
+        'Tax Increment Finance Districts: implementation framework for urban regeneration in Barranquilla and Medellín',
+
+      excerpt:
+        'Analytical study covering bond-size estimation, legal and administrative schemes, and urban project proforma for TIF implementation.',
+
+      categories: ['World Bank', 'Policy briefs'],
+
+      file: {
+        label: 'View document',
+        href: '#',
+      },
+    },
+
+    {
+      type: 'Technical Note',
+
+      source: 'World Bank Group · Colombia · Peru',
+
+      title:
+        'Land value capture instruments: analytical studies for transit-oriented development',
+
+      excerpt:
+        'Framework for LVC as financing source for urban infrastructure across Metro Bogotá, Regiotram, and Lima Metro Line 2 corridors.',
+
+      categories: ['World Bank'],
+
+      file: {
+        label: 'View document',
+        href: '#',
+      },
+    },
+
+    {
+      type: 'Technical Note',
+
+      source: 'World Bank Group · Ecuador',
+
+      title:
+        'Inclusive and resilient housing: co-financing for home improvement, urban upgrading, and rental housing',
+
+      excerpt:
+        'Operational and analytical framework for the USD 235M resilient housing project serving vulnerable populations including migrants.',
+
+      categories: ['World Bank'],
+
+      file: {
+        label: 'View document',
+        href: '#',
+      },
+    },
+
+    {
+      type: 'Research',
+
+      source: 'Lincoln Institute of Land Policy · 2012',
+
+      title:
+        'Methodology for identifying additional infrastructure costs in urban redevelopment projects — Bogotá',
+
+      excerpt:
+        'Academic research study defining cost identification methodology for urban redevelopment, produced as Urban Researcher at Lincoln Institute.',
+
+      categories: ['Academic'],
+
+      file: {
+        label: 'View document',
+        href: '#',
+      },
+    },
+
+    {
+      type: 'Policy Brief',
+
+      source: 'SDHT Bogotá · 2024–2025',
+
+      title:
+        'Revitaliza tu Barrio: governance and management model for urban revitalization in Bogotá',
+
+      excerpt:
+        'Additionality-based urban revitalization framework coordinating public entities, private sector, and civil society within 400m transit buffer zones.',
+
+      categories: ['Policy briefs'],
+
+      file: {
+        label: 'View document',
+        href: '#',
+      },
+    },
+
+    {
+      type: 'Technical Note',
+
+      source: 'World Bank Group · Peru',
+
+      title:
+        'Urban land national program — analytical studies to update housing and land management regulations',
+
+      excerpt:
+        "Contribution to updating Peru's PGSU (Programa General de Suelo Urbano) as part of the Ministry of Housing analytical framework.",
+
+      categories: ['World Bank'],
+
+      file: {
+        label: 'View document',
+        href: '#',
+      },
+    },
+  ],
+
+  note:
+    '"Original thought pieces, op-eds, and academic contributions in progress — section will expand as new work is published."',
+},
 
   recognition: {
     label: 'Speaking & Recognition',

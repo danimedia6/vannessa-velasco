@@ -1,0 +1,649 @@
+/* =========================================================
+   WORLD BANK SECTION
+   ========================================================= */
+
+.world-bank-section {
+  position: relative;
+  z-index: 4;
+
+  width: 100%;
+
+  background: rgba(243, 238, 230, 0.82);
+  color: var(--color-ink);
+
+  font-family: var(--font-sans);
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.world-bank-intro {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: auto 1fr auto;
+  
+
+  column-gap: clamp(12px, 1.4vw, 24px);
+
+  min-height: 78svh;
+
+  padding:
+    clamp(72px, 10vh, 120px)
+    clamp(18px, 4.5vw, 68px)
+    clamp(64px, 9vh, 110px);
+
+  border-bottom: 1px solid rgba(23, 22, 19, 0.14);
+}
+
+
+/* =========================================================
+   INTRO · HEADER
+   ========================================================= */
+
+.world-bank-intro-heading {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.world-bank-eyebrow {
+  margin: 0 0 28px;
+
+  color: var(--color-accent);
+
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  font-weight: 600;
+  line-height: 1;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.world-bank-intro h2 {
+  margin: 0;
+
+  font-family: var(--font-serif);
+  font-size: clamp(4.8rem, 8.2vw, 8.8rem);
+  font-weight: 400;
+
+  line-height: 0.86;
+  letter-spacing: -0.045em;
+}
+
+.world-bank-intro h2 span {
+  display: block;
+}
+
+
+/* =========================================================
+   INTRO · BOTTOM
+   ========================================================= */
+
+.world-bank-intro-bottom {
+  grid-column: 1 / -1;
+  grid-row: 3;
+
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+
+  column-gap: clamp(12px, 1.4vw, 24px);
+
+  align-items: end;
+}
+
+.world-bank-intro-copy {
+  grid-column: 1 / span 6;
+
+  max-width: 700px;
+
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-family: var(--font-sans);
+  font-size: clamp(0.9rem, 1vw, 1.04rem);
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+
+/* Small editorial marker */
+
+.world-bank-intro-marker {
+  grid-column: 10 / -1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 13px;
+
+  border-top: 1px solid rgba(23, 22, 19, 0.22);
+
+  color: var(--color-soft);
+
+  font-family: var(--font-sans);
+  font-size: 0.55rem;
+  font-weight: 600;
+
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   BOUNCE
+   ========================================================= */
+
+.wb-bounce {
+  position: relative;
+
+  display: grid;
+  grid-template-columns:
+    minmax(300px, 4fr)
+    minmax(0, 7fr);
+
+  gap: clamp(55px, 6vw, 90px);
+
+  width: min(1180px, calc(100% - 80px));
+  min-height: 820px;
+
+  margin: 0 auto;
+
+  padding:
+    clamp(70px, 9vh, 110px)
+    0
+    clamp(70px, 9vh, 110px);
+
+  font-family: var(--font-sans);
+
+  align-items: start;
+}
+
+/* =========================================================
+   BOUNCE · LEFT NAVIGATION
+   ========================================================= */
+
+.wb-bounce-nav {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: calc(100% - 70px);
+  min-width: 0;
+
+  margin-top: 70px;
+  margin-left: 100px;
+
+  padding-left: 30px;
+
+  align-self: start;
+}
+
+
+/* Vertical line */
+
+.wb-bounce-line {
+  position: absolute;
+
+  top: 22px;
+  bottom: 22px;
+  left: 5px;
+
+  width: 1px;
+
+  background: rgba(23, 22, 19, 0.17);
+}
+
+
+/* Active moving point */
+
+.wb-bounce-dot {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  z-index: 3;
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: var(--color-accent);
+
+  transition:
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    margin-left 180ms ease;
+
+  pointer-events: none;
+}
+
+.wb-bounce-dot.is-moving-down {
+  margin-left: 8px;
+}
+
+.wb-bounce-dot.is-moving-up {
+  margin-left: -6px;
+}
+
+
+/* =========================================================
+   BOUNCE · ITEMS
+   ========================================================= */
+
+.wb-bounce-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+
+  padding: 15px 0;
+
+  border: 0;
+
+  background: transparent;
+  color: inherit;
+
+  font-family: var(--font-sans);
+  font-size: inherit;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  opacity: 0.34;
+
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease;
+}
+
+.wb-bounce-item:hover {
+  opacity: 0.65;
+}
+
+.wb-bounce-item.is-active {
+  opacity: 1;
+}
+
+
+/* Geography */
+
+.wb-bounce-location {
+  margin-bottom: 6px;
+
+  color: var(--color-accent);
+
+  font-family: var(--font-sans);
+  font-size: 0.56rem;
+  font-weight: 600;
+
+  line-height: 1.25;
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+
+/* Project name in selector */
+
+.wb-bounce-project {
+  max-width: 29ch;
+
+  color: var(--color-ink);
+
+  font-family: var(--font-sans);
+  font-size: clamp(0.9rem, 1vw, 1.05rem);
+  font-weight: 400;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   ACTIVE PROJECT
+   ========================================================= */
+
+.wb-bounce-panel {
+  align-self: start;
+
+  width: 100%;
+  max-width: 790px;
+
+  margin-top: 0;
+
+  animation:
+    wb-panel-enter 360ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+
+/* Counter */
+
+.wb-bounce-counter {
+  margin: 0 0 38px;
+
+  color: var(--color-soft);
+
+  font-family: var(--font-sans);
+  font-size: 0.56rem;
+  font-weight: 600;
+
+  letter-spacing: 0.15em;
+}
+
+
+/* Active geography */
+
+.wb-bounce-panel-location {
+  margin: 0 0 15px;
+
+  color: var(--color-accent);
+
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  font-weight: 600;
+
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+
+/* Active project title */
+
+.wb-bounce-panel h3 {
+  max-width: 12ch;
+
+  margin: 0;
+
+  font-family: var(--font-serif);
+  font-size: clamp(3.4rem, 5.8vw, 7rem);
+  font-weight: 400;
+
+  line-height: 0.88;
+  letter-spacing: -0.045em;
+}
+
+
+/* Active project description */
+
+.wb-bounce-description {
+  max-width: 57ch;
+
+  margin: clamp(30px, 4vh, 46px) 0 0;
+
+  color: var(--color-muted);
+
+  font-family: var(--font-sans);
+  font-size: clamp(0.88rem, 0.95vw, 1rem);
+  font-weight: 400;
+
+  line-height: 1.65;
+}
+
+
+/* Amount */
+
+.wb-bounce-value {
+  max-width: 570px;
+
+  margin-top: clamp(38px, 5vh, 60px);
+  padding-top: 17px;
+
+  border-top: 1px solid rgba(23, 22, 19, 0.2);
+}
+
+.wb-bounce-value strong {
+  display: block;
+
+  color: var(--color-accent);
+
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 4.5vw, 5rem);
+  font-weight: 400;
+
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+
+/* =========================================================
+   PANEL TRANSITION
+   ========================================================= */
+
+@keyframes wb-panel-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   PROJECT DOCUMENT
+   ========================================================= */
+
+.wb-bounce-file {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 36px;
+
+  width: fit-content;
+
+  margin-top: 28px;
+  padding: 13px 15px;
+
+  border: 1px solid rgba(23, 23, 22, 0.55);
+
+  background: rgba(243, 238, 230, 0.32);
+  color: var(--color-ink);
+
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  font-weight: 500;
+
+  letter-spacing: 0.1em;
+  line-height: 1;
+
+  text-transform: uppercase;
+
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+}
+
+.wb-bounce-file span:last-child {
+  font-size: 0.9rem;
+
+  transition: transform 180ms ease;
+}
+
+.wb-bounce-file:hover,
+.wb-bounce-file:focus-visible {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  border-color: var(--color-ink);
+}
+
+.wb-bounce-file:hover span:last-child {
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .world-bank-intro {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 72svh;
+
+    padding:
+      72px
+      16px
+      48px;
+  }
+
+  .world-bank-intro-heading {
+    width: 100%;
+  }
+
+  .world-bank-eyebrow {
+    margin-bottom: 22px;
+
+    font-size: 0.54rem;
+  }
+
+  .world-bank-intro h2 {
+    font-size: clamp(4rem, 20vw, 6rem);
+    line-height: 0.88;
+  }
+
+  .world-bank-intro-bottom {
+    display: block;
+
+    margin-top: auto;
+  }
+
+  .world-bank-intro-copy {
+    max-width: 34ch;
+
+    font-size: 0.86rem;
+    line-height: 1.65;
+  }
+
+  .world-bank-intro-marker {
+    display: flex;
+
+    margin-top: 34px;
+
+    font-size: 0.5rem;
+  }
+
+
+  /* ---------------------------------------------------------
+     MOBILE · BOUNCE
+     --------------------------------------------------------- */
+
+  .wb-bounce {
+    display: block;
+
+    min-height: 0;
+
+    padding:
+      54px
+      16px
+      70px;
+  }
+
+  .wb-bounce-nav {
+    width: 100%;
+
+    padding-left: 25px;
+  }
+
+  .wb-bounce-line {
+    left: 4px;
+  }
+
+  .wb-bounce-dot {
+    width: 9px;
+    height: 9px;
+  }
+
+  .wb-bounce-item {
+    padding: 13px 0;
+  }
+
+  .wb-bounce-location {
+    font-size: 0.52rem;
+  }
+
+  .wb-bounce-project {
+    max-width: 28ch;
+
+    font-size: 0.92rem;
+  }
+
+
+  /* ---------------------------------------------------------
+     MOBILE · ACTIVE PROJECT
+     --------------------------------------------------------- */
+
+  .wb-bounce-panel {
+    max-width: none;
+
+    margin-top: 52px;
+    padding-top: 30px;
+
+    border-top: 1px solid rgba(23, 22, 19, 0.17);
+  }
+
+  .wb-bounce-counter {
+    margin-bottom: 34px;
+  }
+
+  .wb-bounce-panel-location {
+    font-size: 0.54rem;
+  }
+
+  .wb-bounce-panel h3 {
+    max-width: 9ch;
+
+    font-size: clamp(3rem, 14vw, 4.6rem);
+    line-height: 0.91;
+  }
+
+  .wb-bounce-description {
+    max-width: 35ch;
+
+    margin-top: 26px;
+
+    font-size: 0.86rem;
+    line-height: 1.6;
+  }
+
+  .wb-bounce-value {
+    margin-top: 34px;
+  }
+
+  .wb-bounce-value strong {
+    font-size: clamp(3rem, 14vw, 4.6rem);
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY · REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .wb-bounce-dot {
+    transition: none;
+  }
+
+  .wb-bounce-panel {
+    animation: none;
+  }
+}
