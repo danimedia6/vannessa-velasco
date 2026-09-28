@@ -8,7 +8,7 @@
 
   width: 100%;
 
-  background: rgba(243, 238, 230, 0.82);
+  background: rgba(243, 238, 230, 0.45);
   color: var(--color-ink);
 
   font-family: var(--font-sans);
@@ -150,14 +150,14 @@
   gap: clamp(55px, 6vw, 90px);
 
   width: min(1180px, calc(100% - 80px));
-  min-height: 820px;
+  min-height: 0px;
 
   margin: 0 auto;
 
   padding:
     clamp(70px, 9vh, 110px)
     0
-    clamp(70px, 9vh, 110px);
+    clamp(32px, 4vh, 48px);
 
   font-family: var(--font-sans);
 

@@ -4,45 +4,64 @@ export function Hero({ content }) {
   const { hero } = content
 
   return (
-    <section className="hero-section" aria-labelledby="hero-title">
+    <section
+      className="hero-section"
+      aria-labelledby="hero-title"
+    >
       <div className="hero-copy">
+
         <p className="hero-kicker">
-          Habitat Chief Secretary · Bogotá
+          {hero.eyebrow}
         </p>
 
-        <h1 className="hero-title" id="hero-title">
-          <span>Vanessa</span>
-          <span>Velasco</span>
+        <h1
+          className="hero-title"
+          id="hero-title"
+        >
+          <span>{hero.name.first}</span>
+          <span>{hero.name.last}</span>
         </h1>
 
         <div className="hero-role">
-          <p>Secretaria Distrital del Hábitat de Bogotá</p>
-          <p>Board Member · IDU · RENOBO · EAAB</p>
+          {hero.roles.map((role) => (
+            <p key={role}>
+              {role}
+            </p>
+          ))}
         </div>
 
         <figure className="hero-figure">
           <img
             src={hero.image.src}
-            alt="Vanessa Velasco"
+            alt={hero.image.alt}
           />
         </figure>
 
         <blockquote className="hero-statement">
-          <p>
-            Housing as a driver of economic and social
-            transformation in the Global South.
-          </p>
+          <p>{hero.tagline}</p>
         </blockquote>
 
-        <a className="hero-cta" href="#contacto">
-          Hablemos de ciudad
-          <span aria-hidden="true">↘</span>
-        </a>
+        <div className="hero-actions">
+          {hero.actions.map((action) => (
+            <a
+              key={action.label}
+              className={`hero-cta ${
+                action.download
+                  ? "hero-cta--secondary"
+                  : ""
+              }`}
+              href={action.href}
+              download={action.download || undefined}
+            >
+              {action.label}
 
-        <a className="hero-cta hero-cta--secondary" href="#">
-          Press kit
-          <span aria-hidden="true">↓</span>
-        </a>
+              <span aria-hidden="true">
+                {action.download ? "↓" : "↘"}
+              </span>
+            </a>
+          ))}
+        </div>
+
       </div>
     </section>
   )

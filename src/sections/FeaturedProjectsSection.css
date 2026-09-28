@@ -1,0 +1,45 @@
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+
+  width: fit-content;
+
+  margin-top: clamp(22px, 3vh, 32px);
+  padding: 11px 14px;
+
+  border: 1px solid rgba(23, 23, 22, 0.45);
+
+  color: var(--color-ink);
+  background: transparent;
+
+  font-family: var(--font-sans);
+  font-size: clamp(0.58rem, 0.62vw, 0.7rem);
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+  line-height: 1;
+
+  text-transform: uppercase;
+
+  transition:
+    background 200ms ease,
+    color 200ms ease,
+    border-color 200ms ease;
+}
+
+.project-link span:last-child {
+  transition:
+    transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.project-link:hover {
+  background: var(--color-ink);
+  color: var(--color-paper);
+
+  border-color: var(--color-ink);
+}
+
+.project-link:hover span:last-child {
+  transform: translate(3px, -3px);
+}

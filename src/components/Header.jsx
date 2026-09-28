@@ -8,12 +8,14 @@ export function Header({ content }) {
       </a>
 
       <nav className="site-nav" aria-label="Navegación principal">
-        <a href="#perfil">Perfil</a>
-        <a href="#trayectoria">Trayectoria</a>
-        <a href="#proyectos">Proyectos</a>
+        <a href="#perfil">Profile</a>
+        <a href="#trayectoria">Path</a>
+        <a href="#proyectos">Projects</a>
         <a href="#world-bank">World Bank</a>
-        <a href="#publicaciones">Publicaciones</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#publicaciones">Publications</a>
+        <a href="#agenda">Speaking</a>
+        <a href="#prensa">Press</a>
+        <a href="#contacto">Contact</a>
       </nav>
 
       <div className="language-switcher" aria-label="Idioma">

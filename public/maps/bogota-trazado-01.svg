@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2217 4667" preserveAspectRatio="xMidYMid meet">
+  <path
+    id="trazado-01"
+    class="city-trace-line"
+    d="M 2209 663
+       L 1778 1007
+       L 1683 1159
+       L 1443 1558
+       L 1236 1838
+       L 941 2230
+       L 622 2653
+       L 359 2957
+       L 144 3268
+       L 8 3428"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    vector-effect="non-scaling-stroke"
+  />
+</svg>

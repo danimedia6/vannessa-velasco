@@ -1,6 +1,5 @@
 import { Header } from './components/Header.jsx'
 import { BogotaMapBackground } from './components/BogotaMapBackground.jsx'
-import { CityTrace } from './components/CityTrace.jsx'
 import { useScrollTraceProgress } from './hooks/useScrollTraceProgress.js'
 import { pageContent } from './data/pageContent.js'
 import { Hero } from './sections/Hero.jsx'
@@ -12,6 +11,8 @@ import { Footer } from './components/Footer.jsx'
 import { ExperienceTimeline } from './sections/ExperienceTimeline.jsx'
 import { WorldBankBounce } from "./components/WorldBankBounce";
 import { PublicationsSection } from "./sections/PublicationsSection.jsx"
+import { InternationalAgenda } from "./sections/InternationalAgenda.jsx"
+import { PressSection } from "./sections/PressSection.jsx"
 
 export default function App() {
   useScrollTraceProgress()
@@ -19,7 +20,7 @@ export default function App() {
   return (
     <div className="app-shell">
       <BogotaMapBackground />
-      <CityTrace />
+      
       
       <Header content={pageContent} />
       <main id="main-content">
@@ -42,8 +43,12 @@ export default function App() {
         />
 
         <PublicationsSection content={pageContent} />
+
+        <InternationalAgenda content={pageContent} />
+
+        <PressSection content={pageContent} />
       </main>
-      <Footer />
+      <Footer content={pageContent} />
     </div>
   )
 }

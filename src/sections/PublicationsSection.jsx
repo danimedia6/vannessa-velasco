@@ -31,9 +31,7 @@ export function PublicationsSection({ content }) {
       aria-labelledby="publications-title"
     >
       <header className="publications-header">
-        <p className="publications-eyebrow">
-          {label}
-        </p>
+        
 
         <h2 id="publications-title">
           {headline}
@@ -92,7 +90,11 @@ export function PublicationsSection({ content }) {
       </nav>
 
       {filteredItems.length > 0 ? (
-        <div className="publications-grid">
+        <div
+          className={`publications-grid ${
+            activeFilter === 'All' ? 'is-compact' : ''
+          }`}
+        >
           {filteredItems.map((item, index) => (
             <article
               className="publication-card"

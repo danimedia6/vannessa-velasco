@@ -13,7 +13,7 @@
     clamp(18px, 4.5vw, 68px)
     clamp(100px, 14vh, 160px);
 
-  background: var(--color-paper);
+  background: rgba(243, 238, 230, 0.45);
   color: var(--color-ink);
 
   font-family: var(--font-sans);
@@ -247,7 +247,7 @@
   min-height: 430px;
 
   padding:
-    clamp(34px, 4vw, 48px)
+    clamp(22px, 2.5vw, 30px)
     clamp(28px, 3vw, 42px);
 
   border-right: 1px solid rgba(23, 23, 22, 0.18);
@@ -595,5 +595,109 @@
   .publications-featured-file span:last-child,
   .publications-filter {
     transition: none;
+  }
+}
+
+/* =========================================================
+   COMPACT MODE · ALL
+   ========================================================= */
+
+.publications-grid {
+  align-items: start;
+}
+
+
+/* ---------------------------------------------------------
+   CLOSED CARD
+   --------------------------------------------------------- */
+
+.publications-grid.is-compact .publication-card {
+  position: relative;
+
+  height: 215px;
+  min-height: 0;
+  max-height: none;
+
+  overflow: hidden;
+  align-self: start;
+
+  transition:
+    height 650ms cubic-bezier(0.22, 1, 0.36, 1),
+    background 220ms ease;
+}
+
+
+/* Hide secondary content */
+
+.publications-grid.is-compact .publication-excerpt,
+.publications-grid.is-compact .publication-file {
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(10px);
+
+  transition:
+    opacity 240ms ease,
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0s linear 240ms;
+}
+
+
+/* ---------------------------------------------------------
+   OPEN CARD
+   --------------------------------------------------------- */
+
+.publications-grid.is-compact .publication-card:hover,
+.publications-grid.is-compact .publication-card:focus-within {
+  height: 430px;
+}
+
+
+/* Reveal secondary content */
+
+.publications-grid.is-compact
+  .publication-card:hover
+  .publication-excerpt,
+.publications-grid.is-compact
+  .publication-card:hover
+  .publication-file,
+.publications-grid.is-compact
+  .publication-card:focus-within
+  .publication-excerpt,
+.publications-grid.is-compact
+  .publication-card:focus-within
+  .publication-file {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+
+  transition:
+    opacity 280ms ease 100ms,
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1) 70ms,
+    visibility 0s;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE / TOUCH
+   No hover-dependent interaction
+   --------------------------------------------------------- */
+
+@media (hover: none), (max-width: 760px) {
+
+  .publications-grid.is-compact .publication-card {
+    height: auto;
+    min-height: 390px;
+
+    overflow: visible;
+  }
+
+  .publications-grid.is-compact .publication-excerpt,
+  .publications-grid.is-compact .publication-file {
+    opacity: 1;
+    visibility: visible;
+
+    transform: none;
   }
 }

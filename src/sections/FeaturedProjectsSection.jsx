@@ -1,3 +1,5 @@
+import "./FeaturedProjectsSection.css"
+
 export function FeaturedProjectsSection({ content }) {
   const { policyWork } = content
 
@@ -10,9 +12,7 @@ export function FeaturedProjectsSection({ content }) {
       {/* Ruptura editorial */}
       <div className="policy-break">
         <div className="policy-break__inner">
-          <p className="policy-break__eyebrow">
-            Policy Work
-          </p>
+          
 
           <h2
             className="policy-break__title"
@@ -20,6 +20,8 @@ export function FeaturedProjectsSection({ content }) {
           >
             {policyWork.headline}
           </h2>
+
+          
 
           <p className="policy-break__statement">
             {policyWork.framing}
@@ -43,6 +45,18 @@ export function FeaturedProjectsSection({ content }) {
               </p>
 
               <h3>{project.name}</h3>
+
+              {project.link && (
+                <a
+                  className="project-link"
+                  href={project.link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>{project.link.label}</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              )}
 
               <p>{project.description}</p>
             </div>

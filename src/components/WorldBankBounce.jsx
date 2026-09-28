@@ -83,9 +83,7 @@ export function WorldBankBounce({ content }) {
       {/* INTRO */}
       <div className="world-bank-intro">
         <div className="world-bank-intro-heading">
-          <p className="world-bank-eyebrow">
-            {label}
-          </p>
+          
 
           <h2 id="world-bank-title">
             {headline.split("\n").map((line) => (

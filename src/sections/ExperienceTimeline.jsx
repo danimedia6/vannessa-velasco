@@ -9,9 +9,9 @@ export function ExperienceTimeline({ content }) {
     >
       <header className="timeline-header">
         <h2 id="timeline-title">
-          <span>From</span>
-          <span>Bogotá</span>
-          <em>to the world.</em>
+          <span>From Bogotá</span>
+          
+          <em>to the world</em>
         </h2>
       </header>
 
