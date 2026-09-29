@@ -203,3 +203,70 @@
       rotate(90deg);
   }
 }
+
+/* =========================================================
+   MAP BACKGROUND — MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  :root {
+    --alternate-background-zoom: 3.6;
+  }
+
+  .alternate-map-base {
+    height:
+      calc(
+        100vw *
+        var(--alternate-background-zoom)
+      );
+
+    width: auto;
+    max-width: none;
+
+    transform-origin: top left;
+
+    transform:
+      translate(580px, -270px)
+      translateX(100vw)
+      translateY(
+        var(--alternate-background-y, 0px)
+      )
+      rotate(90deg);
+
+    will-change: transform;
+  }
+
+
+  /* Mantener las localidades pegadas exactamente al mapa */
+
+  .localities-layer {
+    height:
+      calc(
+        100vw *
+        var(--alternate-background-zoom)
+      );
+
+    transform-origin: top left;
+
+    transform:
+      translate(580px, -270px)
+      translateX(100vw)
+      translateY(
+        var(--alternate-background-y, 0px)
+      )
+      rotate(90deg);
+
+    will-change: transform;
+  }
+
+
+  .locality-image--1,
+  .locality-image--2 {
+    height:
+      calc(
+        100vw *
+        var(--alternate-background-zoom)
+      );
+  }
+}
