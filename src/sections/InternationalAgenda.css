@@ -442,9 +442,9 @@
 
   .agenda-section {
     padding:
-      64px
+      30px
       16px
-      72px;
+      40px;
   }
 
   .agenda-layout {
@@ -456,7 +456,7 @@
 
     padding-right: 0;
 
-    margin-bottom: 52px;
+    margin-bottom: 30px;
   }
 
   .agenda-intro h2 {
@@ -513,23 +513,23 @@
 
     min-height: 0;
 
-    padding-top: 46px;
+    padding-top: 20px;
   }
 
   .agenda-panel__location h3 {
     font-size:
-      clamp(3.8rem, 18vw, 5.7rem);
+      3rem;
   }
 
   .agenda-panel__body {
-    margin-top: 42px;
+    margin-top: 20px;
   }
 
   .agenda-panel__body h4 {
     max-width: 16ch;
 
     font-size:
-      clamp(2rem, 9vw, 3rem);
+      2rem;
   }
 }
 
@@ -559,9 +559,9 @@
   width: 100%;
 
   padding:
-    clamp(64px, 8vh, 96px)
+    2rem
     clamp(18px, 4.5vw, 68px)
-    clamp(72px, 9vh, 110px);
+    1rem;
 
   background:
     linear-gradient(

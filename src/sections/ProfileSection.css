@@ -75,18 +75,186 @@
 }
 
 
-/* MOBILE */
+/* =========================================================
+   PROFILE — MOBILE
+   ========================================================= */
 
 @media (max-width: 760px) {
+
+  .profile-section {
+    display: block;
+
+    min-height: 0;
+
+    padding:
+      72px
+      16px
+      96px;
+  }
+
+  .profile-main {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .profile-sidebar {
+    width: 100%;
+
+    margin-top: 64px;
+    padding-top: 0;
+  }
+
+  .profile-title {
+    margin:
+      20px
+      0
+      42px;
+
+    font-size: clamp(3.5rem, 16vw, 5rem);
+    line-height: 0.9;
+  }
+
+  .profile-biography {
+    max-width: none;
+
+    font-size: 0.98rem;
+    line-height: 1.68;
+  }
+
+  .profile-biography p + p {
+    margin-top: 1.4em;
+  }
+
+  .profile-intro::first-letter {
+    font-size: 3.8em;
+  }
+
+  .profile-meta-block {
+    padding-bottom: 30px;
+  }
+
+  .profile-meta-title {
+    margin-bottom: 20px;
+  }
+
+  .education-item,
+  .board-item {
+    padding: 13px 0;
+  }
+
+  .education-item p,
+  .board-item p {
+    font-size: 0.82rem;
+  }
+
+  .education-item > span,
+  .board-item > span {
+    font-size: 0.7rem;
+  }
+
+  .profile-boards {
+    margin-top: 42px;
+  }
+
   .profile-areas {
     gap: 7px;
 
     margin-top: 42px;
   }
 
-  .profile-areas .profile-area-tag {
+  .profile-area-tag {
     padding: 8px 10px;
 
-    font-size: 0.56rem;
+    font-size: 0.58rem;
+  }
+
+  .profile-press-kit {
+    margin-top: 28px;
+
+    padding:
+      14px
+      16px;
+  }
+
+}
+
+@media (max-width: 430px) {
+
+  .profile-section {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .profile-title {
+    font-size: clamp(3.2rem, 17vw, 4.6rem);
+  }
+
+  .profile-biography {
+    font-size: 0.95rem;
+  }
+}
+
+/* =========================================================
+   VIDEO — MOBILE FINAL
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .video-interlude {
+    display: block;
+
+    width: 100%;
+    height: auto;
+    min-height: 0 !important;
+
+    margin: 0;
+    padding: 0 !important;
+
+    overflow: visible;
+  }
+
+  .video-frame {
+    display: block;
+
+    width: 100%;
+    height: auto;
+    min-height: 0 !important;
+
+    margin: 0;
+    padding: 0;
+
+    aspect-ratio: auto;
+
+    overflow: visible;
+    background: transparent;
+  }
+
+  .video-frame video {
+    display: block;
+
+    width: 100%;
+    height: auto !important;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: contain;
+    object-position: center;
+  }
+
+
+  /* Reduce el espacio ANTES del video */
+
+  .impact-section {
+    margin-bottom: 0;
+    padding-bottom: 12px;
+  }
+
+
+  /* Reduce el espacio DESPUÉS del video */
+
+  .experience-timeline {
+    margin-top: 0;
+    padding-top: 20px;
   }
 }

@@ -492,75 +492,111 @@
 
 @media (max-width: 760px) {
 
-  .world-bank-intro {
-    display: flex;
-    flex-direction: column;
+  /* =======================================================
+     INTRO
+     ======================================================= */
 
-    min-height: 72svh;
+  .world-bank-intro {
+    display: block;
+
+    min-height: 0;
 
     padding:
-      72px
+      42px
       16px
-      48px;
+      38px;
   }
+
+  .world-bank-intro h2 span:first-child {
+  display: none;
+}
 
   .world-bank-intro-heading {
     width: 100%;
   }
 
   .world-bank-eyebrow {
-    margin-bottom: 22px;
+    margin-bottom: 16px;
 
     font-size: 0.54rem;
   }
 
   .world-bank-intro h2 {
-    font-size: clamp(4rem, 20vw, 6rem);
+    font-size: clamp(3.5rem, 17vw, 5rem);
     line-height: 0.88;
   }
 
   .world-bank-intro-bottom {
     display: block;
 
-    margin-top: auto;
+    margin-top: 32px;
   }
 
   .world-bank-intro-copy {
-    max-width: 34ch;
+    width: 100%;
+    max-width: none;
 
     font-size: 0.86rem;
-    line-height: 1.65;
+    line-height: 1.62;
   }
 
   .world-bank-intro-marker {
-    display: flex;
+    display: none;
 
-    margin-top: 34px;
+    margin-top: 22px;
+    padding-top: 10px;
 
-    font-size: 0.5rem;
+    font-size: 0.48rem;
   }
 
 
-  /* ---------------------------------------------------------
-     MOBILE · BOUNCE
-     --------------------------------------------------------- */
+  /* =======================================================
+     PROJECT SELECTOR
+     ======================================================= */
 
   .wb-bounce {
     display: block;
 
+    width: 100%;
     min-height: 0;
 
+    margin: 0;
+
     padding:
-      54px
+      32px
       16px
-      70px;
+      42px;
   }
 
   .wb-bounce-nav {
-    width: 100%;
+  display: flex;
+  flex-direction: row;
 
-    padding-left: 25px;
-  }
+  width: 100vw;
+
+  margin:
+    0
+    0
+    0
+    calc(50% - 50vw);
+
+  padding:
+    0
+    16px
+    12px;
+
+  gap: 22px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+}
+
+.wb-bounce-nav::-webkit-scrollbar {
+  display: none;
+}
 
   .wb-bounce-line {
     left: 4px;
@@ -572,78 +608,90 @@
   }
 
   .wb-bounce-item {
-    padding: 13px 0;
+    padding: 10px 0;
   }
 
   .wb-bounce-location {
-    font-size: 0.52rem;
+    margin-bottom: 4px;
+
+    font-size: 0.5rem;
   }
 
   .wb-bounce-project {
-    max-width: 28ch;
+    max-width: 30ch;
 
-    font-size: 0.92rem;
+    font-size: 0.86rem;
+    line-height: 1.3;
   }
 
 
-  /* ---------------------------------------------------------
-     MOBILE · ACTIVE PROJECT
-     --------------------------------------------------------- */
+  /* =======================================================
+     ACTIVE PROJECT
+     ======================================================= */
 
   .wb-bounce-panel {
+    width: 100%;
     max-width: none;
 
-    margin-top: 52px;
-    padding-top: 30px;
+    margin-top: 10px;
+    padding-top: 14px;
 
-    border-top: 1px solid rgba(23, 22, 19, 0.17);
+    
   }
 
   .wb-bounce-counter {
-    margin-bottom: 34px;
+    margin-bottom: 22px;
+
+    font-size: 0.5rem;
   }
 
   .wb-bounce-panel-location {
-    font-size: 0.54rem;
+    margin-bottom: 10px;
+
+    font-size: 0.52rem;
   }
 
   .wb-bounce-panel h3 {
-    max-width: 9ch;
+    max-width: 10ch;
 
-    font-size: clamp(3rem, 14vw, 4.6rem);
-    line-height: 0.91;
+    font-size: 3rem;
+    line-height: 0.9;
   }
 
   .wb-bounce-description {
-    max-width: 35ch;
+    width: 100%;
+    max-width: none;
 
-    margin-top: 26px;
+    margin-top: 20px;
 
-    font-size: 0.86rem;
-    line-height: 1.6;
+    font-size: 0.84rem;
+    line-height: 1.58;
   }
 
   .wb-bounce-value {
-    margin-top: 34px;
+    width: 100%;
+    max-width: none;
+
+    margin-top: 26px;
+    padding-top: 14px;
   }
 
   .wb-bounce-value strong {
-    font-size: clamp(3rem, 14vw, 4.6rem);
-  }
-}
-
-
-/* =========================================================
-   ACCESSIBILITY · REDUCED MOTION
-   ========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-  .wb-bounce-dot {
-    transition: none;
+    font-size: 2rem;
   }
 
-  .wb-bounce-panel {
-    animation: none;
+
+  /* DOCUMENT BUTTON */
+
+  .wb-bounce-file {
+    margin-top: 22px;
+
+    padding:
+      11px
+      13px;
+
+    gap: 24px;
+
+    font-size: 0.56rem;
   }
 }

@@ -96,7 +96,7 @@ export const pageContent = {
 
     actions: [
       {
-        label: 'Hablemos de ciudad',
+        label: 'Contact',
         href: '#contacto',
       },
       {
@@ -123,8 +123,8 @@ export const pageContent = {
     ariaLabel: 'Impacto',
     metrics: [
       {
-        value: '31K+',
-        count: 31,
+        value: '37K+',
+        count: 37,
         prefix: '',
         suffix: 'K+',
         label: 'Subsidios entregados · Plan Integrado de Vivienda',

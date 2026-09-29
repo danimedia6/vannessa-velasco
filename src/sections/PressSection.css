@@ -345,7 +345,7 @@
     grid-template-columns:
       28px
       minmax(0, 1fr)
-      22px;
+      10px;
 
     grid-template-rows:
       auto
@@ -354,12 +354,12 @@
 
     gap:
       7px
-      12px;
+      7px;
 
     min-height: 0;
 
     padding:
-      20px
+      13px
       0;
   }
 
@@ -387,7 +387,7 @@
     grid-column: 2;
     grid-row: 2;
 
-    font-size: 1.18rem;
+    font-size: 1rem;
     line-height: 1.2;
   }
 

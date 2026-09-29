@@ -15,10 +15,12 @@ import { InternationalAgenda } from "./sections/InternationalAgenda.jsx"
 import { PressSection } from "./sections/PressSection.jsx"
 import './sections/fondo.css'
 import { useAlternateBackgroundScroll } from './hooks/useAlternateBackgroundScroll.js'
+import { useLocalitiesScroll } from './hooks/useLocalitiesScroll.js'
 
 export default function App() {
   //useScrollTraceProgress()
   useAlternateBackgroundScroll()
+  useLocalitiesScroll()
 
   return (
     <div className="app-shell">
@@ -34,8 +36,32 @@ export default function App() {
         <div className="localities-layer">
           <img
             className="locality-image locality-image--1"
-            src="/images/3.png?v=3"
+            src="/images/1.png"
             alt=""
+            data-scroll-start="0.03"
+            data-scroll-end="0.18"
+          />
+
+          <img
+            className="locality-image locality-image--2"
+            src="/images/2.png"
+            alt=""
+            data-scroll-start="0.16"
+            data-scroll-end="0.28"
+          />
+          <img
+            className="locality-image locality-image--3"
+            src="/images/3.png"
+            alt=""
+            data-scroll-start="0.22"
+            data-scroll-end="0.38"
+          />
+          <img
+            className="locality-image locality-image--4"
+            src="/images/4.png"
+            alt=""
+            data-scroll-start="0.30"
+            data-scroll-end="0.48"
           />
         </div>
       </div>

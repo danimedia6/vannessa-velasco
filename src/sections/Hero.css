@@ -23,10 +23,8 @@
 
 .hero-copy {
   /*
-   * IMPORTANTE:
-   * no usamos position: relative aquí.
-   * Así la foto absoluta toma .hero-section como referencia
-   * y vuelve a subir como en la versión de Vercel.
+   * No usamos position: relative aquí.
+   * Así la foto absoluta toma .hero-section como referencia.
    */
   z-index: 4;
 
@@ -48,12 +46,19 @@
   position: relative;
   z-index: 5;
 
-  margin: 0 0 clamp(20px, 3vh, 30px);
+  margin:
+    0
+    0
+    clamp(20px, 3vh, 30px);
 
   color: var(--color-muted);
 
   font-family: var(--font-sans);
-  font-size: clamp(0.68rem, 0.68vw, 0.78rem);
+  font-size: clamp(
+    0.68rem,
+    0.68vw,
+    0.78rem
+  );
   font-weight: 400;
 
   letter-spacing: 0.18em;
@@ -74,17 +79,21 @@
   width: min-content;
   max-width: 7.6ch;
 
-  margin: 0 0 0 -0.07em;
+  margin:
+    0
+    0
+    0
+    -0.07em;
 
   color: var(--color-ink);
 
   font-family: var(--font-serif);
 
-  /*
-   * Recuperamos la escala original.
-   * En localhost estaba en 12.5vw y por eso quedó pequeño.
-   */
-  font-size: clamp(5.4rem, 15.8vw, 15rem);
+  font-size: clamp(
+    5.4rem,
+    15.8vw,
+    15rem
+  );
   font-weight: 400;
 
   letter-spacing: -0.035em;
@@ -107,12 +116,17 @@
   width: fit-content;
   max-width: none;
 
-  margin-top: clamp(28px, 4.5vh, 48px);
+  margin-top:
+    clamp(28px, 4.5vh, 48px);
 
   color: var(--color-muted);
 
   font-family: var(--font-sans);
-  font-size: clamp(0.72rem, 0.76vw, 0.88rem);
+  font-size: clamp(
+    0.72rem,
+    0.76vw,
+    0.88rem
+  );
 
   letter-spacing: 0.055em;
   line-height: 1.65;
@@ -122,7 +136,24 @@
 
 .hero-role p {
   margin: 0;
+
   white-space: nowrap;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.hero-actions {
+  position: relative;
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: fit-content;
 }
 
 
@@ -133,9 +164,14 @@
 .hero-figure {
   position: absolute;
 
-  top: clamp(74px, 9.5vh, 100px);
-  right: clamp(18px, 4.5vw, 68px);
-  bottom: clamp(26px, 5vh, 54px);
+  top:
+    clamp(74px, 9.5vh, 100px);
+
+  right:
+    clamp(18px, 4.5vw, 68px);
+
+  bottom:
+    clamp(26px, 5vh, 54px);
 
   z-index: 3;
 
@@ -146,7 +182,8 @@
 
   overflow: hidden;
 
-  background: var(--color-photo-ground);
+  background:
+    var(--color-photo-ground);
 }
 
 .hero-figure img {
@@ -179,17 +216,25 @@
     0
     0;
 
-  padding-left: clamp(18px, 2vw, 28px);
+  padding-left:
+    clamp(18px, 2vw, 28px);
 
-  border-left: 1px solid var(--color-ink);
+  border-left:
+    1px solid var(--color-ink);
 }
 
 .hero-statement p {
   margin: 0;
 
-  font-family: var(--font-serif);
+  font-family:
+    var(--font-serif);
 
-  font-size: clamp(1.2rem, 1.65vw, 1.7rem);
+  font-size: clamp(
+    1.2rem,
+    1.65vw,
+    1.7rem
+  );
+
   font-style: italic;
   font-weight: 400;
 
@@ -206,6 +251,7 @@
   z-index: 5;
 
   display: inline-flex;
+
   align-items: center;
   justify-content: space-between;
 
@@ -213,17 +259,42 @@
 
   width: fit-content;
 
-  margin-top: clamp(28px, 4vh, 42px);
-  padding: 14px 16px;
+  margin-top:
+    clamp(28px, 4vh, 42px);
 
-  border: 1px solid rgba(23, 23, 22, 0.65);
+  padding:
+    14px
+    16px;
+
+  border:
+    1px solid rgba(
+      23,
+      23,
+      22,
+      0.65
+    );
+
   border-radius: 2px;
 
-  background: rgba(243, 238, 230, 0.18);
+  background:
+    rgba(
+      243,
+      238,
+      230,
+      0.18
+    );
+
   color: var(--color-ink);
 
-  font-family: var(--font-sans);
-  font-size: clamp(0.76rem, 0.78vw, 0.88rem);
+  font-family:
+    var(--font-sans);
+
+  font-size: clamp(
+    0.76rem,
+    0.78vw,
+    0.88rem
+  );
+
   font-weight: 500;
 
   letter-spacing: 0.08em;
@@ -238,22 +309,57 @@
 }
 
 .hero-cta span {
-  transition: transform 180ms ease;
+  transition:
+    transform 180ms ease;
 }
 
 .hero-cta:hover,
 .hero-cta:focus-visible {
-  background: var(--color-ink);
-  color: var(--color-paper);
-  border-color: var(--color-ink);
+  background:
+    var(--color-ink);
+
+  color:
+    var(--color-paper);
+
+  border-color:
+    var(--color-ink);
 }
 
 .hero-cta:hover span {
-  transform: translate(3px, 3px);
+  transform:
+    translate(3px, 3px);
 }
 
 .hero-cta--secondary {
   margin-top: 8px;
+}
+
+/* =========================================================
+   META ROW · DESKTOP
+   ========================================================= */
+
+.hero-meta-row {
+  display: contents;
+}
+
+.hero-kicker {
+  order: 1;
+}
+
+.hero-title {
+  order: 2;
+}
+
+.hero-role {
+  order: 3;
+}
+
+.hero-statement {
+  order: 4;
+}
+
+.hero-actions {
+  order: 5;
 }
 
 
@@ -261,20 +367,27 @@
    TABLET
    ========================================================= */
 
-@media (max-width: 980px) and (min-width: 761px) {
+@media (max-width: 980px)
+and (min-width: 761px) {
 
   .hero-section {
     padding-top: 86px;
   }
 
   .hero-title {
-    font-size: clamp(5.2rem, 15vw, 9rem);
+    font-size:
+      clamp(
+        5.2rem,
+        15vw,
+        9rem
+      );
   }
 
   .hero-figure {
     top: 78px;
 
-    width: min(48vw, 520px);
+    width:
+      min(48vw, 520px);
   }
 
   .hero-role {
@@ -284,176 +397,105 @@
   .hero-statement {
     max-width: 40ch;
   }
+
   .hero-actions {
     width: 100%;
-    align-items: center;
+
+    align-items:
+      flex-start;
   }
 }
 
 
 /* =========================================================
-   MOBILE
+   HERO · MOBILE
    ========================================================= */
 
 @media (max-width: 760px) {
 
-  .hero-section {
-    min-height: 0;
+  .hero-meta-row {
+    order: 3;
 
-    padding:
-      88px
-      16px
-      54px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 
-    overflow: visible;
+    width: 100%;
+    margin: 0 0 20px;
+
+    gap: 12px;
   }
 
-  .hero-copy {
+
+  /* TEXTO · IZQUIERDA */
+
+  .hero-role {
+    position: relative;
+
+    flex: 1 1 auto;
+
+    width: auto;
+    max-width: 22ch;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 0.52rem;
+    letter-spacing: 0.045em;
+    line-height: 1.45;
+
+    text-align: left;
+  }
+
+  .hero-role p {
+    margin: 0 !important;
+    padding: 0;
+
+    white-space: normal;
+  }
+
+
+  /* BOTONES · DERECHA */
+
+  .hero-actions {
+    position: relative;
+
+    flex: 0 0 110px;
+
     display: flex;
     flex-direction: column;
 
-    width: 100%;
-    min-height: 0;
+    width: 110px;
 
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    top: 0 !important;
+
+    align-items: stretch;
   }
-
-
-  /* Kicker */
-
-  .hero-kicker {
-    order: 1;
-
-    margin: 0 0 14px;
-
-    font-size: 0.58rem;
-    letter-spacing: 0.15em;
-    line-height: 1.35;
-  }
-
-
-  /* Title */
-
-  .hero-title {
-    order: 2;
-
-    width: 100%;
-    max-width: none;
-
-    margin: 0 0 16px -0.035em;
-
-    font-size: clamp(4.1rem, 20vw, 5.6rem);
-    letter-spacing: -0.045em;
-    line-height: 0.76;
-  }
-
-
-  /* Role */
-
-  .hero-role {
-    order: 3;
-
-    width: 100%;
-    max-width: 32ch;
-
-    margin: 0 0 24px;
-
-    font-size: 0.63rem;
-    letter-spacing: 0.055em;
-    line-height: 1.5;
-  }
-
-
-  /* Image */
-
-  .hero-figure {
-    order: 4;
-
-    position: relative;
-
-    inset: auto;
-
-    width: 100vw;
-    max-width: none;
-
-    height: auto;
-    aspect-ratio: 4 / 4.4;
-
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    margin-bottom: 0;
-
-    overflow: hidden;
-  }
-
-  .hero-figure img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-    object-position: 50% 14%;
-  }
-
-
-  /* Statement */
-
-  .hero-statement {
-    order: 5;
-
-    width: 100%;
-    max-width: 300px;
-
-    margin: 28px auto 0;
-    padding: 0;
-
-    border: 0;
-
-    text-align: center;
-    align-self: center;
-  }
-
-  .hero-statement p {
-    width: 100%;
-
-    margin: 0;
-
-    font-size: 1rem;
-    line-height: 1.5;
-
-    text-align: center;
-  }
-
-
-  /* CTA */
 
   .hero-cta {
-    order: 6;
+    width: 110px !important;
 
-    width: 180px;
+    margin: 0 !important;
+    padding: 7px 8px;
 
-    margin: 22px auto 0;
-    padding: 11px 14px;
+    box-sizing: border-box;
 
-    align-self: center;
-    justify-content: space-between;
+    gap: 6px;
 
-    font-size: 0.58rem;
-    letter-spacing: 0.1em;
+    font-size: 0.4rem;
+    letter-spacing: 0.055em;
+    line-height: 1;
+
+    white-space: nowrap;
   }
 
   .hero-cta--secondary {
-    order: 7;
-
-    margin-top: 7px;
-  }
-
-  .hero-actions {
-    width: 100%;
-    align-items: center;
+    margin-top: 5px !important;
   }
 }
-
 
 /* =========================================================
    SMALL MOBILE
@@ -462,30 +504,38 @@
 @media (max-width: 430px) {
 
   .hero-title {
-    font-size: clamp(4rem, 23vw, 5.6rem);
+    font-size:
+      clamp(
+        4rem,
+        23vw,
+        5.6rem
+      );
   }
-}
 
+  .hero-meta-row {
+    grid-template-columns:
+      minmax(0, 1fr)
+      110px;
 
-/* =========================================================
-   REDUCED MOTION
-   ========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-  .hero-cta,
-  .hero-cta span {
-    transition: none;
+    column-gap: 10px;
   }
-}
 
-.hero-actions {
-  position: relative;
-  z-index: 5;
+  .hero-role {
+    max-width: 20ch;
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    font-size: 0.48rem;
+  }
 
-  width: fit-content;
+  .hero-actions,
+  .hero-cta {
+    width: 110px;
+  }
+
+  .hero-cta {
+    padding:
+      7px
+      8px;
+
+    font-size: 0.4rem;
+  }
 }

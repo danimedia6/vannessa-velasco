@@ -78,21 +78,71 @@
   line-height: 1.35;
 }
 
+/* =========================================================
+   IMPACT — MOBILE
+   ========================================================= */
+
 @media (max-width: 760px) {
+
   .impact-section {
-    padding: 28px 16px;
+    padding:
+      26px
+      16px
+      30px;
   }
 
   .impact-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px 18px;
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 160px));
+    justify-content: center;
+
+    column-gap: 24px;
+    row-gap: 30px;
+
+    align-items: start;
+  }
+
+  .impact-item {
+    min-width: 0;
+    text-align: center;
+  }
+
+  .impact-item:nth-child(5) {
+    grid-column: 1 / -1;
+
+    width: 160px;
+
+    justify-self: center;
+  }
+
+  .impact-label {
+    max-width: 18ch;
+    margin-inline: auto;
+  }
+
+  .impact-value {
+    font-size: clamp(2.5rem, 11vw, 3.6rem);
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .impact-item {
-    opacity: 1;
-    transform: none;
-    transition: none;
+@media (max-width: 430px) {
+
+  .impact-section {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .impact-list {
+    column-gap: 14px;
+    row-gap: 26px;
+  }
+
+  .impact-value {
+    font-size: clamp(2.35rem, 12vw, 3.2rem);
+  }
+
+  .impact-label {
+    font-size: 0.64rem;
   }
 }

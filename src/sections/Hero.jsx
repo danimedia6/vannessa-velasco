@@ -22,13 +22,51 @@ export function Hero({ content }) {
           <span>{hero.name.last}</span>
         </h1>
 
-        <div className="hero-role">
-          {hero.roles.map((role) => (
-            <p key={role}>
-              {role}
-            </p>
-          ))}
+
+        {/* ROLE + ACTIONS */}
+
+        <div className="hero-meta-row">
+
+          <div className="hero-role">
+            {hero.roles.map((role) => (
+              <p key={role}>
+                {role}
+              </p>
+            ))}
+          </div>
+
+          <div className="hero-actions">
+            {hero.actions.map((action) => (
+              <a
+                key={action.label}
+                className={`hero-cta ${
+                  action.download
+                    ? "hero-cta--secondary"
+                    : ""
+                }`}
+                href={action.href}
+                download={
+                  action.download ||
+                  undefined
+                }
+              >
+                <span>
+                  {action.label}
+                </span>
+
+                <span aria-hidden="true">
+                  {action.download
+                    ? "↓"
+                    : "↘"}
+                </span>
+              </a>
+            ))}
+          </div>
+
         </div>
+
+
+        {/* IMAGE */}
 
         <figure className="hero-figure">
           <img
@@ -37,30 +75,12 @@ export function Hero({ content }) {
           />
         </figure>
 
+
+        {/* STATEMENT */}
+
         <blockquote className="hero-statement">
           <p>{hero.tagline}</p>
         </blockquote>
-
-        <div className="hero-actions">
-          {hero.actions.map((action) => (
-            <a
-              key={action.label}
-              className={`hero-cta ${
-                action.download
-                  ? "hero-cta--secondary"
-                  : ""
-              }`}
-              href={action.href}
-              download={action.download || undefined}
-            >
-              {action.label}
-
-              <span aria-hidden="true">
-                {action.download ? "↓" : "↘"}
-              </span>
-            </a>
-          ))}
-        </div>
 
       </div>
     </section>
