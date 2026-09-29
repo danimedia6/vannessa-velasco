@@ -1,0 +1,113 @@
+/* =========================================================
+   FONDO ALTERNATIVO — BOGOTÁ
+   ========================================================= */
+
+:root {
+  --alternate-background-zoom: 2;
+}
+
+.alternate-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+
+/* =========================================================
+   GEOMETRÍA COMPARTIDA
+   ========================================================= */
+
+.alternate-map-base {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  height: calc(
+    100vw * var(--alternate-background-zoom)
+  );
+
+  width: auto;
+  max-width: none;
+
+  display: block;
+
+  transform-origin: top left;
+
+  transform:
+    translate(580px, -270px)
+    translateX(100vw)
+    translateY(var(--alternate-background-y, 0px))
+    rotate(90deg);
+
+  will-change: transform;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+
+/* =========================================================
+   MAPA BASE
+   ========================================================= */
+
+.alternate-map-base {
+  z-index: 1;
+
+  opacity: 1;
+
+  filter:
+    contrast(1.06)
+    brightness(0.98);
+}
+
+
+/* =========================================================
+   CAPA DE LOCALIDADES
+   ========================================================= */
+
+.localities-layer {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  z-index: 2;
+
+  height: calc(
+    100vw * var(--alternate-background-zoom)
+  );
+
+  aspect-ratio: 2835 / 1984;
+
+  transform-origin: top left;
+
+  transform:
+    translate(580px, -270px)
+    translateX(100vw)
+    translateY(var(--alternate-background-y, 0px))
+    rotate(90deg);
+
+  pointer-events: none;
+}
+
+.locality-image--1 {
+  position: absolute;
+  height: calc(
+    100vw * var(--alternate-background-zoom)
+  );
+
+  transform:
+  
+    
+    rotate(180deg);
+}
+

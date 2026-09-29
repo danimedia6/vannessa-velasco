@@ -13,13 +13,32 @@ import { WorldBankBounce } from "./components/WorldBankBounce";
 import { PublicationsSection } from "./sections/PublicationsSection.jsx"
 import { InternationalAgenda } from "./sections/InternationalAgenda.jsx"
 import { PressSection } from "./sections/PressSection.jsx"
+import './sections/fondo.css'
+import { useAlternateBackgroundScroll } from './hooks/useAlternateBackgroundScroll.js'
 
 export default function App() {
-  useScrollTraceProgress()
+  //useScrollTraceProgress()
+  useAlternateBackgroundScroll()
 
   return (
     <div className="app-shell">
-      <BogotaMapBackground />
+      {/* <BogotaMapBackground /> */}
+
+      <div className="alternate-background" aria-hidden="true">
+        <img
+          className="alternate-map-base"
+          src="/images/fondo1.png"
+          alt=""
+        />
+
+        <div className="localities-layer">
+          <img
+            className="locality-image locality-image--1"
+            src="/images/3.png?v=3"
+            alt=""
+          />
+        </div>
+      </div>
       
       
       <Header content={pageContent} />
