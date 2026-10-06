@@ -729,3 +729,70 @@
     font-size: 0.46rem;
   }
 }
+
+/* -------------------------------------------------------
+   PROJECT STATS · VALUE
+   ------------------------------------------------------- */
+
+.project-stats dt,
+.featured-project[data-orientation="image-left"]
+  .project-stats dt,
+.featured-project[data-orientation="image-right"]
+  .project-stats dt {
+  width: 100%;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-size: 1.7rem !important;
+  line-height: 0.95 !important;
+  letter-spacing: -0.035em;
+
+  white-space: nowrap;
+
+  text-align: center !important;
+}
+
+
+/* -------------------------------------------------------
+   PROJECT STATS · LABEL
+   ------------------------------------------------------- */
+
+.project-stats dd,
+.featured-project[data-orientation="image-left"]
+  .project-stats dd,
+.featured-project[data-orientation="image-right"]
+  .project-stats dd {
+  width: 100%;
+  max-width: 14ch;
+
+  margin:
+    7px
+    auto
+    0 !important;
+
+  padding: 0 !important;
+
+  font-size: 0.62rem !important;
+  line-height: 1.25;
+
+  text-align: center !important;
+}
+
+@media (max-width: 430px) {
+  .project-stats dt,
+  .featured-project[data-orientation="image-left"]
+    .project-stats dt,
+  .featured-project[data-orientation="image-right"]
+    .project-stats dt {
+    font-size: 1.55rem !important;
+  }
+
+  .project-stats dd,
+  .featured-project[data-orientation="image-left"]
+    .project-stats dd,
+  .featured-project[data-orientation="image-right"]
+    .project-stats dd {
+    font-size: 0.58rem !important;
+  }
+}
