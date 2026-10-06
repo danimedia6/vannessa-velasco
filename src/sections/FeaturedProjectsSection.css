@@ -593,48 +593,43 @@
      LABEL
      ------------------------------------------------------- */
 
-  .project-stats dd {
-    width: 100%;
-    max-width: 13ch;
+  .project-stats dt {
+  width: 100%;
 
-    margin:
-      5px
-      auto
-      0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 
-    padding: 0 !important;
+  font-size:
+    clamp(
+      0.68rem,
+      3.2vw,
+      0.88rem
+    );
 
-    font-size: 0.36rem;
-    line-height: 1.2;
+  line-height: 1;
+  letter-spacing: -0.04em;
 
-    text-align: center !important;
-  }
+  white-space: nowrap;
 
+  text-align: center !important;
+}
 
-  /* =======================================================
-     POLICY RESULTS
-     ======================================================= */
+.project-stats dd {
+  width: 100%;
+  max-width: 13ch;
 
-  .policy-results {
-    display: grid;
+  margin:
+    5px
+    auto
+    0 !important;
 
-    grid-template-columns:
-      repeat(
-        2,
-        minmax(0, 1fr)
-      );
+  padding: 0 !important;
 
-    width: 100%;
+  font-size: 0.32rem;
+  line-height: 1.2;
 
-    margin: 0;
-
-    padding:
-      10px
-      0
-      8px !important;
-
-    background: #191817;
-  }
+  text-align: center !important;
+}
 
   .policy-result {
     position: relative;
