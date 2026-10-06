@@ -13,7 +13,7 @@
     clamp(18px, 4.5vw, 68px)
     clamp(64px, 8vh, 96px);
 
-  background: rgba(243, 238, 230, 0.60);
+  background: rgba(243, 238, 230, 0.55);
   color: var(--color-ink);
 
   font-family: var(--font-sans);
@@ -329,6 +329,8 @@
       64px
       16px
       72px;
+
+    background: rgba(243, 238, 230, 0.55);
   }
 
   .press-header {

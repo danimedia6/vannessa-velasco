@@ -1,4 +1,7 @@
-import { useState } from "react"
+import {
+  useRef,
+  useState,
+} from "react"
 import "./InternationalAgenda.css"
 
 export function InternationalAgenda({ content }) {
@@ -9,158 +12,322 @@ export function InternationalAgenda({ content }) {
     (event) => !event.status
   )
 
-  const [activeIndex, setActiveIndex] = useState(0)
+  const [activeIndex, setActiveIndex] =
+    useState(0)
 
-  const getLocation = (event) => {
+  const agendaListRef = useRef(null)
+  
+
+  
+
+  const goToEvent = (index) => {
+    const list = agendaListRef.current
+
+    if (!list) return
+
+    const maxScroll =
+      list.scrollWidth -
+      list.clientWidth
+
+    const totalSteps =
+      confirmedEvents.length - 1
+
+    const left =
+      totalSteps > 0
+        ? (maxScroll / totalSteps) * index
+        : 0
+
+    setActiveIndex(index)
+
+    list.scrollTo({
+      left,
+      behavior: "smooth",
+    })
+  }
+
+  const getEventData = (event) => {
     const firstMeta = event.meta?.[0] || ""
 
-    const location = firstMeta
-      .split("·")[0]
-      ?.trim()
+    const metaParts = firstMeta
+      .split("·")
+      .map((part) => part.trim())
 
-    const parts = location
+    const location = metaParts[0] || ""
+    const date = metaParts
+      .slice(1)
+      .join(" · ")
+
+    const locationParts = location
       .split(",")
       .map((part) => part.trim())
 
+    const city =
+      locationParts[0] || ""
+
+    const country =
+      locationParts
+        .slice(1)
+        .join(", ")
+
+    const yearMatch =
+      firstMeta.match(/\b(19|20)\d{2}\b/)
+
+    const year =
+      yearMatch?.[0] || ""
+
     return {
-      city: parts[0] || "",
-      country: parts.slice(1).join(", "),
+      city,
+      country,
+      date,
+      year,
+      details:
+        event.meta?.slice(1) || [],
     }
   }
 
-  const activeEvent =
-    confirmedEvents[activeIndex]
+  const headlineParts =
+    headline.trim().split(/\s+/)
 
-  const activeLocation =
-    getLocation(activeEvent)
+  const headlineFirst =
+    headlineParts[0]
+
+  const headlineRest =
+    headlineParts
+      .slice(1)
+      .join(" ")
 
   return (
     <section
+      
       className="agenda-section"
       id="agenda"
       aria-labelledby="agenda-title"
     >
-      <div className="agenda-layout">
+      <div className="agenda-shell">
 
-        {/* LEFT */}
+        {/* ===================================================
+            INTRO
+            =================================================== */}
 
-        <header className="agenda-intro">
-          
+        <header className="agenda-header">
 
-          <h2 id="agenda-title">
-            {headline}
-          </h2>
+          <div className="agenda-header__meta">
 
-          <p className="agenda-description">
-            International conversations,
-            knowledge exchange and global
-            collaboration around housing,
-            cities and urban transformation.
-          </p>
-        </header>
+            <p className="agenda-eyebrow">
+              {label}
+            </p>
 
-        {/* RIGHT */}
+            <p className="agenda-description">
+              International conversations,
+              knowledge exchange and global
+              collaboration around housing,
+              cities and urban transformation.
+            </p>
 
-        <div className="agenda-content">
-
-          {/* CITY NAVIGATION */}
-
-          <div
-            className="agenda-cities"
-            role="tablist"
-            aria-label="International agenda cities"
-          >
-            {confirmedEvents.map(
-              (event, index) => {
-                const { city } =
-                  getLocation(event)
-
-                const isActive =
-                  index === activeIndex
-
-                return (
-                  <button
-                    type="button"
-                    role="tab"
-                    aria-selected={isActive}
-                    className={`agenda-city ${
-                      isActive
-                        ? "is-active"
-                        : ""
-                    }`}
-                    onClick={() =>
-                      setActiveIndex(index)
-                    }
-                    key={`${city}-${event.name}`}
-                  >
-                    <span>
-                      {String(index + 1)
-                        .padStart(2, "0")}
-                    </span>
-
-                    {city}
-                  </button>
-                )
-              }
-            )}
           </div>
 
-          {/* ACTIVE EVENT */}
-
-          <article
-            className="agenda-panel"
-            key={activeEvent.name}
-            role="tabpanel"
+          <h2
+            className="agenda-title"
+            id="agenda-title"
           >
-            <div className="agenda-panel__location">
-              <p>
-                {activeLocation.country}
-              </p>
+            <span>
+              {headlineFirst}
+            </span>
 
-              <h3>
-                {activeLocation.city}
-              </h3>
-            </div>
+            <span>
+              {headlineRest}
+            </span>
+          </h2>
 
-            <div className="agenda-panel__body">
+        </header>
 
-              <p className="agenda-panel__organization">
-                {activeEvent.organization}
-              </p>
 
-              <h4>
-                {activeEvent.name}
-              </h4>
+        {/* ===================================================
+            GLOBAL ROUTE
+            =================================================== */}
 
-              <div className="agenda-panel__meta">
-                {activeEvent.meta?.map(
-                  (line, index) => (
-                    <p
-                      key={`${line}-${index}`}
-                    >
-                      {line}
-                    </p>
-                  )
-                )}
-              </div>
+        <nav
+          className="agenda-route"
+          aria-label="International agenda cities"
+        >
+          <div
+            className="agenda-route__line"
+            aria-hidden="true"
+          />
 
-              {activeEvent.tag && (
-                <div className="agenda-panel__role">
+          {confirmedEvents.map(
+            (event, index) => {
+              const {
+                city,
+                year,
+              } = getEventData(event)
+
+              const isActive =
+                index === activeIndex
+
+              return (
+                <button
+                  type="button"
+                  className={`agenda-route__stop ${
+                    isActive
+                      ? "is-active"
+                      : ""
+                  }`}
+                  onClick={() =>
+                    goToEvent(index)
+                  }
+                  key={`${city}-${event.name}`}
+                >
                   <span
+                    className="agenda-route__dot"
                     aria-hidden="true"
-                    className="agenda-panel__dot"
                   />
 
-                  <span>
-                    {activeEvent.tag}
+                  <span
+                    className="agenda-route__city"
+                  >
+                    {city}
                   </span>
-                </div>
-              )}
 
-            </div>
-          </article>
+                  <span
+                    className="agenda-route__year"
+                  >
+                    {year}
+                  </span>
+                </button>
+              )
+            }
+          )}
+        </nav>
+
+
+        {/* ===================================================
+            EVENT LIST
+            =================================================== */}
+
+        <div
+        className="agenda-list"
+        ref={agendaListRef}
+      >
+
+          {confirmedEvents.map(
+            (event, index) => {
+              const {
+                city,
+                country,
+                date,
+                year,
+                details,
+              } = getEventData(event)
+
+              const isActive =
+                index === activeIndex
+
+              return (
+                <article
+                  className={`agenda-event ${
+                    isActive
+                      ? "is-active"
+                      : ""
+                  }`}
+                  key={event.name}
+                >
+
+                  {/* YEAR */}
+
+                  <div className="agenda-event__year">
+                    <span>
+                      {year}
+                    </span>
+                  </div>
+
+
+                  {/* MAIN */}
+
+                  <div className="agenda-event__main">
+
+                    <div className="agenda-event__place">
+
+                      <span>
+                        {city}
+                      </span>
+
+                      {country && (
+                        <>
+                          <span
+                            aria-hidden="true"
+                          >
+                            /
+                          </span>
+
+                          <span>
+                            {country}
+                          </span>
+                        </>
+                      )}
+
+                    </div>
+
+                    <p className="agenda-event__organization">
+                      {event.organization}
+                    </p>
+
+                    <h3 className="agenda-event__title">
+                      {event.name}
+                    </h3>
+
+                  </div>
+
+
+                  {/* DETAILS */}
+
+                  <div className="agenda-event__details">
+
+                    {date && (
+                      <p className="agenda-event__date">
+                        {date}
+                      </p>
+                    )}
+
+                    {details.map(
+                      (line, detailIndex) => (
+                        <p
+                          key={`${line}-${detailIndex}`}
+                        >
+                          {line}
+                        </p>
+                      )
+                    )}
+
+                  </div>
+
+
+                  {/* ROLE */}
+
+                  <div className="agenda-event__role">
+
+                    {event.tag && (
+                      <span>
+                        {event.tag}
+                      </span>
+                    )}
+
+                    <span
+                      className="agenda-event__arrow"
+                      aria-hidden="true"
+                    >
+                      ↗
+                    </span>
+
+                  </div>
+
+                </article>
+              )
+            }
+          )}
 
         </div>
+
       </div>
     </section>
   )

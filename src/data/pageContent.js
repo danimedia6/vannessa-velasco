@@ -350,7 +350,27 @@ export const pageContent = {
         name: 'Mi Casa en Bogotá',
         description:
           "An integrated district housing policy addressing 61% of the city's housing deficit through 8 differentiated programs targeting both demand and supply across the housing value chain. Investment tripled compared to previous administrations.",
-        image: '/images/projects/micasa1.jpg',
+        images: [
+          {
+            src: '/images/projects/micasa1.jpg',
+            alt: 'Mi Casa en Bogotá',
+            position: '20% center',
+          },
+          {
+            src: '/images/projects/micasa2.jpg',
+            alt: 'Mi Casa en Bogotá',
+          },
+          {
+            src: '/images/projects/micasa3.jpg',
+            alt: 'Mi Casa en Bogotá',
+            position: '70% center',
+          },
+          {
+            src: '/images/projects/micasa4.jpg',
+            alt: 'Mi Casa en Bogotá',
+            position: '90% center',
+          },
+        ],
         link: {
           label: 'Explore project',
           href: 'https://habitatbogota.gov.co/desarrollo-sostenible-ciudades/vivienda-transformacion/revolucion-vivienda',
@@ -375,7 +395,27 @@ export const pageContent = {
         name: 'Revitaliza tu Barrio',
         description:
           'Neighborhood revitalization across 75 neighborhoods in 20 zones, following principles of sustainable construction, social cohesion, and strategic proximity to Metro, BRT, and Metrocable corridors. Coordinated within 400m buffer zones around mobility networks.',
-        image: '/images/projects/revitaliza1.png',
+        images: [
+          {
+            src: '/images/projects/revitaliza1.jpg',
+            alt: 'Revitaliza tu Barrio',
+            position: '20% center',
+          },
+          {
+            src: '/images/projects/revitaliza2.jpg',
+            alt: 'Revitaliza tu Barrio',
+          },
+          {
+            src: '/images/projects/revitaliza3.png',
+            alt: 'Revitaliza tu Barrio',
+            position: '70% center',
+          },
+          {
+            src: '/images/projects/revitaliza4.JPG',
+            alt: 'Revitaliza tu Barrio',
+            position: '90% center',
+          },
+        ],
         link: {
           label: 'Explore project',
           href: 'https://habitatbogota.gov.co/desarrollo-sostenible-ciudades/estrategia-revitalizacion',

@@ -411,6 +411,7 @@ a {
   column-gap: clamp(20px, 2vw, 34px);
 
   min-height: 100svh;
+  background: rgba(243, 238, 230, 0.55);
 
   padding:
     clamp(48px, 6vh, 72px)
@@ -664,7 +665,7 @@ a {
 
   padding-bottom: 0;
 
-  background: rgba(243, 238, 230, 0.45);
+  background: rgba(243, 238, 230, 0.55);
 }
 
 .projects-section .section-trace {
@@ -903,6 +904,7 @@ a {
     clamp(18px, 4.5vw, 68px)
     clamp(36px, 5vh, 58px);
   overflow: hidden;
+  background: rgba(243, 238, 230, 0.55);
 }
 
 .video-interlude .section-trace {
@@ -1571,6 +1573,7 @@ a {
 .experience-timeline {
    position: relative;
   z-index: 4;
+  background: rgba(243, 238, 230, 0.55);
 
   padding:
     clamp(42px, 6vh, 68px)
@@ -1815,7 +1818,7 @@ a {
   position: relative;
   z-index: 4;
   padding-bottom: 0;
-  background: rgba(243, 238, 230, 0.45);
+  background: rgba(243, 238, 230, 0.55);
 }
 
 .policy-results {
@@ -2324,6 +2327,13 @@ a {
 .site-footer .footer-bottom a {
   color: var(--color-paper);
 }
+
+.hero-section {
+  background: rgba(243, 238, 230, 0.55);
+}
+
+
+
 
 /* =========================================================
    RESPONSIVE FINAL — HEADER + HERO

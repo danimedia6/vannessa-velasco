@@ -33,37 +33,7 @@ export default function App() {
           alt=""
         />
 
-        <div className="localities-layer">
-          <img
-            className="locality-image locality-image--1"
-            src="/images/1.png"
-            alt=""
-            data-scroll-start="0.03"
-            data-scroll-end="0.18"
-          />
-
-          <img
-            className="locality-image locality-image--2"
-            src="/images/2.png"
-            alt=""
-            data-scroll-start="0.16"
-            data-scroll-end="0.28"
-          />
-          <img
-            className="locality-image locality-image--3"
-            src="/images/3.png"
-            alt=""
-            data-scroll-start="0.22"
-            data-scroll-end="0.38"
-          />
-          <img
-            className="locality-image locality-image--4"
-            src="/images/4.png"
-            alt=""
-            data-scroll-start="0.30"
-            data-scroll-end="0.48"
-          />
-        </div>
+        
       </div>
       
       
