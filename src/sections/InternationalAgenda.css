@@ -316,18 +316,19 @@
   position: relative;
 
   display: grid;
+
   grid-template-columns:
-    repeat(3, minmax(150px, 200px));
+    repeat(4, minmax(120px, 1fr));
 
   justify-content: center;
 
   width: 100%;
-  max-width: 640px;
+  max-width: 760px;
 
   margin:
     0
     auto
-    clamp(58px, 8vh, 96px);
+    20px;
 
   padding: 0;
 
@@ -344,8 +345,8 @@
 
   top: 7px;
 
-  left: calc(100% / 6);
-  right: calc(100% / 6);
+  left: calc(100% / 8);
+  right: calc(100% / 8);
 
   height: 1px;
 
@@ -1499,14 +1500,285 @@
 
 
 
+@media (prefers-reduced-motion: reduce) {
+
+
+
+  .agenda-route__stop,
+
+  .agenda-route__dot,
+
+  .agenda-route__year,
+
+  .agenda-event,
+
+  .agenda-event::before,
+
+  .agenda-event__title,
+
+  .agenda-event__arrow {
+
+    transition: none;
+
+  }
+
+
+
+}
 
 /* =========================================================
-
-   MOBILE
-
+   INTERNATIONAL AGENDA — YEAR SLIDES
    ========================================================= */
 
+.agenda-list {
+  display: flex;
+  flex-wrap: nowrap;
 
+  width: 100%;
+  max-width: 100%;
+
+  overflow-x: hidden;
+  overflow-y: visible;
+
+  gap: 0;
+}
+
+
+/* Cada año ocupa exactamente un slide */
+
+.agenda-year-slide {
+  flex: 0 0 100%;
+
+  width: 100%;
+  min-width: 100%;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   YEAR HEADER
+   ========================================================= */
+
+.agenda-year-slide__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  padding:
+    0
+    0
+    18px;
+
+  border-bottom:
+    1px solid rgba(23, 23, 22, 0.22);
+
+  color: var(--color-muted);
+
+  font-size: 0.58rem;
+  font-weight: 600;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.agenda-year-slide__header span:first-child {
+  color: var(--color-accent);
+
+  font-size: 0.72rem;
+}
+
+
+/* =========================================================
+   EVENTS RAIL
+   ========================================================= */
+
+.agenda-year-events {
+  display: flex;
+
+  width: 100%;
+
+  justify-content: center;
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   EVENT
+   ========================================================= */
+
+.agenda-year-events .agenda-event {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width:
+    calc(
+      100% /
+      var(--agenda-columns)
+    ) !important;
+
+  min-width:
+    calc(
+      100% /
+      var(--agenda-columns)
+    ) !important;
+
+  max-width:
+    calc(
+      100% /
+      var(--agenda-columns)
+    ) !important;
+
+  flex:
+    0 0
+    calc(
+      100% /
+      var(--agenda-columns)
+    ) !important;
+
+  padding:
+    clamp(26px, 4vh, 42px)
+    clamp(16px, 1.8vw, 28px)
+    clamp(24px, 3.5vh, 38px);
+
+  border-right:
+    1px solid rgba(23, 23, 22, 0.14);
+
+  box-sizing: border-box;
+}
+
+.agenda-year-events
+.agenda-event:last-child {
+  border-right: 0;
+}
+
+
+/* Quitamos el año repetido dentro de cada evento */
+
+.agenda-year-events
+.agenda-event__year {
+  display: none;
+}
+
+
+/* =========================================================
+   PLACE
+   ========================================================= */
+
+.agenda-year-events
+.agenda-event__place {
+  margin-bottom: 18px;
+
+  font-size: 0.54rem;
+  line-height: 1.35;
+
+  letter-spacing: 0.15em;
+}
+
+
+/* =========================================================
+   ORGANIZATION
+   ========================================================= */
+
+.agenda-year-events
+.agenda-event__organization {
+  margin:
+    0
+    0
+    12px;
+
+  font-size:
+    clamp(
+      0.52rem,
+      0.55vw,
+      0.64rem
+    );
+
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.agenda-year-events
+.agenda-event__title {
+  max-width: none;
+
+  margin: 0;
+
+  font-size:
+    clamp(
+      1.15rem,
+      1.45vw,
+      1.65rem
+    );
+
+  line-height: 1.08;
+
+  letter-spacing: -0.035em;
+}
+
+
+/* Ya no desplazamos el título */
+
+.agenda-year-events
+.agenda-event:hover
+.agenda-event__title {
+  transform: none;
+}
+
+
+/* =========================================================
+   DETAILS
+   ========================================================= */
+
+.agenda-year-events
+.agenda-event__details {
+  margin-top:
+    clamp(
+      24px,
+      3vh,
+      34px
+    );
+
+  padding-bottom: 0;
+}
+
+.agenda-year-events
+.agenda-event__details p {
+  font-size:
+    clamp(
+      0.62rem,
+      0.65vw,
+      0.72rem
+    );
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   ROLE
+   ========================================================= */
+
+.agenda-year-events
+.agenda-event__role {
+  justify-content: flex-start;
+
+  width: 100%;
+
+  margin-top: auto;
+  padding-top: 22px;
+  padding-bottom: 0;
+
+  text-align: left;
+
+  font-size: 0.5rem;
+}
 
 @media (max-width: 760px) {
 
@@ -1651,354 +1923,410 @@
 
   /* ROUTE */
 
-  .agenda-route {
-    display: grid;
-    grid-template-columns:
-      repeat(3, minmax(0, 1fr));
+  /* =======================================================
+   YEARS · MOBILE COMPACT
+   ======================================================= */
 
-    justify-content: stretch;
+.agenda-route {
+  position: relative;
 
-    width: 100%;
-    max-width: none;
+  display: flex;
+  flex-wrap: nowrap;
 
-    margin:
-      0
-      0
-      42px;
+  width: 100%;
+  max-width: none;
 
-    padding: 0;
+  margin:
+    0
+    0
+    20px;
 
-    overflow: visible;
-  }
+  padding: 0;
 
-  .agenda-route::-webkit-scrollbar {
-    display: none;
-  }
+  overflow: hidden;
+}
 
-  .agenda-route__line {
-    left: calc(100% / 6);
-    right: calc(100% / 6);
+.agenda-route__stop,
+.agenda-route__stop:nth-of-type(3),
+.agenda-route__stop:last-child {
+  flex: 0 0 25%;
 
-    min-width: 0;
-  }
+  min-width: 25%;
 
-  .agenda-route__stop,
-  .agenda-route__stop:nth-of-type(3),
-  .agenda-route__stop:last-child {
-    min-width: 0;
+  padding:
+    21px
+    2px
+    7px;
 
-    padding:
-      31px
-      4px
-      12px;
+  align-items: center;
 
-    align-items: center;
-
-    text-align: center;
-  }
-
-  .agenda-route__dot,
-  .agenda-route__stop:nth-of-type(3)
-  .agenda-route__dot,
-  .agenda-route__stop:last-child
-  .agenda-route__dot {
-    left: 50%;
-    right: auto;
-
-    width: 12px;
-    height: 12px;
-
-    transform:
-      translateX(-50%);
-  }
-
-  .agenda-route__stop.is-active
-  .agenda-route__dot,
-  .agenda-route__stop:nth-of-type(3).is-active
-  .agenda-route__dot {
-    transform:
-      translateX(-50%)
-      scale(1.22);
-  }
-
-  .agenda-route__city {
-    font-size:
-      clamp(
-        1.05rem,
-        5vw,
-        1.35rem
-      );
-
-    white-space: nowrap;
-  }
-
-  .agenda-route__year {
-    margin-top: 15px;
-
-    font-size: 0.5rem;
-  }
-
-
-  /* EVENTS */
-
-
-
-  .agenda-event {
-
-    display: grid;
-
-
-
-    grid-template-columns:
-
-      48px
-
-      minmax(0, 1fr);
-
-
-
-    column-gap: 12px;
-
-
-
-    padding:
-
-      28px
-
-      0
-
-      32px;
-
-  }
-
-
-
-
-
-  .agenda-event:hover,
-
-  .agenda-event.is-active {
-
-    padding-left: 0;
-
-    padding-right: 0;
-
-  }
-
-
-
-
-
-  .agenda-event::before {
-
-    top: -1px;
-
-  }
-
-
-
-
-
-  .agenda-event:hover::before,
-
-  .agenda-event.is-active::before {
-
-    width: 34px;
-
-  }
-
-
-
-
-
-  .agenda-event__year {
-
-    grid-column: 1;
-
-
-
-    grid-row:
-
-      1 / span 3;
-
-  }
-
-
-
-
-
-  .agenda-event__main {
-
-    grid-column: 2;
-
-  }
-
-
-
-
-
-  .agenda-event__place {
-
-    margin-bottom: 16px;
-
-
-
-    font-size: 0.52rem;
-
-  }
-
-
-
-
-
-  .agenda-event__organization {
-
-    font-size: 0.56rem;
-
-
-
-    line-height: 1.45;
-
-  }
-
-
-
-
-
-  .agenda-event__title {
-
-    max-width: 15ch;
-
-
-
-    font-size:
-
-      clamp(
-
-        1.75rem,
-
-        8vw,
-
-        2.5rem
-
-      );
-
-
-
-    line-height: 1;
-
-  }
-
-
-
-
-
-  .agenda-event:hover
-
-  .agenda-event__title,
-
-  .agenda-event.is-active
-
-  .agenda-event__title {
-
-    transform: none;
-
-  }
-
-
-
-
-
-  .agenda-event__details {
-
-    grid-column: 2;
-
-
-
-    margin-top: 26px;
-
-
-
-    padding-bottom: 0;
-
-  }
-
-
-
-
-
-  .agenda-event__details p {
-
-    font-size: 0.7rem;
-
-
-
-    line-height: 1.55;
-
-  }
-
-
-
-
-
-  .agenda-event__role {
-
-    grid-column: 2;
-
-
-
-    grid-row: auto;
-
-
-
-    justify-content:
-
-      flex-start;
-
-
-
-    margin-top: 24px;
-
-
-
-    padding-top: 13px;
-
-    padding-bottom: 0;
-
-
-
-    border-top:
-
-      1px solid
-
-      rgba(23, 23, 22, 0.14);
-
-
-
-    font-size: 0.52rem;
-
-
-
-    text-align: left;
-
-  }
-
-
-
+  text-align: center;
 }
 
 
+/* línea para 4 años */
+
+.agenda-route__line {
+  top: 4px;
+
+  left: calc(100% / 8);
+  right: calc(100% / 8);
+
+  height: 1px;
+}
 
 
+/* puntos */
 
-/* =========================================================
+.agenda-route__dot,
+.agenda-route__stop:nth-of-type(3)
+.agenda-route__dot,
+.agenda-route__stop:last-child
+.agenda-route__dot {
+  top: 0;
 
-   SMALL MOBILE
+  left: 50%;
+  right: auto;
 
-   ========================================================= */
+  width: 8px;
+  height: 8px;
+
+  transform: translateX(-50%);
+}
+
+.agenda-route__stop.is-active
+.agenda-route__dot,
+.agenda-route__stop:nth-of-type(3).is-active
+.agenda-route__dot,
+.agenda-route__stop:last-child.is-active
+.agenda-route__dot {
+  transform:
+    translateX(-50%)
+    scale(1.2);
+}
 
 
+/* año */
 
+.agenda-route__city {
+  font-size: 0.78rem;
+
+  line-height: 1;
+
+  white-space: nowrap;
+}
+
+
+/* cantidad de eventos */
+
+.agenda-route__year {
+  margin-top: 9px;
+
+  font-size: 0.4rem;
+
+  letter-spacing: 0.08em;
+}
+
+/* =======================================================
+   EVENTS · MOBILE
+   ======================================================= */
+
+.agenda-year-events {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 8px;
+
+  width: 100%;
+
+  align-items: start;
+}
+
+
+/* =======================================================
+   EVENT CARD · CLOSED
+   ======================================================= */
+
+.agenda-year-events
+.agenda-event {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+
+  min-height: 122px;
+
+  padding:
+    12px
+    9px
+    30px;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid rgba(23, 23, 22, 0.14);
+
+  background: transparent;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  transition:
+    min-height 360ms cubic-bezier(0.22, 1, 0.36, 1),
+    padding 360ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* quitamos la línea dorada desktop */
+
+.agenda-year-events
+.agenda-event::before {
+  display: none;
+}
+
+
+/* indicador + */
+
+.agenda-year-events
+.agenda-event::after {
+  content: "+";
+
+  position: absolute;
+
+  right: 9px;
+  bottom: 8px;
+
+  color: var(--color-accent);
+
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+
+/* =======================================================
+   CLOSED · ONLY TITLE
+   ======================================================= */
+
+.agenda-year-events
+.agenda-event__year,
+
+.agenda-year-events
+.agenda-event__place,
+
+.agenda-year-events
+.agenda-event__organization,
+
+.agenda-year-events
+.agenda-event__details,
+
+.agenda-year-events
+.agenda-event__role {
+  display: none;
+}
+
+
+.agenda-year-events
+.agenda-event__main {
+  width: 100%;
+  min-width: 0;
+}
+
+
+.agenda-year-events
+.agenda-event__title {
+  display: block;
+
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+
+  font-size:
+    clamp(
+      0.92rem,
+      4vw,
+      1.08rem
+    );
+
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+
+  overflow-wrap: anywhere;
+
+  transform: none !important;
+}
+
+
+/* =======================================================
+   ACTIVE EVENT · FULL WIDTH
+   ======================================================= */
+
+.agenda-year-events
+.agenda-event.is-active {
+  grid-column: 1 / -1;
+
+  min-height: 0;
+
+  padding:
+    22px
+    16px
+    20px;
+
+  border-color:
+    rgba(23, 23, 22, 0.22);
+
+  overflow: visible;
+}
+
+
+/* cambia + por × */
+
+.agenda-year-events
+.agenda-event.is-active::after {
+  content: "×";
+
+  top: 14px;
+  right: 14px;
+  bottom: auto;
+
+  color: var(--color-ink);
+
+  font-size: 1rem;
+}
+
+
+/* =======================================================
+   ACTIVE EVENT · CONTENT
+   ======================================================= */
+
+.agenda-year-events
+.agenda-event.is-active
+.agenda-event__place {
+  display: flex;
+
+  margin-bottom: 12px;
+
+  padding-right: 30px;
+
+  font-size: 0.5rem;
+  line-height: 1.3;
+
+  letter-spacing: 0.12em;
+}
+
+
+.agenda-year-events
+.agenda-event.is-active
+.agenda-event__organization {
+  display: block;
+
+  margin:
+    0
+    0
+    10px;
+
+  padding-right: 28px;
+
+  font-size: 0.52rem;
+  line-height: 1.4;
+
+  letter-spacing: 0.1em;
+}
+
+
+.agenda-year-events
+.agenda-event.is-active
+.agenda-event__title {
+  max-width: 14ch;
+
+  font-size:
+    clamp(
+      2rem,
+      9vw,
+      2.9rem
+    );
+
+  line-height: 0.94;
+
+  letter-spacing: -0.04em;
+}
+
+
+.agenda-year-events
+.agenda-event.is-active
+.agenda-event__details {
+  display: block;
+
+  margin-top: 24px;
+
+  padding-bottom: 0;
+
+  color: var(--color-muted);
+}
+
+
+.agenda-year-events
+.agenda-event.is-active
+.agenda-event__details p {
+  margin: 0;
+
+  font-size: 0.72rem;
+  line-height: 1.55;
+}
+
+
+.agenda-year-events
+.agenda-event.is-active
+.agenda-event__details p + p {
+  margin-top: 7px;
+}
+
+
+.agenda-year-events
+.agenda-event.is-active
+.agenda-event__date {
+  margin-bottom: 14px !important;
+
+  color: var(--color-ink);
+}
+
+
+.agenda-year-events
+.agenda-event.is-active
+.agenda-event__role {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  margin-top: 22px;
+
+  padding:
+    13px
+    0
+    0;
+
+  border-top:
+    1px solid rgba(23, 23, 22, 0.14);
+
+  font-size: 0.5rem;
+
+  text-align: left;
+}
+
+}
 @media (max-width: 430px) {
 
 
@@ -2048,39 +2376,326 @@
 }
 
 
+@media (max-width: 760px) {
 
+  /* =======================================================
+    MOBILE · EVENT GRID
+    ======================================================= */
 
+  .agenda-year-events {
+    display: grid;
 
-/* =========================================================
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
 
-   REDUCED MOTION
+    gap: 8px;
 
-   ========================================================= */
+    width: 100%;
 
-
-
-@media (prefers-reduced-motion: reduce) {
-
-
-
-  .agenda-route__stop,
-
-  .agenda-route__dot,
-
-  .agenda-route__year,
-
-  .agenda-event,
-
-  .agenda-event::before,
-
-  .agenda-event__title,
-
-  .agenda-event__arrow {
-
-    transition: none;
-
+    align-items: start;
   }
 
 
+  /* =======================================================
+    MOBILE · CLOSED EVENT
+    ======================================================= */
 
+  .agenda-year-events
+  .agenda-event {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+
+    min-height: 118px;
+
+    padding:
+      12px
+      9px
+      28px;
+
+    box-sizing: border-box;
+
+    border:
+      1px solid
+      rgba(23, 23, 22, 0.14);
+
+    background: transparent;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition:
+      padding 360ms
+        cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+
+  /* quitamos comportamiento decorativo desktop */
+
+  .agenda-year-events
+  .agenda-event::before {
+    display: none;
+  }
+
+
+  /* indicador abrir */
+
+  .agenda-year-events
+  .agenda-event::after {
+    content: "+";
+
+    position: absolute;
+
+    right: 9px;
+    bottom: 8px;
+
+    color: var(--color-accent);
+
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+
+    line-height: 1;
+  }
+
+
+  /* =======================================================
+    MOBILE · HIDE EVERYTHING EXCEPT TITLE
+    ======================================================= */
+
+  .agenda-year-events
+  .agenda-event__year,
+
+  .agenda-year-events
+  .agenda-event__place,
+
+  .agenda-year-events
+  .agenda-event__organization,
+
+  .agenda-year-events
+  .agenda-event__details,
+
+  .agenda-year-events
+  .agenda-event__role {
+    display: none;
+  }
+
+
+  .agenda-year-events
+  .agenda-event__main {
+    width: 100%;
+    min-width: 0;
+  }
+
+
+  .agenda-year-events
+  .agenda-event__title {
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
+
+    font-size:
+      clamp(
+        0.9rem,
+        3.8vw,
+        1.08rem
+      );
+
+    line-height: 1.05;
+
+    letter-spacing: -0.025em;
+
+    overflow-wrap: anywhere;
+
+    transform: none !important;
+  }
+
+
+  /* =======================================================
+    MOBILE · EXPANDED EVENT
+    ======================================================= */
+
+  .agenda-year-events
+  .agenda-event.is-expanded {
+    order: -1;
+    grid-column: 1 / -1;
+
+    justify-self: center;
+
+    width:
+      min(
+        78%,
+        290px
+      ) !important;
+
+    min-width: 0 !important;
+    max-width: 290px !important;
+
+    min-height: 0;
+
+    padding:
+      18px
+      14px
+      16px;
+
+    overflow: visible;
+
+    border-color:
+      rgba(23, 23, 22, 0.22);
+  }
+
+
+  /* + becomes × */
+
+  .agenda-year-events
+  .agenda-event.is-expanded::after {
+    content: "×";
+
+    top: 15px;
+    right: 15px;
+    bottom: auto;
+
+    color: var(--color-ink);
+
+    font-size: 1rem;
+  }
+
+
+  /* =======================================================
+    EXPANDED · PLACE
+    ======================================================= */
+
+  .agenda-year-events
+  .agenda-event.is-expanded
+  .agenda-event__place {
+    display: flex;
+
+    margin-bottom: 12px;
+
+    padding-right: 28px;
+
+    font-size: 0.5rem;
+    line-height: 1.3;
+
+    letter-spacing: 0.12em;
+  }
+
+
+  /* =======================================================
+    EXPANDED · ORGANIZATION
+    ======================================================= */
+
+  .agenda-year-events
+  .agenda-event.is-expanded
+  .agenda-event__organization {
+    display: block;
+
+    margin:
+      0
+      0
+      10px;
+
+    padding-right: 28px;
+
+    font-size: 0.52rem;
+    line-height: 1.4;
+
+    letter-spacing: 0.1em;
+  }
+
+
+  /* =======================================================
+    EXPANDED · TITLE
+    ======================================================= */
+
+  .agenda-year-events
+  .agenda-event.is-expanded
+  .agenda-event__title {
+    max-width: 15ch;
+
+    font-size:
+      clamp(
+        1.45rem,
+        6.5vw,
+        2rem
+      );
+
+    line-height: 0.98;
+
+    letter-spacing: -0.035em;
+  }
+
+
+  /* =======================================================
+    EXPANDED · DETAILS
+    ======================================================= */
+
+  .agenda-year-events
+  .agenda-event.is-expanded
+  .agenda-event__details {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 24px;
+
+    padding-bottom: 0;
+
+    color: var(--color-muted);
+  }
+
+
+  .agenda-year-events
+  .agenda-event.is-expanded
+  .agenda-event__details p {
+    margin: 0;
+
+    font-size: 0.72rem;
+
+    line-height: 1.55;
+  }
+
+
+  .agenda-year-events
+  .agenda-event.is-expanded
+  .agenda-event__details p + p {
+    margin-top: 7px;
+  }
+
+
+  /* =======================================================
+    EXPANDED · ROLE
+    ======================================================= */
+
+  .agenda-year-events
+  .agenda-event.is-expanded
+  .agenda-event__role {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+
+    margin-top: 22px;
+
+    padding:
+      13px
+      0
+      0;
+
+    border-top:
+      1px solid
+      rgba(23, 23, 22, 0.14);
+
+    font-size: 0.5rem;
+
+    text-align: left;
+  }
 }

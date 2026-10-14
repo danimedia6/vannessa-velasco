@@ -172,23 +172,33 @@ export const pageContent = {
     timeline: [
       {
         period: '2001–06',
-        role: 'Teaching & urban planning, Bogotá',
+        role: 'Teaching & Urban Planning',
+        detail:
+          'During the early stages of her career, Vanessa combined urban planning practice with teaching at Pontificia Universidad Javeriana and Universidad Nacional de Colombia. Her work focused on urban design, regional planning and the relationship between Bogotá and its expanding metropolitan edge, including research that informed a planning strategy for the western boundary of the Bogotá–Region.',
       },
       {
         period: '2007–13',
-        role: 'Public sector Bogotá · ERU · Min. Cultura',
+        role: 'Public-Sector Urban Leadership',
+        detail:
+          'In Colombia’s public sector, Vanessa worked on heritage-led regeneration, land management and large-scale urban renewal. At the Ministry of Culture, she coordinated IDB-supported projects for the recovery of ten historic centers. Later, as Technical Director of Bogotá’s Urban Renewal Company (ERU), she helped advance projects such as Estación Central, combining affordable housing, mixed uses, public space and heritage preservation.',
       },
       {
-        period: '2014–16',
-        role: 'Korea LH Corp · Regional consultancy',
+        period: '2013–15',
+        role: 'South Korea',
+        detail:
+          'In South Korea, Vanessa completed a Master’s in Urban Administration and Planning at the University of Seoul and worked as an urban development consultant with Korea Land & Housing Corporation (LH). This period broadened her expertise in land markets, urban policy and land value capture, connecting Latin American planning challenges with international approaches to housing and urban development.',
       },
       {
-        period: '2017–2024',
-        role: 'World Bank Group · 7 countries · USD 1B+ portfolio',
+        period: '2015–23',
+        role: 'World Bank',
+        detail:
+          'At the World Bank, Vanessa provided operational and analytical support to urban projects in Colombia, Peru, Ecuador, Mexico and Jamaica. Her portfolio covered urban and housing policy, land value capture, urban regeneration, transit-oriented development and local economic development. She also contributed to resilient and inclusive housing operations and led or co-led technical work on initiatives such as Bogotá’s Vital Neighborhoods.',
       },
       {
-        period: '2024 –',
-        role: 'Habitat Chief Secretary · Bogotá',
+        period: '2024–Present',
+        role: 'Secretary of Habitat of Bogotá',
+        detail:
+          'Since January 2024, as Bogotá’s Secretary of Habitat, Vanessa has led the city’s housing and urban revitalization agenda. Her work brings together affordable housing, home improvement, land management, neighborhood revitalization, public services and climate resilience through programs such as Mi Casa en Bogotá and Revitaliza tu Barrio, expanding access to housing and improving the environments where people live.',
       },
     ],
 
@@ -347,7 +357,7 @@ export const pageContent = {
     programs: [
       {
         category: 'Flagship housing policy',
-        name: 'Mi Casa en Bogotá',
+        name: 'My House in Bogotá',
         description:
           "An integrated district housing policy addressing 61% of the city's housing deficit through 8 differentiated programs targeting both demand and supply across the housing value chain. Investment tripled compared to previous administrations.",
         images: [
@@ -357,23 +367,23 @@ export const pageContent = {
             position: '20% center',
           },
           {
-            src: '/images/projects/micasa2.jpg',
+            src: '/images/projects/micasa2.jpeg',
             alt: 'Mi Casa en Bogotá',
           },
           {
-            src: '/images/projects/micasa3.jpg',
+            src: '/images/projects/micasa3.jpeg',
             alt: 'Mi Casa en Bogotá',
             position: '70% center',
           },
           {
-            src: '/images/projects/micasa4.jpg',
+            src: '/images/projects/micasa4.jpeg',
             alt: 'Mi Casa en Bogotá',
             position: '90% center',
           },
         ],
         link: {
           label: 'Explore project',
-          href: 'https://habitatbogota.gov.co/desarrollo-sostenible-ciudades/vivienda-transformacion/revolucion-vivienda',
+          href: 'https://habitatbogota.gov.co/view/mi-casa-bogota-en',
         },
         stats: [
           {
@@ -392,33 +402,33 @@ export const pageContent = {
       },
       {
         category: 'Urban revitalization strategy',
-        name: 'Revitaliza tu Barrio',
+        name: 'Revitalise Your Neighborhood',
         description:
           'Neighborhood revitalization across 75 neighborhoods in 20 zones, following principles of sustainable construction, social cohesion, and strategic proximity to Metro, BRT, and Metrocable corridors. Coordinated within 400m buffer zones around mobility networks.',
         images: [
           {
-            src: '/images/projects/revitaliza1.jpg',
+            src: '/images/projects/revitaliza1.jpeg',
             alt: 'Revitaliza tu Barrio',
             position: '20% center',
           },
           {
-            src: '/images/projects/revitaliza2.jpg',
+            src: '/images/projects/revitaliza2.jpeg',
             alt: 'Revitaliza tu Barrio',
           },
           {
-            src: '/images/projects/revitaliza3.png',
+            src: '/images/projects/revitaliza3.jpeg',
             alt: 'Revitaliza tu Barrio',
             position: '70% center',
           },
           {
-            src: '/images/projects/revitaliza4.JPG',
+            src: '/images/projects/revitaliza4.jpeg',
             alt: 'Revitaliza tu Barrio',
             position: '90% center',
           },
         ],
         link: {
           label: 'Explore project',
-          href: 'https://habitatbogota.gov.co/desarrollo-sostenible-ciudades/estrategia-revitalizacion',
+          href: 'https://habitatbogota.gov.co/view/revitalizacion-en',
         },
         stats: [
           {
@@ -438,7 +448,7 @@ export const pageContent = {
     ],
     results: [
       {
-        value: '31,000+',
+        value: '37,000+',
         label:
           'Families with housing solutions in 24 months — exceeding 4 full years of any prior administration',
       },
@@ -1062,49 +1072,224 @@ export const pageContent = {
   recognition: {
     label: 'Speaking & Recognition',
     headline: 'International agenda',
+
     events: [
       {
-        organization: 'UN-Habitat · World Urban Forum 13',
+        year: '2022',
+        place: 'Santiago',
+        organization: 'International Seminar · Urban Regeneration in Chile',
+        name: 'Paths Towards Urban Regeneration in Chile',
+
+        meta: [
+          'Santiago, Chile',
+          'Presented the urban regeneration case of the Magdalena River in Barranquilla.',
+          'International dialogue on urban regeneration and Latin American city-making.',
+        ],
+
+        tag: 'Speaker',
+
+        href:
+          'https://globalcenters.columbia.edu/news/innovative-solutions-urban-regeneration-explored-santiago-seminar',
+      },
+
+      {
+        year: '2024',
+        place: 'Madrid',
+        organization: 'Foro de las Ciudades de Madrid',
+        name: 'Urban Planning, Regeneration and Housing',
+
+        meta: [
+          'Madrid, Spain',
+          'Official speaker at Foro de las Ciudades de Madrid.',
+          'Participation focused on urban planning, regeneration, housing and Ibero-American urban experiences.',
+        ],
+
+        tag: 'Speaker',
+
+        href:
+          'https://www.ifema.es/foro-ciudades/notas-prensa/presenta-su-programa-completo',
+      },
+
+      {
+        year: '2024',
+        place: 'Barcelona',
+        organization: 'Smart City Expo World Congress',
         name:
-          'Mi Casa en Bogotá: Housing as a driver of economic and social transformation in the Global South',
+          'Transforming our Neighbourhoods: How to Get People and Politicians Onboard?',
+
         meta: [
-          'Baku, Azerbaijan · May 22, 2026',
-          'Voices From Cities · Room B · Panel lead',
-          'Co-panelists: ONU-Habitat, CAMACOL, Caja de Vivienda Popular',
+          'Barcelona, Spain',
+          'Panel with representatives from C40, IDB, Rome and Barcelona.',
+          'Discussion on neighborhood transformation, governance and public support for urban change.',
         ],
-        tag: 'Panel Speaker',
+
+        tag: 'Panelist',
+
+        href:
+          'https://www.tomorrow.city/transforming-our-neighbourhoods-how-to-get-people-and-politicians-onboard/',
       },
+
       {
+        year: '2024',
+        place: 'Cairo',
+        organization: 'UN-Habitat · World Urban Forum 12',
+        name: 'Green, Thriving and Climate-Resilient Neighbourhoods',
+
+        meta: [
+          'Cairo, Egypt',
+          'Panelist · “Green and Thriving Neighbourhoods in Latin America and around the World.”',
+          'Panelist · “Cities Leading Innovative Solutions Towards Climate Resilience in Migration Contexts.”',
+        ],
+
+        tag: 'Panelist',
+
+        href:
+          'https://wuf.unhabitat.org/event/wuf12/green-and-thriving-neighbourhoods-latin-america-and-around-world',
+      },
+
+      {
+        year: '2025',
+        place: 'Washington, D.C.',
+        organization: 'World Bank Land Conference 2025',
+        name: 'Resilient and Inclusive Housing and Urban Development in Bogotá',
+
+        meta: [
+          'Washington, D.C., USA',
+          'World Bank Land Conference and Regional Workshop for Latin America and the Caribbean.',
+          'Presented Bogotá’s approach to resilient and inclusive housing and urban development.',
+        ],
+
+        tag: 'Panelist',
+
+        href:
+          'https://www.alcaldiabogota.gov.co/sisjur/listados/tematica2.jsp?cadena=&subtema=40681',
+      },
+
+      {
+        year: '2025',
+        place: 'Guangzhou',
+        organization: 'GPSC Regional City Academy for Asia · Infra4Dev',
+        name: 'Land Value Capture, Urban Infrastructure and Resilience',
+
+        meta: [
+          'Guangzhou, China',
+          'Panelist on land value capture, urban infrastructure, resilience and planning.',
+          'Presented Bogotá’s Lagos de Torca experience as an urban development case.',
+        ],
+
+        tag: 'Panelist',
+
+        href:
+          'https://bogota.gov.co/mi-ciudad/habitat/bogota-invitada-al-primer-regional-city-academy-asia-en-guangzhou',
+      },
+
+      {
+        year: '2025',
+        place: 'Bogotá',
         organization: 'UN-Habitat · World Cities Day 2025',
-        name: 'People-Centered Smart Cities — Bogotá as global host city',
+        name: 'People-Centered Smart Cities',
+
         meta: [
-          'Bogotá, Colombia · October 30–31, 2025',
-          'Launch of the Housing & Urban Transformation Hub',
-          'South–South cooperation platform with UN-Habitat',
+          'Bogotá, Colombia',
+          'Participated as panelist, keynote speaker and moderator.',
+          'Conversations focused on affordable housing, urban revitalization and people-centered smart cities.',
         ],
-        tag: 'Host City Lead',
+
+        tag: 'Panelist · Keynote · Moderator',
+
+        href:
+          'https://habitatbogota.gov.co/prensa/noticias/bogota-lidero-dialogo-internacional-sobre-ciudades-inteligentes-centradas-las-personas',
       },
+
       {
-        organization: 'Columbia University · GSAPP',
-        name: "The Doryan Winkelman '86 MSRED Real Estate Development Lecture",
+        year: '2026',
+        place: 'Baku',
+        organization: 'UN-Habitat · World Urban Forum 13',
+        name: 'Mi Casa en Bogotá and Urban Transformation',
+
         meta: [
-          'New York, USA · June 2022',
-          'International real estate and urban development',
-          'M.S.RED annual lecture series',
+          'Baku, Azerbaijan',
+          'Led the panel focused on Mi Casa en Bogotá.',
+          'Participated in nine additional sessions on housing, climate-responsive urbanism, mobility, biodiversity, public facilities and urban revitalization.',
         ],
-        tag: 'Invited Lecturer',
+
+        tag: 'Panel Lead · Speaker',
+
+        href:
+          'https://bogota.gov.co/mi-ciudad/habitat/participacion-de-bogota-13deg-foro-urbano-mundial-wuf13',
       },
+
       {
-        organization: 'International recognition',
-        name: 'Premio Shanghai',
-        meta: ['Year and award category to be confirmed'],
-        status: 'Pending confirmation',
+        year: '2026',
+        place: 'Singapore',
+        organization: 'World Cities Summit',
+        name: 'Cities, Health, Hyperlocal Urbanism and Climate-Ready Housing',
+
+        meta: [
+          'Singapore',
+          'Panelist · “Are Cities Good for Your Health?”',
+          'Panelist · “Future Urban Liveability: The Hyperlocal Shift.”',
+          'Panelist · “Where Housing Meets Climate: Solutions for Cities.”',
+        ],
+
+        tag: 'Panelist',
+
+        href:
+          'https://www.worldcitiessummit.com.sg/programme/wcs-thematic-tracks-n-sessions/cities-for-people',
       },
+
       {
-        organization: 'UN-Habitat · Multiple editions',
-        name: 'World Urban Forum — 10 panel appearances',
-        meta: ['Multiple editions, topics, and roles', 'Full breakdown pending'],
-        status: 'Details pending',
+        year: '2026',
+        place: 'Medellín',
+        organization: 'Climate Week Medellín · CAF',
+        name: 'BiodiverCiudades: experiencias de éxito',
+
+        meta: [
+          'Medellín, Colombia',
+          'Speaker on urban planning, regeneration, biodiversity and climate adaptation.',
+          'Presented urban experiences linking city-making and environmental resilience.',
+        ],
+
+        tag: 'Speaker',
+
+        href:
+          'https://www.caf.com/es/actualidad/eventos/caf-en-climate-week-medellin-2026/',
+      },
+
+      {
+        year: '2026',
+        place: 'Barcelona',
+        organization: 'Smart City Expo World Congress · HOWS Barcelona',
+        name:
+          'Place, People, Policy: Regenerating Neighbourhoods to Live and Belong In',
+
+        meta: [
+          'Barcelona, Spain · November 3–5, 2026',
+          'Scheduled panel participation · November 5.',
+          'Conversation on neighborhood regeneration, place, people and urban policy.',
+        ],
+
+        tag: 'Upcoming · Panelist',
+
+        href:
+          'https://www.smartcityexpo.com/speakers/maita-fernandez-armesto-sanchez/',
+      },
+
+      {
+        year: '2026',
+        place: 'Los Angeles',
+        organization: 'CoMotion LA',
+        name: 'CoMotion LA 2026',
+
+        meta: [
+          'Los Angeles, USA · November 18–19, 2026',
+          'Scheduled participation in the international urban mobility gathering.',
+        ],
+
+        tag: 'Upcoming',
+
+        href:
+          'https://www.comotionglobal.com/los-angeles26',
       },
     ],
   },
@@ -1115,63 +1300,83 @@ export const pageContent = {
 
     items: [
       {
-        outlet: 'La República',
+        outlet: 'Cities Today',
         title:
-          'Secretaría Distrital del Hábitat lanzó “Mejora tu Cuota” para el mejoramiento de vivienda',
-        date: 'Sep 9, 2026',
-        language: 'ES',
+          'How Bogota is using shared data to link housing, mobility and climate',
+        date: 'Apr 26, 2026',
+        language: 'EN',
         href:
-          'https://www.larepublica.co/economia/subsidio-mejora-tu-cuota-de-la-secretaria-distrital-del-habitat-4478435',
+          'https://cities-today.com/how-bogota-is-using-shared-data-to-link-housing-mobility-and-climate/',
       },
 
       {
-        outlet: 'El Espectador',
+        outlet: 'Forbes',
         title:
-          'Vivienda digna y central: el plan de Bogotá para romper la segregación urbana',
-        date: 'Sep 1, 2026',
+          'ONU-Hábitat destaca modelo de vivienda de Bogotá que prevé inversiones por US$350 millones a 2027',
+        date: 'May 21, 2026',
         language: 'ES',
         href:
-          'https://www.elespectador.com/bogota/vivienda-digna-y-central-el-plan-de-bogota-para-romper-la-segregacion-urbana/',
+          'https://forbes.co/actualidad/onu-habitat-destaca-modelo-de-vivienda-de-bogota-que-preve-inversiones-por-us350-millones-a-2027',
       },
 
       {
-        outlet: 'El Espectador',
+        outlet: 'WRI · TheCityFix',
         title:
-          'Vivienda con cuotas de $100.000: logro en medio de los retos de generar techo en Bogotá',
-        date: 'Aug 31, 2026',
-        language: 'ES',
+          'Bogotá’s Vision for a Climate-Resilient Urban Future',
+        date: 'Jun 9, 2026',
+        language: 'EN',
         href:
-          'https://www.elespectador.com/bogota/vivienda-con-cuotas-de-100000-logro-en-medio-de-los-retos-de-generar-techo-en-bogota/',
+          'https://thecityfix.com/blog/bogot%C3%A1s-vision-climate-resilient-urban-future/',
       },
 
       {
-        outlet: 'Portafolio',
+        outlet: 'Cities Alliance',
         title:
-          'Tributaria de Galán busca llevar la vivienda VIS y VIP a zonas de renovación urbana y proteger a Bogotá de sismos',
-        date: '',
-        language: 'ES',
+          'Bogota: Connecting Housing, Care and Women’s Economic Autonomy',
+        date: 'Jun 17, 2026',
+        language: 'EN',
         href:
-          'https://www.portafolio.co/mis-finanzas/vivienda/tributaria-de-galan-busca-llevar-la-vivienda-vis-y-vip-a-zonas-de-renovacion-urbana-y-proteger-a-bogota-de-sismos-503191',
+          'https://www.citiesalliance.org/newsroom/news/urban-news/bogota-connecting-housing-care-and-womens-economic-autonomy',
       },
 
       {
-        outlet: 'Caracol Radio',
+        outlet: 'CoMotion · Fast Forward',
         title:
-          '¿Qué le espera a Bogotá en temas de vivienda con el nuevo gobierno de Abelardo de la Espriella?',
-        date: 'Jul 21, 2026',
-        language: 'ES',
+          'Building at the Neighborhood Level with Vanessa Velasco',
+        date: 'Jun 17, 2026',
+        language: 'EN',
         href:
-          'https://caracol.com.co/2026/07/21/que-le-espera-a-bogota-en-temas-de-vivienda-con-el-nuevo-gobierno-de-abelardo-de-la-espriella/',
+          'https://open.spotify.com/episode/3t0tgSNBfwG658GzPWW6Pw',
       },
 
       {
-        outlet: 'La República',
+        outlet: 'Streetsblog',
         title:
-          'La Secretaría de Hábitat liderará la agenda de Bogotá en el Foro Urbano Mundial',
-        date: 'May 19, 2026',
-        language: 'ES',
+          'Letter From Bogotá: How A Great World Capital Puts Housing, Transit and Public Space First',
+        date: 'Jul 29, 2026',
+        language: 'EN',
         href:
-          'https://www.larepublica.co/economia/la-secretaria-de-habitat-liderara-la-agenda-de-bogota-en-el-foro-urbano-mundial-4395908',
+          'https://usa.streetsblog.org/2026/07/29/letter-from-bogota-how-a-great-world-capital-puts-housing-transit-and-public-space-first',
+      },
+
+      {
+        outlet: 'Reuters',
+        title:
+          'How Bogota offers a blueprint for climate-smart, resilient urban growth',
+        date: 'Aug 3, 2026',
+        language: 'EN',
+        href:
+          'https://www.reuters.com/sustainability/society-equity/how-bogota-offers-blueprint-climate-smart-resilient-urban-growth--ecmii-2026-08-03/',
+      },
+
+      {
+        outlet: 'Urbanet',
+        title:
+          'Housing Policy Must Focus on People Rather Than Products',
+        date: 'Aug 25, 2026',
+        language: 'EN',
+        href:
+          'https://www.urbanet.info/bogota-housing-strategy-urban-transformation/',
       },
     ],
 

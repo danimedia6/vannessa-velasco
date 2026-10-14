@@ -12,56 +12,70 @@ export function InternationalAgenda({ content }) {
     (event) => !event.status
   )
 
-  const [activeIndex, setActiveIndex] =
-    useState(0)
+
+
+  const years = [
+    ...new Set(
+      confirmedEvents
+        .map((event) => event.year)
+        .filter(Boolean)
+    ),
+  ].sort(
+    (a, b) =>
+      Number(a) - Number(b)
+  )
+
+  const [activeYear, setActiveYear] =
+    useState(
+      years[years.length - 1] || ""
+    )
+
+  const [expandedEvent, setExpandedEvent] =
+  useState(null)
+
+
+  const eventsByYear =
+    years.reduce((groups, year) => {
+      groups[year] =
+        confirmedEvents.filter(
+          (event) =>
+            event.year === year
+        )
+
+      return groups
+    }, {})
 
   const agendaListRef = useRef(null)
   
-
-  
-
-  const goToEvent = (index) => {
-    const list = agendaListRef.current
+  const goToYear = (year) => {
+    const list =
+      agendaListRef.current
 
     if (!list) return
 
-    const maxScroll =
-      list.scrollWidth -
-      list.clientWidth
+    const index =
+      years.indexOf(year)
 
-    const totalSteps =
-      confirmedEvents.length - 1
-
-    const left =
-      totalSteps > 0
-        ? (maxScroll / totalSteps) * index
-        : 0
-
-    setActiveIndex(index)
+    setActiveYear(year)
+    setExpandedEvent(null)
 
     list.scrollTo({
-      left,
+      left:
+        list.clientWidth * index,
       behavior: "smooth",
     })
   }
 
   const getEventData = (event) => {
-    const firstMeta = event.meta?.[0] || ""
+    const firstMeta =
+      event.meta?.[0] || ""
 
-    const metaParts = firstMeta
-      .split("·")
-      .map((part) => part.trim())
+    const locationParts =
+      firstMeta
+        .split(",")
+        .map((part) => part.trim())
 
-    const location = metaParts[0] || ""
-    const date = metaParts
-      .slice(1)
-      .join(" · ")
-
-    const locationParts = location
-      .split(",")
-      .map((part) => part.trim())
-
-    const city =
+    const parsedCity =
       locationParts[0] || ""
 
     const country =
@@ -69,17 +83,16 @@ export function InternationalAgenda({ content }) {
         .slice(1)
         .join(", ")
 
-    const yearMatch =
-      firstMeta.match(/\b(19|20)\d{2}\b/)
-
-    const year =
-      yearMatch?.[0] || ""
-
     return {
-      city,
+      city:
+        event.place ||
+        parsedCity,
+
       country,
-      date,
-      year,
+
+      year:
+        event.year || "",
+
       details:
         event.meta?.slice(1) || [],
     }
@@ -95,6 +108,14 @@ export function InternationalAgenda({ content }) {
     headlineParts
       .slice(1)
       .join(" ")
+
+  const toggleEvent = (eventKey) => {
+    setExpandedEvent((current) =>
+      current === eventKey
+        ? null
+        : eventKey
+    )
+  }
 
   return (
     <section
@@ -148,184 +169,219 @@ export function InternationalAgenda({ content }) {
 
         <nav
           className="agenda-route"
-          aria-label="International agenda cities"
+          aria-label="International agenda years"
         >
           <div
             className="agenda-route__line"
             aria-hidden="true"
           />
 
-          {confirmedEvents.map(
-            (event, index) => {
-              const {
-                city,
-                year,
-              } = getEventData(event)
+          {years.map((year) => {
+            const eventCount =
+              confirmedEvents.filter(
+                (event) =>
+                  event.year === year
+              ).length
 
-              const isActive =
-                index === activeIndex
+            const isActive =
+              year === activeYear
 
-              return (
-                <button
-                  type="button"
-                  className={`agenda-route__stop ${
-                    isActive
-                      ? "is-active"
-                      : ""
-                  }`}
-                  onClick={() =>
-                    goToEvent(index)
-                  }
-                  key={`${city}-${event.name}`}
-                >
-                  <span
-                    className="agenda-route__dot"
-                    aria-hidden="true"
-                  />
+            return (
+              <button
+                type="button"
+                className={`agenda-route__stop ${
+                  isActive
+                    ? "is-active"
+                    : ""
+                }`}
+                onClick={() =>
+                  goToYear(year)
+                }
+                key={year}
+              >
+                <span
+                  className="agenda-route__dot"
+                  aria-hidden="true"
+                />
 
-                  <span
-                    className="agenda-route__city"
-                  >
-                    {city}
-                  </span>
+                <span className="agenda-route__city">
+                  {year}
+                </span>
 
-                  <span
-                    className="agenda-route__year"
-                  >
-                    {year}
-                  </span>
-                </button>
-              )
-            }
-          )}
+                <span className="agenda-route__year">
+                  {eventCount}{" "}
+                  {eventCount === 1
+                    ? "event"
+                    : "events"}
+                </span>
+              </button>
+            )
+          })}
         </nav>
 
 
         {/* ===================================================
-            EVENT LIST
+            YEAR CAROUSEL
             =================================================== */}
 
         <div
-        className="agenda-list"
-        ref={agendaListRef}
-      >
+          className="agenda-list"
+          ref={agendaListRef}
+        >
+          {years.map((year) => {
+            const yearEvents =
+              eventsByYear[year] || []
 
-          {confirmedEvents.map(
-            (event, index) => {
-              const {
-                city,
-                country,
-                date,
-                year,
-                details,
-              } = getEventData(event)
+            return (
+              <section
+                className="agenda-year-slide"
+                key={year}
+                aria-label={`International agenda ${year}`}
+              >
 
-              const isActive =
-                index === activeIndex
+                
 
-              return (
-                <article
-                  className={`agenda-event ${
-                    isActive
-                      ? "is-active"
-                      : ""
-                  }`}
-                  key={event.name}
+
+                <div
+                  className="agenda-year-events"
+                  style={{
+                    "--agenda-columns":
+                      Math.max(yearEvents.length, 3),
+                  }}
                 >
 
-                  {/* YEAR */}
+                  {yearEvents.map(
+                    (event, index) => {
+                      const {
+                        city,
+                        country,
+                        year: eventYear,
+                        details,
+                      } = getEventData(event)
 
-                  <div className="agenda-event__year">
-                    <span>
-                      {year}
-                    </span>
-                  </div>
+                      const eventKey =
+                        `${year}-${index}`
 
+                      const isExpanded =
+                        expandedEvent === eventKey
 
-                  {/* MAIN */}
-
-                  <div className="agenda-event__main">
-
-                    <div className="agenda-event__place">
-
-                      <span>
-                        {city}
-                      </span>
-
-                      {country && (
-                        <>
-                          <span
-                            aria-hidden="true"
-                          >
-                            /
-                          </span>
-
-                          <span>
-                            {country}
-                          </span>
-                        </>
-                      )}
-
-                    </div>
-
-                    <p className="agenda-event__organization">
-                      {event.organization}
-                    </p>
-
-                    <h3 className="agenda-event__title">
-                      {event.name}
-                    </h3>
-
-                  </div>
-
-
-                  {/* DETAILS */}
-
-                  <div className="agenda-event__details">
-
-                    {date && (
-                      <p className="agenda-event__date">
-                        {date}
-                      </p>
-                    )}
-
-                    {details.map(
-                      (line, detailIndex) => (
-                        <p
-                          key={`${line}-${detailIndex}`}
+                      return (
+                        <article
+                          className={`agenda-event ${
+                            isExpanded
+                              ? "is-expanded"
+                              : ""
+                          }`}
+                          key={`${eventYear}-${city}-${event.name}-${index}`}
+                          onClick={() =>
+                            toggleEvent(eventKey)
+                          }
+                          onKeyDown={(event) => {
+                            if (
+                              event.key === "Enter" ||
+                              event.key === " "
+                            ) {
+                              event.preventDefault()
+                              toggleEvent(eventKey)
+                            }
+                          }}
+                          role="button"
+                          tabIndex={0}
+                          aria-expanded={isExpanded}
                         >
-                          {line}
-                        </p>
+
+                          {/* YEAR */}
+
+                          <div className="agenda-event__year">
+                            <span>
+                              {eventYear}
+                            </span>
+                          </div>
+
+
+                          {/* MAIN */}
+
+                          <div className="agenda-event__main">
+
+                            <div className="agenda-event__place">
+
+                              <span>
+                                {city}
+                              </span>
+
+                              {country && (
+                                <>
+                                  <span
+                                    aria-hidden="true"
+                                  >
+                                    /
+                                  </span>
+
+                                  <span>
+                                    {country}
+                                  </span>
+                                </>
+                              )}
+
+                            </div>
+
+                            <p className="agenda-event__organization">
+                              {event.organization}
+                            </p>
+
+                            <h3 className="agenda-event__title">
+                              {event.name}
+                            </h3>
+
+                          </div>
+
+
+                          {/* DETAILS */}
+
+                          <div className="agenda-event__details">
+
+                            {details.map(
+                              (line, detailIndex) => (
+                                <p
+                                  key={`${line}-${detailIndex}`}
+                                >
+                                  {line}
+                                </p>
+                              )
+                            )}
+
+                          </div>
+
+
+                          {/* ROLE */}
+
+                          <div className="agenda-event__role">
+
+                            {event.tag && (
+                              <span>
+                                {event.tag}
+                              </span>
+                            )}
+
+                            <span
+                              className="agenda-event__arrow"
+                              aria-hidden="true"
+                            >
+                              ↗
+                            </span>
+
+                          </div>
+
+                        </article>
                       )
-                    )}
+                    }
+                  )}
 
-                  </div>
+                </div>
 
-
-                  {/* ROLE */}
-
-                  <div className="agenda-event__role">
-
-                    {event.tag && (
-                      <span>
-                        {event.tag}
-                      </span>
-                    )}
-
-                    <span
-                      className="agenda-event__arrow"
-                      aria-hidden="true"
-                    >
-                      ↗
-                    </span>
-
-                  </div>
-
-                </article>
-              )
-            }
-          )}
-
+              </section>
+            )
+          })}
         </div>
 
       </div>

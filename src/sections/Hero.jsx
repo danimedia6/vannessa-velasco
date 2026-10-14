@@ -28,11 +28,9 @@ export function Hero({ content }) {
         <div className="hero-meta-row">
 
           <div className="hero-role">
-            {hero.roles.map((role) => (
-              <p key={role}>
-                {role}
-              </p>
-            ))}
+            <p>
+              {hero.roles.join(" · ")}
+            </p>
           </div>
 
           <div className="hero-actions">

@@ -1,0 +1,398 @@
+/* =========================================================
+   SOCIAL FLOAT
+   ========================================================= */
+
+.social-float {
+  position: fixed;
+
+  right:
+    clamp(
+      16px,
+      2.2vw,
+      32px
+    );
+
+  bottom:
+    clamp(
+      16px,
+      2.2vw,
+      32px
+    );
+
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  gap: 10px;
+
+  font-family:
+    var(--font-sans);
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.social-float__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  gap: 8px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform:
+    translateY(12px);
+
+  pointer-events: none;
+
+  transition:
+    opacity 180ms ease,
+    transform 320ms
+      cubic-bezier(
+        0.22,
+        1,
+        0.36,
+        1
+      ),
+    visibility 0s
+      linear 320ms;
+}
+
+.social-float.is-open
+.social-float__links {
+  opacity: 1;
+  visibility: visible;
+
+  transform:
+    translateY(0);
+
+  pointer-events: auto;
+
+  transition:
+    opacity 180ms ease,
+    transform 320ms
+      cubic-bezier(
+        0.22,
+        1,
+        0.36,
+        1
+      ),
+    visibility 0s;
+}
+
+
+/* =========================================================
+   SOCIAL LINK
+   ========================================================= */
+
+.social-float__link {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: var(--color-ink);
+
+  text-decoration: none;
+}
+
+.social-float__label {
+  padding:
+    8px
+    10px;
+
+  border:
+    1px solid
+    rgba(23, 23, 22, 0.1);
+
+  background:
+    rgba(
+      243,
+      238,
+      230,
+      0.78
+    );
+
+  backdrop-filter:
+    blur(12px);
+
+  -webkit-backdrop-filter:
+    blur(12px);
+
+  font-size: 0.54rem;
+  font-weight: 600;
+
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+
+  opacity: 0;
+
+  transform:
+    translateX(6px);
+
+  transition:
+    opacity 180ms ease,
+    transform 280ms
+      cubic-bezier(
+        0.22,
+        1,
+        0.36,
+        1
+      );
+}
+
+.social-float__link:hover
+.social-float__label,
+.social-float__link:focus-visible
+.social-float__label {
+  opacity: 1;
+
+  transform:
+    translateX(0);
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.social-float__icon {
+  display: grid;
+  place-items: center;
+
+  width: 42px;
+  height: 42px;
+
+  border:
+    1px solid
+    rgba(23, 23, 22, 0.12);
+
+  background:
+    rgba(
+      243,
+      238,
+      230,
+      0.86
+    );
+
+  backdrop-filter:
+    blur(14px);
+
+  -webkit-backdrop-filter:
+    blur(14px);
+
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease,
+    transform 220ms
+      cubic-bezier(
+        0.22,
+        1,
+        0.36,
+        1
+      );
+}
+
+.social-float__icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.social-float__link:hover
+.social-float__icon,
+.social-float__link:focus-visible
+.social-float__icon {
+  background:
+    var(--color-ink);
+
+  color:
+    var(--color-paper);
+
+  border-color:
+    var(--color-ink);
+
+  transform:
+    translateX(-2px);
+}
+
+
+/* =========================================================
+   MAIN BUTTON
+   ========================================================= */
+
+.social-float__trigger {
+  position: relative;
+
+  width: 48px;
+  height: 48px;
+
+  padding: 0;
+
+  border:
+    1px solid
+    var(--color-ink);
+
+  background:
+    var(--color-ink);
+
+  color:
+    var(--color-paper);
+
+  cursor: pointer;
+
+  appearance: none;
+
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    transform 240ms
+      cubic-bezier(
+        0.22,
+        1,
+        0.36,
+        1
+      );
+}
+
+.social-float__trigger:hover {
+  transform:
+    scale(1.04);
+}
+
+
+/* Plus */
+
+.social-float__trigger span {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 15px;
+  height: 1px;
+
+  background:
+    currentColor;
+
+  transform:
+    translate(
+      -50%,
+      -50%
+    );
+
+  transition:
+    transform 300ms
+      cubic-bezier(
+        0.22,
+        1,
+        0.36,
+        1
+      );
+}
+
+.social-float__trigger
+span:last-child {
+  transform:
+    translate(
+      -50%,
+      -50%
+    )
+    rotate(90deg);
+}
+
+
+/* Open = X */
+
+.social-float.is-open
+.social-float__trigger
+span:first-child {
+  transform:
+    translate(
+      -50%,
+      -50%
+    )
+    rotate(45deg);
+}
+
+.social-float.is-open
+.social-float__trigger
+span:last-child {
+  transform:
+    translate(
+      -50%,
+      -50%
+    )
+    rotate(-45deg);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+  .social-float {
+    right: 14px;
+
+    bottom:
+      calc(
+        14px +
+        env(safe-area-inset-bottom)
+      );
+
+    gap: 8px;
+  }
+
+  .social-float__links {
+    gap: 7px;
+  }
+
+  .social-float__trigger {
+    width: 46px;
+    height: 46px;
+  }
+
+  .social-float__icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .social-float__icon svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .social-float__label {
+    display: none;
+  }
+
+  .social-float__link:hover
+  .social-float__icon {
+    transform: none;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (
+  prefers-reduced-motion:
+  reduce
+) {
+  .social-float__links,
+  .social-float__trigger,
+  .social-float__trigger span,
+  .social-float__icon,
+  .social-float__label {
+    transition: none;
+  }
+}

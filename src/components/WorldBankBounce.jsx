@@ -11,6 +11,8 @@ export function WorldBankBounce({ content }) {
   const { label, headline, intro, projects } = content;
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const [hasSelection, setHasSelection] = useState(false);
+
   const [dotPosition, setDotPosition] = useState(0);
   const [dotDirection, setDotDirection] = useState(0);
 
@@ -45,8 +47,8 @@ export function WorldBankBounce({ content }) {
   };
 
   useLayoutEffect(() => {
-    positionDot(activeIndex, false);
-  }, []);
+    positionDot(activeIndex, hasSelection);
+  }, [activeIndex, hasSelection]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -66,10 +68,19 @@ export function WorldBankBounce({ content }) {
   }, [activeIndex]);
 
   const selectItem = (index) => {
-    if (index === activeIndex) return;
+    const isSameItem = index === activeIndex;
 
-    setActiveIndex(index);
-    positionDot(index);
+    if (hasSelection && isSameItem) {
+      setHasSelection(false);
+      setDotDirection(0);
+      return;
+    }
+
+    setHasSelection(true);
+
+    if (!isSameItem) {
+      setActiveIndex(index);
+    }
   };
 
   const activeItem = projects[activeIndex];
@@ -108,7 +119,11 @@ export function WorldBankBounce({ content }) {
       </div>
 
       {/* INTERACTIVE EXPERIENCE */}
-      <div className="wb-bounce">
+      <div
+        className={`wb-bounce ${
+          hasSelection ? "has-selection" : ""
+        }`}
+      >
         <nav
           className="wb-bounce-nav"
           aria-label="World Bank projects"
@@ -137,7 +152,9 @@ export function WorldBankBounce({ content }) {
           />
 
           {projects.map((item, index) => {
-            const active = index === activeIndex;
+            const active =
+              hasSelection &&
+              index === activeIndex;
 
             return (
               <button

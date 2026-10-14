@@ -1,0 +1,778 @@
+/* =========================================================
+   EXPERIENCE TIMELINE
+   ========================================================= */
+
+.experience-timeline {
+   position: relative;
+  z-index: 4;
+  background: rgba(243, 238, 230, 0.55);
+
+  padding:
+    clamp(42px, 6vh, 68px)
+    clamp(18px, 4.5vw, 68px)
+    clamp(110px, 15vh, 170px);
+}
+
+/* Header */
+
+.timeline-header h2 {
+  margin: 0;
+
+  font-family:
+    var(--font-serif);
+
+  font-size: clamp(4rem, 7vw, 7.4rem);
+  font-weight: 400;
+
+  letter-spacing: -0.045em;
+  line-height: 0.82;
+
+  margin-bottom: clamp(60px, 9vh, 105px);
+}
+
+.timeline-header h2 span,
+.timeline-header h2 em {
+  display: block;
+}
+
+.timeline-header h2 em {
+  width: max-content;
+
+  font-weight: 400;
+  font-style: normal;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   TRACK
+   ========================================================= */
+
+.timeline-track {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  /* Línea principal más presente */
+  border-top: 2px solid rgba(23, 23, 22, 0.55);
+}
+
+/* Tramo dorado inicial */
+
+.timeline-track::before {
+  content: "";
+
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  width: 28%;
+  height: 2px;
+
+  background: #a77b18;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   ITEM
+   ========================================================= */
+
+.timeline-item {
+  position: relative;
+
+  min-height: 190px;
+
+  padding:
+    clamp(30px, 4vh, 44px)
+    clamp(22px, 2.5vw, 38px)
+    30px
+    ;
+
+  border-right: 1px solid rgba(23, 23, 22, 0.12);
+
+  cursor: default;
+
+  transition:
+    background 220ms ease,
+    padding-left 220ms ease;
+}
+
+.timeline-item:last-child {
+  border-right: 0;
+}
+
+/* Línea vertical desde cada nodo */
+
+.timeline-item::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 1px;
+  height: 100%;
+
+  background: rgba(23, 23, 22, 0.10);
+
+  transform-origin: top;
+  transition:
+    background 220ms ease,
+    height 220ms ease;
+}
+
+/* =========================================================
+   NODE
+   ========================================================= */
+
+.timeline-node {
+  position: absolute;
+
+  top: -7px;
+  left: 0;
+
+  z-index: 2;
+
+  width: 13px;
+  height: 13px;
+
+  border: 2px solid var(--color-ink);
+  border-radius: 50%;
+
+  background: var(--color-paper);
+
+  transition:
+    background 200ms ease,
+    border-color 200ms ease,
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+
+/* Presente */
+
+.timeline-item:last-child .timeline-node {
+  border-color: #a77b18;
+  background: #a77b18;
+}
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+.timeline-period {
+  position: relative;
+  z-index: 2;
+
+  margin: 0 0 20px;
+
+  color: #9b7218;
+
+  font-family:
+    var(--font-serif);
+
+  font-size: clamp(0.82rem, 0.86vw, 0.98rem);
+  line-height: 1;
+
+  transition: transform 220ms ease;
+}
+
+.timeline-role {
+  position: relative;
+  z-index: 2;
+
+  max-width: 23ch;
+
+  margin: 0;
+
+  color: var(--color-ink);
+
+  font-size: clamp(0.82rem, 0.88vw, 1rem);
+  line-height: 1.55;
+
+  transition:
+    transform 220ms ease,
+    color 220ms ease;
+}
+
+/* =========================================================
+   TIMELINE — EXPERIENCE POPOVER
+   ========================================================= */
+
+.timeline-popover {
+  position: absolute;
+
+  left: 50%;
+  bottom: calc(100% + 18px);
+
+  z-index: 30;
+
+  width: min(320px, 24vw);
+
+  padding:
+    18px
+    20px
+    20px;
+
+  border:
+  1px solid rgba(23, 23, 22, 0.10);
+  box-shadow:
+  0 14px 38px rgba(23, 23, 22, 0.06);
+
+  background: rgba(243, 238, 230, 0.68);
+
+  backdrop-filter:
+    blur(14px)
+    saturate(0.92);
+
+  -webkit-backdrop-filter:
+    blur(14px)
+    saturate(0.92);
+
+  color: var(--color-ink);
+
+  opacity: 0;
+  visibility: hidden;
+
+  pointer-events: none;
+
+  transform:
+    translate(-50%, 10px);
+
+  transition:
+    opacity 180ms ease,
+    transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0s linear 280ms;
+}
+
+
+/* Small architectural accent */
+
+.timeline-popover::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 42px;
+  height: 2px;
+
+  background: var(--color-accent);
+}
+
+
+/* Period */
+
+.timeline-popover__period {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: var(--color-accent);
+
+  font-family: var(--font-sans);
+  font-size: 0.56rem;
+  font-weight: 600;
+
+  letter-spacing: 0.14em;
+  line-height: 1;
+
+  text-transform: uppercase;
+}
+
+
+/* Title */
+
+.timeline-popover__title {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: var(--color-ink);
+
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+
+  line-height: 1.3;
+}
+
+
+/* Description */
+
+.timeline-popover__text {
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 400;
+
+  line-height: 1.55;
+}
+
+
+/* OPEN */
+
+.timeline-item:hover .timeline-popover,
+.timeline-item:focus .timeline-popover,
+.timeline-item:focus-within .timeline-popover {
+  opacity: 1;
+  visibility: visible;
+
+  transform:
+    translate(-50%, 0);
+
+  transition:
+    opacity 180ms ease,
+    transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0s;
+}
+
+.timeline-item:first-child .timeline-popover {
+  left: 0;
+
+  transform:
+    translate(0, 10px);
+}
+
+.timeline-item:first-child:hover .timeline-popover,
+.timeline-item:first-child:focus .timeline-popover,
+.timeline-item:first-child:focus-within .timeline-popover {
+  transform:
+    translate(0, 0);
+}
+
+
+.timeline-item:last-child .timeline-popover {
+  right: 0;
+  left: auto;
+
+  transform:
+    translate(0, 10px);
+}
+
+.timeline-item:last-child:hover .timeline-popover,
+.timeline-item:last-child:focus .timeline-popover,
+.timeline-item:last-child:focus-within .timeline-popover {
+  transform:
+    translate(0, 0);
+}
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.timeline-item:hover {
+  background: rgba(167, 123, 24, 0.045);
+}
+
+.timeline-item:hover .timeline-node {
+  transform: scale(1.22);
+
+  border-color: #a77b18;
+  background: #a77b18;
+
+  box-shadow:
+    0 0 0 5px rgba(167, 123, 24, 0.10);
+}
+
+.timeline-item:hover::after {
+  background: rgba(167, 123, 24, 0.32);
+}
+
+.timeline-item:hover .timeline-period {
+  transform: translateY(2px);
+}
+
+.timeline-item:hover .timeline-role {
+  transform: translateY(2px);
+}
+
+/* =========================================================
+   KEYBOARD
+   ========================================================= */
+
+.timeline-item:focus-within .timeline-node {
+  border-color: #a77b18;
+  background: #a77b18;
+}
+
+/* =========================================================
+   EXPERIENCE TIMELINE — MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .experience-timeline {
+    padding:
+      28px
+      16px
+      76px;
+  }
+
+  .timeline-header h2 {
+    margin-bottom: 48px;
+
+    font-size: clamp(3.6rem, 16vw, 5.1rem);
+    line-height: 0.86;
+  }
+
+  .timeline-header h2 em {
+    width: auto;
+    white-space: normal;
+  }
+
+
+  /* TRACK VERTICAL */
+
+  .timeline-track {
+    display: block;
+
+    position: relative;
+
+    border-top: 0;
+    border-left: 2px solid rgba(23, 23, 22, 0.28);
+
+    margin-left: 7px;
+  }
+
+  .timeline-track::before {
+    top: 0;
+    left: -2px;
+
+    width: 2px;
+    height: 28%;
+
+    background: #a77b18;
+  }
+
+
+  /* ITEMS */
+
+  .timeline-item {
+    position: relative;
+
+    min-height: 0;
+
+    padding:
+      0
+      0
+      44px
+      28px;
+
+    border-right: 0;
+
+    background: transparent;
+  }
+
+  .timeline-item:last-child {
+    padding-bottom: 0;
+  }
+
+
+  /* Quitamos las líneas verticales antiguas */
+
+  .timeline-item::after {
+    display: none;
+  }
+
+
+  /* NODE */
+
+  .timeline-node {
+    top: 1px;
+    left: -8px;
+
+    width: 14px;
+    height: 14px;
+
+    background: var(--color-paper);
+  }
+
+
+  /* TEXTO */
+
+  .timeline-period {
+    margin-bottom: 10px;
+
+    font-size: 0.82rem;
+  }
+
+  .timeline-role {
+    max-width: 28ch;
+
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  
+
+
+  /* Hover no tiene mucho sentido en touch */
+
+  .timeline-item:hover {
+    background: transparent;
+  }
+
+  .timeline-item:hover .timeline-period,
+  .timeline-item:hover .timeline-role {
+    transform: none;
+  }
+}
+
+/* =========================================================
+   MOBILE NAVIGATION
+   ========================================================= */
+
+.mobile-menu-toggle,
+.mobile-menu {
+  display: none;
+}
+
+/* =========================================================
+   TIMELINE — MOBILE EXPERIENCE DETAIL
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .timeline-item {
+    cursor: pointer;
+  }
+
+  .timeline-popover {
+    position: relative;
+
+    left: auto;
+    right: auto;
+    bottom: auto;
+
+    z-index: 1;
+
+    width: 100%;
+
+    margin-top: 0;
+    padding:
+      0
+      0
+      0;
+
+    border: 0;
+
+    background: transparent;
+
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+
+    box-shadow: none;
+
+    opacity: 0;
+    visibility: hidden;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transform: none;
+
+    transition:
+      max-height 380ms cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 220ms ease,
+      margin-top 280ms ease,
+      padding-top 280ms ease,
+      visibility 0s linear 380ms;
+  }
+
+  .timeline-popover::before {
+    display: none;
+  }
+
+  .timeline-item:focus .timeline-popover,
+  .timeline-item:focus-within .timeline-popover {
+    opacity: 1;
+    visibility: visible;
+
+    max-height: 420px;
+
+    margin-top: 18px;
+    padding-top: 16px;
+
+    border-top:
+      1px solid rgba(23, 23, 22, 0.12);
+
+    transition:
+      max-height 420ms cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 220ms ease,
+      margin-top 280ms ease,
+      padding-top 280ms ease,
+      visibility 0s;
+  }
+
+  .timeline-popover__period {
+    display: none;
+  }
+
+  .timeline-popover__title {
+    margin-bottom: 10px;
+
+    font-size: 0.74rem;
+  }
+
+  .timeline-popover__text {
+    max-width: 46ch;
+
+    font-size: 0.78rem;
+    line-height: 1.62;
+  }
+
+  .timeline-item:focus {
+    outline: none;
+  }
+
+
+  .timeline-item {
+    cursor: pointer;
+
+    min-width: 0;
+    max-width: 100%;
+
+    box-sizing: border-box;
+  }
+
+
+  /* POPOVER */
+
+  .timeline-popover,
+  .timeline-item:first-child .timeline-popover,
+  .timeline-item:last-child .timeline-popover {
+
+    position: relative;
+
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+
+    z-index: 1;
+
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    border: 0;
+
+    background: transparent;
+
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+
+    box-shadow: none;
+
+    opacity: 0;
+    visibility: hidden;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transform: none;
+
+    transition:
+      max-height 380ms cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 220ms ease,
+      margin-top 280ms ease,
+      padding-top 280ms ease,
+      visibility 0s linear 380ms;
+  }
+
+
+  /* QUITAR ACENTO DEL POPOVER */
+
+  .timeline-popover::before {
+    display: none;
+  }
+
+
+  /* ABIERTO */
+
+  .timeline-item:focus .timeline-popover,
+  .timeline-item:focus-within .timeline-popover {
+
+    opacity: 1;
+    visibility: visible;
+
+    max-height: 420px;
+
+    margin-top: 18px;
+    padding-top: 16px;
+
+    border-top:
+      1px solid rgba(23, 23, 22, 0.12);
+
+    transform: none;
+
+    transition:
+      max-height 420ms cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 220ms ease,
+      margin-top 280ms ease,
+      padding-top 280ms ease,
+      visibility 0s;
+  }
+
+
+  /* ANULAR COMPORTAMIENTO DESKTOP
+     DEL PRIMER Y ÚLTIMO ITEM */
+
+  .timeline-item:first-child:focus .timeline-popover,
+  .timeline-item:first-child:focus-within .timeline-popover,
+  .timeline-item:last-child:focus .timeline-popover,
+  .timeline-item:last-child:focus-within .timeline-popover {
+
+    left: auto;
+    right: auto;
+
+    transform: none;
+  }
+
+
+  /* TEXTO */
+
+  .timeline-popover__period {
+    display: none;
+  }
+
+  .timeline-popover__title {
+    max-width: 100%;
+
+    margin-bottom: 10px;
+
+    font-size: 0.74rem;
+
+    overflow-wrap: break-word;
+  }
+
+  .timeline-popover__text {
+    max-width: 100%;
+
+    font-size: 0.78rem;
+    line-height: 1.62;
+
+    overflow-wrap: break-word;
+  }
+
+
+  /* FOCUS */
+
+  .timeline-item:focus {
+    outline: none;
+  }
+  
+
+}

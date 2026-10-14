@@ -1,3 +1,5 @@
+import "./ExperienceTimeline.css"
+
 export function ExperienceTimeline({ content }) {
   const { timeline } = content.experience
 
@@ -16,9 +18,16 @@ export function ExperienceTimeline({ content }) {
       </header>
 
       <div className="timeline-track">
-        {timeline.map((item) => (
-          <article className="timeline-item" key={item.period}>
-            <span className="timeline-node" aria-hidden="true" />
+        {timeline.map((item, index) => (
+          <article
+            className="timeline-item"
+            key={`${item.period}-${item.role}`}
+            tabIndex={0}
+          >
+            <span
+              className="timeline-node"
+              aria-hidden="true"
+            />
 
             <p className="timeline-period">
               {item.period}
@@ -27,6 +36,25 @@ export function ExperienceTimeline({ content }) {
             <p className="timeline-role">
               {item.role}
             </p>
+
+            {item.detail && (
+              <div
+                className="timeline-popover"
+                role="tooltip"
+              >
+                <span className="timeline-popover__period">
+                  {item.period}
+                </span>
+
+                <strong className="timeline-popover__title">
+                  {item.role}
+                </strong>
+
+                <p className="timeline-popover__text">
+                  {item.detail}
+                </p>
+              </div>
+            )}
           </article>
         ))}
       </div>

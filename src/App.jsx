@@ -1,6 +1,4 @@
 import { Header } from './components/Header.jsx'
-import { BogotaMapBackground } from './components/BogotaMapBackground.jsx'
-import { useScrollTraceProgress } from './hooks/useScrollTraceProgress.js'
 import { pageContent } from './data/pageContent.js'
 import { Hero } from './sections/Hero.jsx'
 import { ProfileSection } from './sections/ProfileSection.jsx'
@@ -16,6 +14,9 @@ import { PressSection } from "./sections/PressSection.jsx"
 import './sections/fondo.css'
 import { useAlternateBackgroundScroll } from './hooks/useAlternateBackgroundScroll.js'
 import { useLocalitiesScroll } from './hooks/useLocalitiesScroll.js'
+import {
+  SocialFloat,
+} from "./components/SocialFloat"
 
 export default function App() {
   //useScrollTraceProgress()
@@ -64,6 +65,7 @@ export default function App() {
         <PressSection content={pageContent} />
       </main>
       <Footer content={pageContent} />
+      <SocialFloat />
     </div>
   )
 }

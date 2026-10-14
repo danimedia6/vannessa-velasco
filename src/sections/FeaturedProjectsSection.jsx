@@ -1,5 +1,7 @@
 import "./FeaturedProjectsSection.css"
-import { ProjectImageAccordion } from "../components/ProjectImageAccordion"
+import {
+  ProjectImageSlider
+} from "../components/ProjectImageSlider"
 
 export function FeaturedProjectsSection({ content }) {
   const { policyWork } = content
@@ -93,7 +95,7 @@ export function FeaturedProjectsSection({ content }) {
                 <div
                   className={`project-media ${
                     hasGallery
-                      ? "project-media--accordion"
+                      ? "project-media--slider"
                       : ""
                   }`}
                   aria-label={
@@ -105,7 +107,7 @@ export function FeaturedProjectsSection({ content }) {
 
                   {hasGallery ? (
 
-                    <ProjectImageAccordion
+                    <ProjectImageSlider
                       images={project.images}
                     />
 

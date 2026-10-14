@@ -39,6 +39,79 @@ export function ProfileSection({ content }) {
           ))}
         </div>
 
+        <details className="profile-education-mobile">
+          <summary className="profile-education-mobile__summary">
+            <span>
+              Education
+            </span>
+
+            <span
+              className="profile-education-mobile__icon"
+              aria-hidden="true"
+            >
+              +
+            </span>
+          </summary>
+
+          <div className="profile-education-mobile__content">
+            <div className="education-list">
+              {education.map((item) => (
+                <div
+                  className="education-item"
+                  key={`${item.credential}-${item.institution}`}
+                >
+                  <p>
+                    {item.credential}
+
+                    {item.year &&
+                      ` · ${item.year}`}
+                  </p>
+
+                  <span>
+                    {item.institution}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </details>
+
+        <details className="profile-boards-mobile">
+          <summary className="profile-education-mobile__summary">
+            <span>
+              {boards.label}
+            </span>
+
+            <span
+              className="profile-education-mobile__icon"
+              aria-hidden="true"
+            >
+              +
+            </span>
+          </summary>
+
+          <div className="profile-education-mobile__content">
+            <div className="boards-list">
+              {boards.items.map((item) => (
+                <div
+                  className="board-item"
+                  key={item.organization}
+                >
+                  <p>
+                    {item.organization}
+                    {" — "}
+                    {item.role}
+                  </p>
+
+                  <span>
+                    {item.fullName}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </details>
+
         <div
           className="profile-areas"
           aria-label={profile.areasLabel}
@@ -63,7 +136,7 @@ export function ProfileSection({ content }) {
       </div>
 
       <aside className="profile-sidebar">
-        <div className="profile-meta-block">
+        <div className="profile-meta-block profile-education-desktop">
           <p className="profile-meta-title">
             {profile.educationLabel}
           </p>
