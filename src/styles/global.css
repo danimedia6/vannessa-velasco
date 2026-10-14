@@ -1569,7 +1569,7 @@ a {
 
 
   .mobile-menu a::after {
-    content: "↘";
+    content: "↘︎";
 
     color: var(--color-accent);
 

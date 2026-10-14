@@ -55,7 +55,7 @@ export function Hero({ content }) {
                 <span aria-hidden="true">
                   {action.download
                     ? "↓"
-                    : "↘"}
+                    : "↘︎"}
                 </span>
               </a>
             ))}

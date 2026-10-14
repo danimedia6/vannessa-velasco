@@ -128,7 +128,7 @@ export function ProfileSection({ content }) {
                 className="profile-area-arrow"
                 aria-hidden="true"
               >
-                ↘
+                ↘︎
               </span>
             </a>
           ))}
