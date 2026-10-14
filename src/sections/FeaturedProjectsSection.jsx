@@ -78,7 +78,7 @@ export function FeaturedProjectsSection({ content }) {
                       </span>
 
                       <span aria-hidden="true">
-                        ↗
+                        ↗︎
                       </span>
                     </a>
                   )}

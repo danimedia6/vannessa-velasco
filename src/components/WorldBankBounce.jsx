@@ -214,7 +214,7 @@ export function WorldBankBounce({ content }) {
                 rel="noreferrer"
             >
                 <span>{activeItem.file.label}</span>
-                <span aria-hidden="true">↗</span>
+                <span aria-hidden="true">↗︎</span>
             </a>
             )}
         </article>

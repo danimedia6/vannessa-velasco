@@ -271,7 +271,7 @@ export function Footer({ content }) {
               : contact.form.submitLabel}
 
             <span aria-hidden="true">
-              ↗
+              ↗︎
             </span>
           </button>
 
@@ -394,7 +394,7 @@ export function Footer({ content }) {
                   </span>
 
                   <span aria-hidden="true">
-                    ↗
+                    ↗︎
                   </span>
                 </a>
               )}

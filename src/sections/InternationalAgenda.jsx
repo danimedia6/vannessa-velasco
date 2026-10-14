@@ -367,7 +367,7 @@ export function InternationalAgenda({ content }) {
                               className="agenda-event__arrow"
                               aria-hidden="true"
                             >
-                              ↗
+                              ↗︎
                             </span>
 
                           </div>

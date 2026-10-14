@@ -337,7 +337,7 @@ export function PublicationsSection({ content }) {
                           </span>
 
                           <span aria-hidden="true">
-                            ↗
+                            ↗︎
                           </span>
                         </a>
                       )}

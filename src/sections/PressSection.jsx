@@ -58,7 +58,7 @@ export function PressSection({ content }) {
               className="press-row__arrow"
               aria-hidden="true"
             >
-              ↗
+              ↗︎
             </span>
           </a>
         ))}
@@ -77,7 +77,7 @@ export function PressSection({ content }) {
             href={action.href}
           >
             <span>{action.label}</span>
-            <span aria-hidden="true">↗</span>
+            <span aria-hidden="true">↗︎</span>
           </a>
         </footer>
       )}
