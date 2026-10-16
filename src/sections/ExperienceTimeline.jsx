@@ -1,7 +1,10 @@
 import "./ExperienceTimeline.css"
 
 export function ExperienceTimeline({ content }) {
-  const { timeline } = content.experience
+  const {
+      timeline,
+      timelineTitle,
+    } = content.experience
 
   return (
     <section
@@ -10,10 +13,9 @@ export function ExperienceTimeline({ content }) {
       aria-labelledby="timeline-title"
     >
       <header className="timeline-header">
-        <h2 id="timeline-title">
-          <span>From Bogotá</span>
-          
-          <em>to the world</em>
+        <h2>
+          <span>{timelineTitle.first}</span>
+          <em>{timelineTitle.second}</em>
         </h2>
       </header>
 

@@ -1,5 +1,5 @@
 import { Header } from './components/Header.jsx'
-import { pageContent } from './data/pageContent.js'
+import { pageContent } from "./data/siteContent"
 import { Hero } from './sections/Hero.jsx'
 import { ProfileSection } from './sections/ProfileSection.jsx'
 import { ImpactSection } from './sections/ImpactSection.jsx'

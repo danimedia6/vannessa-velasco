@@ -8,6 +8,60 @@ export const pageContent = {
 
   siteTitle: 'Vanessa Velasco',
 
+  navigation: {
+    homeLabel: 'Home',
+
+    mainAriaLabel:
+      'Main navigation',
+
+    mobileAriaLabel:
+      'Mobile navigation',
+
+    languageAriaLabel:
+      'Language selector',
+
+    menuOpenLabel:
+      'Open navigation',
+
+    menuCloseLabel:
+      'Close navigation',
+
+    items: [
+      {
+        label: 'PROFILE',
+        href: '#perfil',
+      },
+      {
+        label: 'PATH',
+        href: '#trayectoria',
+      },
+      {
+        label: 'PROJECTS',
+        href: '#proyectos',
+      },
+      {
+        label: 'WORLD BANK',
+        href: '#world-bank',
+      },
+      {
+        label: 'PUBLICATIONS',
+        href: '#publicaciones',
+      },
+      {
+        label: 'SPEAKING',
+        href: '#agenda',
+      },
+      {
+        label: 'PRESS',
+        href: '#prensa',
+      },
+      {
+        label: 'CONTACT',
+        href: '#contacto',
+      },
+    ],
+  },
+
   // Adaptador temporal para la interfaz base actual; proviene del hero del HTML.
   intro: {
     eyebrow: 'Habitat Chief Secretary · Bogotá',
@@ -169,6 +223,12 @@ export const pageContent = {
   },
 
   experience: {
+
+    timelineTitle: {
+      first: 'From Bogotá',
+      second: 'to the world',
+    },
+    
     timeline: [
       {
         period: '2001–06',

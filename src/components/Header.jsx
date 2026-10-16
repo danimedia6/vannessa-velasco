@@ -1,13 +1,32 @@
 import { useState } from "react"
 
 export function Header({ content }) {
-  const { siteTitle } = content
+  const {
+    siteTitle,
+    navigation,
+  } = content
 
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] =
+    useState(false)
 
   const closeMenu = () => {
     setMenuOpen(false)
   }
+
+  const isSpanish =
+    window.location.pathname === "/es" ||
+    window.location.pathname.startsWith(
+      "/es/"
+    )
+
+  const currentHash =
+    window.location.hash || ""
+
+  const englishUrl =
+    `/${currentHash}`
+
+  const spanishUrl =
+    `/es/${currentHash}`
 
   return (
     <header className="site-header">
@@ -21,25 +40,30 @@ export function Header({ content }) {
         type="button"
         aria-label={
           menuOpen
-            ? "Cerrar navegación"
-            : "Abrir navegación"
+            ? navigation.menuCloseLabel
+            : navigation.menuOpenLabel
         }
         aria-expanded={menuOpen}
         aria-controls="mobile-navigation"
         onClick={() =>
-          setMenuOpen((current) => !current)
+          setMenuOpen(
+            (current) => !current
+          )
         }
       >
         <span />
         <span />
       </button>
 
+
       {/* LOGO */}
 
       <a
         className="site-logo"
         href="#main-content"
-        aria-label="Inicio"
+        aria-label={
+          navigation.homeLabel
+        }
         onClick={closeMenu}
       >
         {siteTitle.toUpperCase()}
@@ -50,39 +74,20 @@ export function Header({ content }) {
 
       <nav
         className="site-nav"
-        aria-label="Navegación principal"
+        aria-label={
+          navigation.mainAriaLabel
+        }
       >
-        <a href="#perfil">
-          PROFILE
-        </a>
-
-        <a href="#trayectoria">
-          PATH
-        </a>
-
-        <a href="#proyectos">
-          PROJECTS
-        </a>
-
-        <a href="#world-bank">
-          WORLD BANK
-        </a>
-
-        <a href="#publicaciones">
-          PUBLICATIONS
-        </a>
-
-        <a href="#agenda">
-          SPEAKING
-        </a>
-
-        <a href="#prensa">
-          PRESS
-        </a>
-
-        <a href="#contacto">
-          CONTACT
-        </a>
+        {navigation.items.map(
+          (item) => (
+            <a
+              href={item.href}
+              key={item.href}
+            >
+              {item.label}
+            </a>
+          )
+        )}
       </nav>
 
 
@@ -90,11 +95,20 @@ export function Header({ content }) {
 
       <div
         className="language-switcher"
-        aria-label="Idioma"
+        aria-label={
+          navigation.languageAriaLabel
+        }
       >
         <a
-          href="#main-content"
-          aria-current="true"
+          href={spanishUrl}
+          lang="es"
+          hrefLang="es"
+          aria-current={
+            isSpanish
+              ? "page"
+              : undefined
+          }
+          onClick={closeMenu}
         >
           ES
         </a>
@@ -104,8 +118,15 @@ export function Header({ content }) {
         </span>
 
         <a
-          href="#main-content"
+          href={englishUrl}
           lang="en"
+          hrefLang="en"
+          aria-current={
+            !isSpanish
+              ? "page"
+              : undefined
+          }
+          onClick={closeMenu}
         >
           EN
         </a>
@@ -119,63 +140,21 @@ export function Header({ content }) {
           menuOpen ? "is-open" : ""
         }`}
         id="mobile-navigation"
-        aria-label="Navegación móvil"
+        aria-label={
+          navigation.mobileAriaLabel
+        }
       >
-        <a
-          href="#perfil"
-          onClick={closeMenu}
-        >
-          PROFILE
-        </a>
-
-        <a
-          href="#trayectoria"
-          onClick={closeMenu}
-        >
-          PATH
-        </a>
-
-        <a
-          href="#proyectos"
-          onClick={closeMenu}
-        >
-          PROJECTS
-        </a>
-
-        <a
-          href="#world-bank"
-          onClick={closeMenu}
-        >
-          WORLD BANK
-        </a>
-
-        <a
-          href="#publicaciones"
-          onClick={closeMenu}
-        >
-          PUBLICATIONS
-        </a>
-
-        <a
-          href="#agenda"
-          onClick={closeMenu}
-        >
-          SPEAKING
-        </a>
-
-        <a
-          href="#prensa"
-          onClick={closeMenu}
-        >
-          PRESS
-        </a>
-
-        <a
-          href="#contacto"
-          onClick={closeMenu}
-        >
-          CONTACT
-        </a>
+        {navigation.items.map(
+          (item) => (
+            <a
+              href={item.href}
+              key={item.href}
+              onClick={closeMenu}
+            >
+              {item.label}
+            </a>
+          )
+        )}
       </nav>
 
     </header>
