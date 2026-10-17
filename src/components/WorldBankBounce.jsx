@@ -133,7 +133,23 @@ export function WorldBankBounce({ content }) {
 
           <p className="wb-bounce-hint">
             {content.interactionHint}
-            <span aria-hidden="true"> ↘</span>
+            <span
+              className="wb-bounce-hint-arrow"
+              aria-hidden="true"
+            >
+              <svg
+                viewBox="0 0 12 12"
+                fill="none"
+              >
+                <path
+                  d="M2 2L10 10M10 10V4M10 10H4"
+                  stroke="currentColor"
+                  strokeWidth="1.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </span>
           </p>
           <div
             className="wb-bounce-line"

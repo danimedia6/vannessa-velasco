@@ -664,11 +664,28 @@
   box-sizing: border-box;
 }
 
-.wb-bounce-hint {
-  margin-bottom: 12px;
+.wb-bounce-hint-arrow {
+  display: inline-flex;
+  align-items: center;
 
-  font-size: 0.46rem;
-  letter-spacing: 0.12em;
+  margin-left: 5px;
+
+  vertical-align: middle;
+
+  transition:
+    transform 180ms ease;
+}
+
+.wb-bounce-hint-arrow svg {
+  width: 9px;
+  height: 9px;
+
+  display: block;
+}
+
+.wb-bounce-nav:hover
+.wb-bounce-hint-arrow {
+  transform: translate(2px, 2px);
 }
 
 
