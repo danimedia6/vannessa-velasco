@@ -256,15 +256,6 @@ export function Footer({ content }) {
           onSubmit={handleSubmit}
         >
 
-          <input
-            type="text"
-            name="_gotcha"
-            tabIndex="-1"
-            autoComplete="off"
-            aria-hidden="true"
-            className="footer-form__honeypot"
-          />
-
           {firstRowFields.length > 0 && (
             <div className="footer-form__row">
               {firstRowFields.map((field) => (
