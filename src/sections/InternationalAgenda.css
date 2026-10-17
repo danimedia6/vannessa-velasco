@@ -2699,3 +2699,58 @@
     text-align: left;
   }
 }
+
+/* =========================================================
+   INTERNATIONAL AGENDA · MOBILE FINAL NORMALIZATION
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .agenda-year-events {
+    display: grid;
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 8px;
+
+    width: 100%;
+
+    justify-content: initial;
+    align-items: stretch;
+  }
+
+
+  .agenda-year-events
+  .agenda-event,
+  .agenda-year-events
+  .agenda-event:last-child {
+    display: flex;
+    flex-direction: column;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+
+    flex: none !important;
+
+    min-height: 190px;
+
+    padding:
+      12px
+      9px
+      11px;
+
+    box-sizing: border-box;
+
+    border:
+      1px solid
+      rgba(23, 23, 22, 0.13);
+
+    background:
+      rgba(243, 238, 230, 0.18);
+
+    overflow: hidden;
+  }
+
+}
