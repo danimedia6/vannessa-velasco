@@ -2732,9 +2732,11 @@
     min-width: 0 !important;
     max-width: none !important;
 
-    flex: none !important;
+    height: 210px;
+    min-height: 210px;
+    max-height: 210px;
 
-    min-height: 190px;
+    flex: none !important;
 
     padding:
       12px
@@ -2751,6 +2753,28 @@
       rgba(243, 238, 230, 0.18);
 
     overflow: hidden;
+  }
+
+  .agenda-year-events
+  .agenda-event.is-active {
+    width: 100% !important;
+
+    height: 210px;
+    min-height: 210px;
+    max-height: 210px;
+
+    padding:
+      12px
+      9px
+      11px;
+  }
+
+  .agenda-year-events
+  .agenda-event:hover {
+    padding:
+      12px
+      9px
+      11px;
   }
 
 }
