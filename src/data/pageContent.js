@@ -267,6 +267,9 @@ export const pageContent = {
       headline: '2015 - 2024\nMulti-country impact',
       intro:
         "From 2015 to 2024, Vanessa Velasco contributed to analytical and operational work across Latin America, the Caribbean, and Southeast Asia, specializing in housing, land value capture, urban regeneration, territorial development, and transit-oriented development.",
+      
+      interactionHint: '06 projects · Select to explore',
+      
       projects: [
         {
           geography: 'Colombia',

@@ -118,6 +118,8 @@ export function WorldBankBounce({ content }) {
         </div>
       </div>
 
+      
+
       {/* INTERACTIVE EXPERIENCE */}
       <div
         className={`wb-bounce ${
@@ -128,6 +130,11 @@ export function WorldBankBounce({ content }) {
           className="wb-bounce-nav"
           aria-label="World Bank projects"
         >
+
+          <p className="wb-bounce-hint">
+            {content.interactionHint}
+            <span aria-hidden="true"> ↘</span>
+          </p>
           <div
             className="wb-bounce-line"
             aria-hidden="true"

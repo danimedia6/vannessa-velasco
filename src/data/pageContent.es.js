@@ -273,6 +273,8 @@ export const pageContent = {
       intro:
         'Entre 2015 y 2024, Vanessa Velasco participó en trabajo analítico y operativo en América Latina, el Caribe y el Sudeste Asiático, especializándose en vivienda, captura de valor del suelo, regeneración urbana, desarrollo territorial y desarrollo orientado al transporte.',
 
+      interactionHint: '06 proyectos · Selecciona para explorar',
+
       projects: [
         {
           geography: 'Colombia',
