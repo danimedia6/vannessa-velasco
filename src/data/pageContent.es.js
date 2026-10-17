@@ -1,4 +1,4 @@
-// Fuente factual inicial: source/vanessavelasco_v7 (3) (1).html.
+﻿// Fuente factual inicial: source/vanessavelasco_v7 (3) (1).html.
 // El HTML se usa como contenido, no como referencia visual.
 
 export const pageContent = {
@@ -332,7 +332,7 @@ export const pageContent = {
 
           file: {
             label: 'Ver documento',
-            href: 'https://blogs.worldbank.org/es/ppps/como-podemos-ayudar-financiar-el-desarrollo-urbano-en-las-ciudades-latinoamericanas?utm_source=chatgpt.com',
+            href: 'https://blogs.worldbank.org/es/ppps/como-podemos-ayudar-financiar-el-desarrollo-urbano-en-las-ciudades-latinoamericanas',
           },
         },
 
@@ -346,7 +346,7 @@ export const pageContent = {
 
           file: {
             label: 'Ver documento',
-            href: 'https://blogs.worldbank.org/es/ppps/como-podemos-ayudar-financiar-el-desarrollo-urbano-en-las-ciudades-latinoamericanas?utm_source=chatgpt.com',
+            href: 'https://blogs.worldbank.org/es/ppps/como-podemos-ayudar-financiar-el-desarrollo-urbano-en-las-ciudades-latinoamericanas',
           },
         },
 
@@ -360,7 +360,7 @@ export const pageContent = {
 
           file: {
             label: 'Ver documento',
-            href: 'https://documents1.worldbank.org/curated/en/911381540835286885/pdf/131472-WP-SPANISH-PUBLIC-MigracindesdeVenezuelaaColombia.pdf?utm_source=chatgpt.com',
+            href: 'https://documents1.worldbank.org/curated/en/911381540835286885/pdf/131472-WP-SPANISH-PUBLIC-MigracindesdeVenezuelaaColombia.pdf',
           },
         },
       ],

@@ -70,6 +70,9 @@ export function Hero({ content }) {
           <img
             src={hero.image.src}
             alt={hero.image.alt}
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
           />
         </figure>
 

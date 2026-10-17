@@ -1,4 +1,4 @@
-// Fuente factual inicial: source/vanessavelasco_v7 (3) (1).html.
+﻿// Fuente factual inicial: source/vanessavelasco_v7 (3) (1).html.
 // El HTML se usa como contenido, no como referencia visual.
 export const pageContent = {
   source: {
@@ -228,7 +228,7 @@ export const pageContent = {
       first: 'From Bogotá',
       second: 'to the world',
     },
-    
+
     timeline: [
       {
         period: '2001–06',
@@ -267,9 +267,9 @@ export const pageContent = {
       headline: '2015 - 2024\nMulti-country impact',
       intro:
         "From 2015 to 2024, Vanessa Velasco contributed to analytical and operational work across Latin America, the Caribbean, and Southeast Asia, specializing in housing, land value capture, urban regeneration, territorial development, and transit-oriented development.",
-      
+
       interactionHint: '06 projects · Select to explore',
-      
+
       projects: [
         {
           geography: 'Colombia',
@@ -310,7 +310,7 @@ export const pageContent = {
           amount: 'USD 235M',
           file: {
             label: 'View document',
-            href: 'https://blogs.worldbank.org/es/ppps/como-podemos-ayudar-financiar-el-desarrollo-urbano-en-las-ciudades-latinoamericanas?utm_source=chatgpt.com'
+            href: 'https://blogs.worldbank.org/es/ppps/como-podemos-ayudar-financiar-el-desarrollo-urbano-en-las-ciudades-latinoamericanas'
           }
         },
         {
@@ -320,7 +320,7 @@ export const pageContent = {
             'Led LVC instruments development. Team member for cadastre system and territorial development policies. Analytical studies for Metro de Lima Line 2 TOD areas.',
           file: {
             label: 'View document',
-            href: 'https://blogs.worldbank.org/es/ppps/como-podemos-ayudar-financiar-el-desarrollo-urbano-en-las-ciudades-latinoamericanas?utm_source=chatgpt.com'
+            href: 'https://blogs.worldbank.org/es/ppps/como-podemos-ayudar-financiar-el-desarrollo-urbano-en-las-ciudades-latinoamericanas'
           }
         },
         {
@@ -330,7 +330,7 @@ export const pageContent = {
             'Led affordable housing technical assistance in Mexico; defined housing land bank pilot in Mérida. Co-led disaster risk project in Jamaica. LVC analytical studies for Indonesia.',
           file: {
             label: 'View document',
-            href: 'https://documents1.worldbank.org/curated/en/911381540835286885/pdf/131472-WP-SPANISH-PUBLIC-MigracindesdeVenezuelaaColombia.pdf?utm_source=chatgpt.com'
+            href: 'https://documents1.worldbank.org/curated/en/911381540835286885/pdf/131472-WP-SPANISH-PUBLIC-MigracindesdeVenezuelaaColombia.pdf'
           }
         },
       ],
