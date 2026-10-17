@@ -2701,80 +2701,84 @@
 }
 
 /* =========================================================
-   INTERNATIONAL AGENDA · MOBILE FINAL NORMALIZATION
+   INTERNATIONAL AGENDA · MOBILE CARD NORMALIZATION
    ========================================================= */
 
 @media (max-width: 760px) {
 
-  .agenda-year-events {
-    display: grid;
-
-    grid-template-columns:
-      repeat(3, minmax(0, 1fr));
-
-    gap: 8px;
-
-    width: 100%;
-
-    justify-content: initial;
-    align-items: stretch;
-  }
-
-
+  /* tarjetas cerradas */
   .agenda-year-events
-  .agenda-event,
-  .agenda-year-events
-  .agenda-event:last-child {
-    display: flex;
-    flex-direction: column;
-
+  .agenda-event:not(.is-expanded) {
     width: 100% !important;
     min-width: 0 !important;
     max-width: none !important;
 
-    height: 210px;
-    min-height: 210px;
-    max-height: 210px;
-
-    flex: none !important;
+    min-height: 118px;
+    height: 118px;
 
     padding:
       12px
       9px
-      11px;
+      28px;
+
+    overflow: hidden;
 
     box-sizing: border-box;
 
     border:
       1px solid
-      rgba(23, 23, 22, 0.13);
-
-    background:
-      rgba(243, 238, 230, 0.18);
-
-    overflow: hidden;
+      rgba(23, 23, 22, 0.14);
   }
 
-  .agenda-year-events
-  .agenda-event.is-active {
-    width: 100% !important;
 
-    height: 210px;
-    min-height: 210px;
-    max-height: 210px;
+  /* tarjeta seleccionada */
+  .agenda-year-events
+  .agenda-event.is-expanded {
+    grid-column: 1 / -1;
+
+    width:
+      min(
+        78%,
+        290px
+      ) !important;
+
+    min-width:
+      min(
+        78%,
+        290px
+      ) !important;
+
+    max-width: 290px !important;
+
+    height: 340px;
+    min-height: 340px;
+    max-height: 340px;
+
+    justify-self: center;
 
     padding:
-      12px
-      9px
-      11px;
+      18px
+      14px
+      16px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    border:
+      1px solid
+      rgba(23, 23, 22, 0.22);
   }
 
+
+  /* evita cambios de tamaño por hover/touch */
   .agenda-year-events
-  .agenda-event:hover {
+  .agenda-event.is-expanded:hover {
     padding:
-      12px
-      9px
-      11px;
+      18px
+      14px
+      16px;
   }
 
 }
