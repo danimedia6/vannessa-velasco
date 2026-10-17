@@ -1,6 +1,11 @@
 import { useState } from "react"
 import "./Footer.css"
 
+const CONTACT_ENDPOINT =
+  import.meta.env.VITE_CONTACT_ENDPOINT
+
+
+
 function SocialIcon({ network }) {
   if (network === "LinkedIn") {
     return (
@@ -137,6 +142,7 @@ function FormField({ field }) {
           name={field.name}
           rows="4"
           placeholder={field.placeholder}
+          required={field.name === "message"}
         />
       </label>
     )
@@ -150,6 +156,10 @@ function FormField({ field }) {
         type={field.type || "text"}
         name={field.name}
         placeholder={field.placeholder}
+        required={
+          field.name === "name" ||
+          field.name === "email"
+        }
       />
     </label>
   )
@@ -176,11 +186,14 @@ export function Footer({ content }) {
     try {
       setFormStatus("sending")
 
-      const response = await fetch("/api/contact", {
+      const response = await fetch(
+        CONTACT_ENDPOINT,
+        {
         method: "POST",
 
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
 
         body: JSON.stringify(payload),
@@ -242,6 +255,15 @@ export function Footer({ content }) {
           className="footer-form"
           onSubmit={handleSubmit}
         >
+
+          <input
+            type="text"
+            name="_gotcha"
+            tabIndex="-1"
+            autoComplete="off"
+            aria-hidden="true"
+            className="footer-form__honeypot"
+          />
 
           {firstRowFields.length > 0 && (
             <div className="footer-form__row">
