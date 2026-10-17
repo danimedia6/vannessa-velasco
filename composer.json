@@ -1,0 +1,10 @@
+{
+  "name": "vanessa-velasco/website",
+  "description": "Official website for Vanessa Velasco.",
+  "type": "project",
+  "license": "proprietary",
+  "require": {
+    "php": ">=8.1",
+    "phpmailer/phpmailer": "^7.1"
+  }
+}

@@ -10,3 +10,4 @@ dist/
 Thumbs.db
 api/config.php
 .env.local
+/vendor/

@@ -2,7 +2,8 @@ import { useState } from "react"
 import "./Footer.css"
 
 const CONTACT_ENDPOINT =
-  import.meta.env.VITE_CONTACT_ENDPOINT
+  import.meta.env.VITE_CONTACT_ENDPOINT ||
+  "/api/contact.php"
 
 
 
@@ -189,15 +190,16 @@ export function Footer({ content }) {
       const response = await fetch(
         CONTACT_ENDPOINT,
         {
-        method: "POST",
+          method: "POST",
 
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
 
-        body: JSON.stringify(payload),
-      })
+          body: JSON.stringify(payload),
+        }
+      )
 
       if (!response.ok) {
         throw new Error("Error sending form")
@@ -256,6 +258,15 @@ export function Footer({ content }) {
           onSubmit={handleSubmit}
         >
 
+          <input
+            type="text"
+            name="office_fax"
+            tabIndex="-1"
+            autoComplete="off"
+            aria-hidden="true"
+            className="footer-form__honeypot"
+          />
+
           {firstRowFields.length > 0 && (
             <div className="footer-form__row">
               {firstRowFields.map((field) => (
@@ -280,8 +291,8 @@ export function Footer({ content }) {
             disabled={formStatus === "sending"}
           >
             {formStatus === "sending"
-              ? "Enviando..."
-              : contact.form.submitLabel}
+            ? contact.form.sendingLabel
+            : contact.form.submitLabel}
 
             <span aria-hidden="true">
               ↗︎
@@ -290,13 +301,13 @@ export function Footer({ content }) {
 
           {formStatus === "success" && (
             <p className="footer-form-status is-success">
-              Mensaje enviado correctamente.
+              {contact.form.successMessage}
             </p>
           )}
 
           {formStatus === "error" && (
             <p className="footer-form-status is-error">
-              No pudimos enviar el mensaje. Inténtalo nuevamente.
+              {contact.form.errorMessage}
             </p>
           )}
         </form>

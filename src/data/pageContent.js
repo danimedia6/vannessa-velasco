@@ -1495,6 +1495,15 @@ export const pageContent = {
       ],
 
       submitLabel: 'Send message',
+
+      sendingLabel:
+        'Sending...',
+
+      successMessage:
+        'Message sent successfully.',
+
+      errorMessage:
+        'We could not send your message. Please try again.',
     },
 
     media: {

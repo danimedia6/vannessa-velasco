@@ -1646,8 +1646,16 @@ export const pageContent = {
         },
       ],
 
-      submitLabel:
-        'Enviar mensaje',
+      submitLabel: 'Enviar mensaje',
+
+      sendingLabel:
+        'Enviando...',
+
+      successMessage:
+        'Mensaje enviado correctamente.',
+
+      errorMessage:
+        'No pudimos enviar el mensaje. Inténtalo nuevamente.',
     },
 
     media: {
