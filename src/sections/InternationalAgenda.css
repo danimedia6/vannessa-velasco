@@ -20,11 +20,11 @@
 
   padding:
 
-    clamp(92px, 12vh, 150px)
+    clamp(70px, 8vh, 100px)
 
     clamp(18px, 4.5vw, 68px)
 
-    clamp(100px, 14vh, 170px);
+    0;
 
 
 

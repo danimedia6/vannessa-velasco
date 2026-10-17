@@ -598,23 +598,6 @@
   gap: 14px;
 }
 
-.wb-bounce.has-selection .wb-bounce-nav {
-  flex-direction: column;
-
-  width: 100%;
-  min-width: 0;
-
-  margin: 0;
-  padding: 0;
-
-  gap: 0;
-
-  overflow: visible;
-
-  scroll-snap-type: none;
-  scroll-padding-inline: 0;
-}
-
 
 /* =======================================================
    VERTICAL NAVIGATION
@@ -624,40 +607,28 @@
   position: relative;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: stretch;
 
-  width: calc(100% + 32px);
-  max-width: none;
+  width: 100%;
+  min-width: 0;
 
-  margin:
-    0
-    0
-    0
-    -16px;
+  margin: 0;
 
   padding:
     0
-    16px
-    12px;
+    0
+    0
+    25px;
 
-  gap: 12px;
+  gap: 0;
 
-  overflow-x: auto;
-  overflow-y: hidden;
-
-  scroll-snap-type: x mandatory;
-  scroll-padding-inline: 16px;
-
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
+  overflow: visible;
 
   box-sizing: border-box;
 }
 
-.wb-bounce-nav::-webkit-scrollbar {
-  display: none;
-}
+
 
 
 /* -------------------------------------------------------
@@ -665,16 +636,11 @@
    ------------------------------------------------------- */
 
 .wb-bounce-line {
-  display: none;
+  display: block;
 
   top: 18px;
   bottom: 18px;
   left: 4px;
-}
-
-.wb-bounce.has-selection
-.wb-bounce-line {
-  display: block;
 }
 
 
@@ -683,28 +649,7 @@
    ------------------------------------------------------- */
 
 .wb-bounce-dot {
-  display: block;
-
-  width: 9px;
-  height: 9px;
-
-  opacity: 0;
-
-  transition:
-    transform
-      420ms
-      cubic-bezier(0.22, 1, 0.36, 1),
-    margin-left
-      180ms
-      ease,
-    opacity
-      220ms
-      ease;
-}
-
-.wb-bounce.has-selection
-.wb-bounce-dot {
-  opacity: 1;
+  display: none;
 }
 
 
@@ -713,14 +658,14 @@
    ======================================================= */
 
 .wb-bounce-item {
-  flex: 0 0 min(72vw, 280px);
+  position: relative;
 
-  width: auto;
+  flex: 0 0 auto;
+
+  width: 100%;
   min-width: 0;
 
-  padding: 10px 0;
-
-  scroll-snap-align: start;
+  padding: 13px 0;
 
   box-sizing: border-box;
 }
@@ -741,18 +686,10 @@
 
 .wb-bounce.has-selection
 .wb-bounce-item {
-  flex: 0 0 auto;
-
   width: 100%;
   min-width: 0;
 
-  padding:
-    10px
-    3px
-    10px
-    0;
-
-  scroll-snap-align: none;
+  padding: 13px 0;
 
   opacity: 1;
 }
@@ -762,12 +699,6 @@
 
 .wb-bounce.has-selection
 .wb-bounce-item.is-active {
-  margin-left: -8px;
-
-  padding-left: 8px;
-
-  
-
   opacity: 1;
 }
 
@@ -801,6 +732,7 @@
    ======================================================= */
 
 .wb-bounce-project {
+  position: relative;
   max-width: 28ch;
 
   font-size: 0.88rem;
@@ -810,6 +742,26 @@
     font-size
       420ms
       cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.wb-bounce.has-selection
+.wb-bounce-item.is-active
+.wb-bounce-project::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0.24em;
+  left: -25px;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: var(--color-accent);
+
+  z-index: 3;
 }
 
 .wb-bounce.has-selection
