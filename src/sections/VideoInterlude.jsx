@@ -4,14 +4,17 @@ export function VideoInterlude({ content }) {
   const video = content.media?.videoInterlude
   const videoRef = useRef(null)
   const frameRef = useRef(null)
+
   const [isInView, setIsInView] = useState(false)
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(true)
   const [shouldPlay, setShouldPlay] = useState(false)
+  const [isMuted, setIsMuted] = useState(true)
 
   useEffect(() => {
     if (!video) return undefined
 
     const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+
     const syncMotionPreference = () => {
       setPrefersReducedMotion(motionQuery.matches)
     }
@@ -45,6 +48,7 @@ export function VideoInterlude({ content }) {
     setShouldPlay(canPlay)
 
     if (!videoRef.current) return
+
     if (canPlay) {
       videoRef.current.play().catch(() => {})
     } else {
@@ -52,7 +56,24 @@ export function VideoInterlude({ content }) {
     }
   }, [isInView, prefersReducedMotion, video])
 
+  const toggleSound = () => {
+    if (!videoRef.current) return
+
+    const nextMuted = !isMuted
+
+    setIsMuted(nextMuted)
+    videoRef.current.muted = nextMuted
+
+    if (!nextMuted) {
+      videoRef.current.play().catch(() => {})
+    }
+  }
+
   if (!video) return null
+
+  const isSpanish =
+    window.location.pathname === '/es' ||
+    window.location.pathname.startsWith('/es/')
 
   return (
     <section className="video-interlude" aria-label={video.label}>
@@ -60,7 +81,7 @@ export function VideoInterlude({ content }) {
         <video
           ref={videoRef}
           autoPlay={shouldPlay}
-          muted
+          muted={isMuted}
           loop
           playsInline
           preload="metadata"
@@ -68,6 +89,23 @@ export function VideoInterlude({ content }) {
         >
           <source src={video.src} type={video.type} />
         </video>
+
+        <button
+          className="video-sound-toggle"
+          type="button"
+          onClick={toggleSound}
+          aria-label={
+            isMuted
+              ? isSpanish
+                ? 'Activar sonido'
+                : 'Turn sound on'
+              : isSpanish
+                ? 'Silenciar'
+                : 'Mute'
+          }
+        >
+          {isMuted ? '🔇' : '🔊'}
+        </button>
       </div>
     </section>
   )
