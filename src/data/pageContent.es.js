@@ -220,7 +220,7 @@ export const pageContent = {
 
   media: {
     videoInterlude: {
-      src: '/videos/ciudad-mosaico.mp4',
+      src: 'https://media.vanessavelasco.com/videos/ciudad-mosaico-web.mp4',
       type: 'video/mp4',
       label: 'Video Ciudad Mosaico',
     },
