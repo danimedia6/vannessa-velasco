@@ -313,10 +313,13 @@ if (
 /* =========================================================
    CONFIG
    ========================================================= */
-
 $configPath =
     getenv('CONTACT_CONFIG')
-    ?: __DIR__ . '/config.php';
+    ?: (
+        is_file(dirname(__DIR__, 4) . '/private/vanessavelasco-config.php')
+            ? dirname(__DIR__, 4) . '/private/vanessavelasco-config.php'
+            : __DIR__ . '/config.php'
+    );
 
 if (!is_file($configPath)) {
     error_log(
