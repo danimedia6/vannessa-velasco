@@ -1,4 +1,4 @@
-﻿// Fuente factual inicial: source/vanessavelasco_v7 (3) (1).html.
+// Fuente factual inicial: source/vanessavelasco_v7 (3) (1).html.
 // El HTML se usa como contenido, no como referencia visual.
 
 export const pageContent = {
@@ -87,10 +87,9 @@ export const pageContent = {
     educationLabel: 'Educación',
 
     pressKit: {
-      label: 'Descargar kit de prensa',
-      href: '/press-kit/Vanessa-Velasco-Press-Kit.zip',
-      download: 'Vanessa-Velasco-Press-Kit.zip',
-    },
+      label: 'Kit de prensa',
+      href: '/es/press-kit/',
+},
 
     areas: [
       {
@@ -155,9 +154,8 @@ export const pageContent = {
       },
       {
         label: 'Kit de prensa',
-        href: '/press-kit/Vanessa-Velasco-Press-Kit.zip',
-        download: 'Vanessa-Velasco-Press-Kit.zip',
-      },
+        href: '/es/press-kit/',
+},
     ],
   },
 
@@ -230,7 +228,7 @@ export const pageContent = {
 
     timelineTitle: {
       first: 'De Bogotá',
-      second: 'al mundo',
+      second: 'para el mundo',
     },
     timeline: [
       {
@@ -492,7 +490,7 @@ export const pageContent = {
 
         link: {
           label: 'Explorar proyecto',
-          href: 'https://habitatbogota.gov.co/view/mi-casa-bogota-en',
+          href: 'https://habitatbogota.gov.co/view/mi-casa-bogota',
         },
 
         stats: [
@@ -543,7 +541,7 @@ export const pageContent = {
 
         link: {
           label: 'Explorar proyecto',
-          href: 'https://habitatbogota.gov.co/view/revitalizacion-en',
+          href: 'https://habitatbogota.gov.co/view/Revitalizacion',
         },
 
         stats: [

@@ -1,4 +1,4 @@
-﻿// Fuente factual inicial: source/vanessavelasco_v7 (3) (1).html.
+// Fuente factual inicial: source/vanessavelasco_v7 (3) (1).html.
 // El HTML se usa como contenido, no como referencia visual.
 export const pageContent = {
   source: {
@@ -87,10 +87,9 @@ export const pageContent = {
     educationLabel: 'Education',
 
     pressKit: {
-      label: 'Download press kit',
-      href: '/press-kit/Vanessa-Velasco-Press-Kit.zip',
-      download: 'Vanessa-Velasco-Press-Kit.zip',
-    },
+      label: 'Press kit',
+      href: '/press-kit/',
+},
 
     areas: [
     {
@@ -155,9 +154,8 @@ export const pageContent = {
       },
       {
         label: 'Press kit',
-        href: '/press-kit/Vanessa-Velasco-Press-Kit.zip',
-        download: 'Vanessa-Velasco-Press-Kit.zip',
-      },
+        href: '/press-kit/',
+},
     ],
   },
 

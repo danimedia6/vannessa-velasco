@@ -13,20 +13,70 @@ export function Header({ content }) {
     setMenuOpen(false)
   }
 
+  const pathname =
+    window.location.pathname
+
   const isSpanish =
-    window.location.pathname === "/es" ||
-    window.location.pathname.startsWith(
-      "/es/"
-    )
+    pathname === "/es" ||
+    pathname.startsWith("/es/")
+
+  const isPressKit =
+    pathname === "/press-kit" ||
+    pathname.startsWith("/press-kit/") ||
+    pathname === "/es/press-kit" ||
+    pathname.startsWith("/es/press-kit/")
 
   const currentHash =
     window.location.hash || ""
 
+  /*
+   * Selector de idioma
+   *
+   * HOME:
+   * /#perfil ↔ /es/#perfil
+   *
+   * PRESS KIT:
+   * /press-kit/ ↔ /es/press-kit/
+   */
   const englishUrl =
-    `/${currentHash}`
+    isPressKit
+      ? "/press-kit/"
+      : `/${currentHash}`
 
   const spanishUrl =
-    `/es/${currentHash}`
+    isPressKit
+      ? "/es/press-kit/"
+      : `/es/${currentHash}`
+
+  /*
+   * Desde el Press Kit, los enlaces
+   * de navegación deben regresar
+   * al home correspondiente.
+   */
+  const getNavigationHref = (
+    href
+  ) => {
+    if (!isPressKit) {
+      return href
+    }
+
+    return isSpanish
+      ? `/es/${href}`
+      : `/${href}`
+  }
+
+  /*
+   * El logo en el home sigue llevando
+   * al inicio de la página.
+   *
+   * Desde Press Kit regresa al home.
+   */
+  const logoHref =
+    isPressKit
+      ? isSpanish
+        ? "/es/"
+        : "/"
+      : "#main-content"
 
   return (
     <header className="site-header">
@@ -60,7 +110,7 @@ export function Header({ content }) {
 
       <a
         className="site-logo"
-        href="#main-content"
+        href={logoHref}
         aria-label={
           navigation.homeLabel
         }
@@ -81,7 +131,9 @@ export function Header({ content }) {
         {navigation.items.map(
           (item) => (
             <a
-              href={item.href}
+              href={getNavigationHref(
+                item.href
+              )}
               key={item.href}
             >
               {item.label}
@@ -147,7 +199,9 @@ export function Header({ content }) {
         {navigation.items.map(
           (item) => (
             <a
-              href={item.href}
+              href={getNavigationHref(
+                item.href
+              )}
               key={item.href}
               onClick={closeMenu}
             >

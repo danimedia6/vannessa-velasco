@@ -32,6 +32,16 @@ export default defineConfig({
           process.cwd(),
           "es/index.html"
         ),
+
+        pressKit: resolve(
+          process.cwd(),
+          "press-kit/index.html"
+        ),
+
+        esPressKit: resolve(
+          process.cwd(),
+          "es/press-kit/index.html"
+        ),
       },
     },
   },

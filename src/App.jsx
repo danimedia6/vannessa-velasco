@@ -17,11 +17,18 @@ import { useLocalitiesScroll } from './hooks/useLocalitiesScroll.js'
 import {
   SocialFloat,
 } from "./components/SocialFloat"
+import { PressKitPage } from './pages/PressKitPage.jsx'
 
 export default function App() {
   //useScrollTraceProgress()
   useAlternateBackgroundScroll()
   useLocalitiesScroll()
+
+  const isPressKit =
+  window.location.pathname === '/press-kit' ||
+  window.location.pathname.startsWith('/press-kit/') ||
+  window.location.pathname === '/es/press-kit' ||
+  window.location.pathname.startsWith('/es/press-kit/')
 
   return (
     <div className="app-shell">
@@ -40,30 +47,37 @@ export default function App() {
       
       <Header content={pageContent} />
       <main id="main-content">
-        <Hero content={pageContent} />
-        <div id="next" className="hero-end-marker" aria-hidden="true" />
+        {isPressKit ? (
+          <PressKitPage />
+        ) : (
+          <>
+            <Hero content={pageContent} />
+            <div id="next" className="hero-end-marker" aria-hidden="true" />
 
-        <ImpactSection content={pageContent} />
+            <ImpactSection content={pageContent} />
 
-        <section id="perfil">
-          <VideoInterlude content={pageContent} />
-          <ProfileSection content={pageContent} />
-        </section>
+            <section id="perfil">
+              <VideoInterlude content={pageContent} />
+              <ProfileSection content={pageContent} />
+            </section>
 
-        <ExperienceTimeline content={pageContent} />
+            <ExperienceTimeline content={pageContent} />
 
-        <FeaturedProjectsSection content={pageContent} />
+            <FeaturedProjectsSection content={pageContent} />
 
-        <WorldBankBounce
-          content={pageContent.experience.worldBank}
-        />
+            <WorldBankBounce
+              content={pageContent.experience.worldBank}
+            />
 
-        <PublicationsSection content={pageContent} />
+            <PublicationsSection content={pageContent} />
 
-        <InternationalAgenda content={pageContent} />
+            <InternationalAgenda content={pageContent} />
 
-        <PressSection content={pageContent} />
-        <SocialFloat socials={pageContent.contact.socials} />
+            <PressSection content={pageContent} />
+
+            <SocialFloat socials={pageContent.contact.socials} />
+          </>
+        )}
       </main>
       <Footer content={pageContent} />
       

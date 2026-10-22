@@ -1,0 +1,2635 @@
+warning: in the working copy of 'src/data/pageContent.es.js', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/src/data/pageContent.es.js b/src/data/pageContent.es.js[m
+[1mindex 810d583..4b8a1cb 100644[m
+[1m--- a/src/data/pageContent.es.js[m
+[1m+++ b/src/data/pageContent.es.js[m
+[36m@@ -1,10 +1,10 @@[m
+[31m-﻿// Fuente factual inicial: source/vanessavelasco_v7 (3) (1).html.[m
+[32m+[m[32m// Fuente factual inicial: source/vanessavelasco_v7 (3) (1).html.[m
+ // El HTML se usa como contenido, no como referencia visual.[m
+ [m
+ export const pageContent = {[m
+   source: {[m
+     file: 'source/vanessavelasco_v7 (3) (1).html',[m
+[31m-    note: 'Fuente HTML original suministrada para extracción factual inicial.',[m
+[32m+[m[32m    note: 'Fuente HTML original suministrada para extracci�n factual inicial.',[m
+   },[m
+ [m
+   siteTitle: 'Vanessa Velasco',[m
+[36m@@ -13,19 +13,19 @@[m [mexport const pageContent = {[m
+     homeLabel: 'Inicio',[m
+ [m
+     mainAriaLabel:[m
+[31m-      'Navegación principal',[m
+[32m+[m[32m      'Navegaci�n principal',[m
+ [m
+     mobileAriaLabel:[m
+[31m-      'Navegación móvil',[m
+[32m+[m[32m      'Navegaci�n m�vil',[m
+ [m
+     languageAriaLabel:[m
+       'Selector de idioma',[m
+ [m
+     menuOpenLabel:[m
+[31m-      'Abrir navegación',[m
+[32m+[m[32m      'Abrir navegaci�n',[m
+ [m
+     menuCloseLabel:[m
+[31m-      'Cerrar navegación',[m
+[32m+[m[32m      'Cerrar navegaci�n',[m
+ [m
+     items: [[m
+       {[m
+[36m@@ -64,37 +64,36 @@[m [mexport const pageContent = {[m
+   },[m
+ [m
+   intro: {[m
+[31m-    eyebrow: 'Secretaria Distrital del Hábitat · Bogotá',[m
+[32m+[m[32m    eyebrow: 'Secretaria Distrital del H�bitat � Bogot�',[m
+     title: 'Vanessa Velasco',[m
+     description:[m
+[31m-      '"La vivienda como motor de transformación económica y social en el Sur Global"',[m
+[32m+[m[32m      '"La vivienda como motor de transformaci�n econ�mica y social en el Sur Global"',[m
+   },[m
+ [m
+   profile: {[m
+     fullName: 'Vanessa Velasco Bernal',[m
+     displayName: 'Vanessa Velasco',[m
+[31m-    location: 'Bogotá, Colombia',[m
+[31m-    currentRole: 'Secretaria Distrital del Hábitat · Bogotá',[m
+[32m+[m[32m    location: 'Bogot�, Colombia',[m
+[32m+[m[32m    currentRole: 'Secretaria Distrital del H�bitat � Bogot�',[m
+ [m
+     title:[m
+[31m-      'Secretaria Distrital del Hábitat de Bogotá · Miembro de Junta · IDU · RenoBo · EAAB',[m
+[32m+[m[32m      'Secretaria Distrital del H�bitat de Bogot� � Miembro de Junta � IDU � RenoBo � EAAB',[m
+ [m
+[31m-    footerTitle: 'Secretaria Distrital del Hábitat de Bogotá',[m
+[32m+[m[32m    footerTitle: 'Secretaria Distrital del H�bitat de Bogot�',[m
+ [m
+     languages: ['EN', 'ES'],[m
+ [m
+[31m-    areasLabel: 'Áreas de trabajo',[m
+[31m-    educationLabel: 'Educación',[m
+[32m+[m[32m    areasLabel: '�reas de trabajo',[m
+[32m+[m[32m    educationLabel: 'Educaci�n',[m
+ [m
+     pressKit: {[m
+[31m-      label: 'Descargar kit de prensa',[m
+[31m-      href: '/press-kit/Vanessa-Velasco-Press-Kit.zip',[m
+[31m-      download: 'Vanessa-Velasco-Press-Kit.zip',[m
+[31m-    },[m
+[32m+[m[32m      label: 'Kit de prensa',[m
+[32m+[m[32m      href: '/es/press-kit/',[m
+[32m+[m[32m},[m
+ [m
+     areas: [[m
+       {[m
+[31m-        label: 'Política urbana de vivienda',[m
+[32m+[m[32m        label: 'Pol�tica urbana de vivienda',[m
+         href: '#proyectos',[m
+       },[m
+       {[m
+[36m@@ -106,7 +105,7 @@[m [mexport const pageContent = {[m
+         href: '#world-bank',[m
+       },[m
+       {[m
+[31m-        label: 'Regeneración urbana',[m
+[32m+[m[32m        label: 'Regeneraci�n urbana',[m
+         href: '#proyectos',[m
+       },[m
+       {[m
+[36m@@ -118,14 +117,14 @@[m [mexport const pageContent = {[m
+         href: '#publicaciones',[m
+       },[m
+       {[m
+[31m-        label: 'Cooperación Sur-Sur',[m
+[32m+[m[32m        label: 'Cooperaci�n Sur-Sur',[m
+         href: '#agenda',[m
+       },[m
+     ],[m
+   },[m
+ [m
+   hero: {[m
+[31m-    eyebrow: 'Secretaria Distrital del Hábitat · Bogotá',[m
+[32m+[m[32m    eyebrow: 'Secretaria Distrital del H�bitat � Bogot�',[m
+ [m
+     name: {[m
+       first: 'Vanessa',[m
+[36m@@ -134,17 +133,17 @@[m [mexport const pageContent = {[m
+     },[m
+ [m
+     roles: [[m
+[31m-      'Secretaria Distrital del Hábitat de Bogotá',[m
+[31m-      'Miembro de Junta · IDU · RenoBo · EAAB',[m
+[32m+[m[32m      'Secretaria Distrital del H�bitat de Bogot�',[m
+[32m+[m[32m      'Miembro de Junta � IDU � RenoBo � EAAB',[m
+     ],[m
+ [m
+     tagline:[m
+[31m-      'La vivienda como motor de transformación económica y social en el Sur Global.',[m
+[32m+[m[32m      'La vivienda como motor de transformaci�n econ�mica y social en el Sur Global.',[m
+ [m
+     image: {[m
+       src: '/images/vanessa-velasco-hero.jpg',[m
+[31m-      alt: 'Vanessa Velasco Bernal — Secretaria Distrital del Hábitat de Bogotá',[m
+[31m-      locationLabel: 'Bogotá, Colombia',[m
+[32m+[m[32m      alt: 'Vanessa Velasco Bernal � Secretaria Distrital del H�bitat de Bogot�',[m
+[32m+[m[32m      locationLabel: 'Bogot�, Colombia',[m
+       isPlaceholder: false,[m
+     },[m
+ [m
+[36m@@ -155,24 +154,23 @@[m [mexport const pageContent = {[m
+       },[m
+       {[m
+         label: 'Kit de prensa',[m
+[31m-        href: '/press-kit/Vanessa-Velasco-Press-Kit.zip',[m
+[31m-        download: 'Vanessa-Velasco-Press-Kit.zip',[m
+[31m-      },[m
+[32m+[m[32m        href: '/es/press-kit/',[m
+[32m+[m[32m},[m
+     ],[m
+   },[m
+ [m
+   bio: {[m
+[31m-    label: 'Biografía',[m
+[32m+[m[32m    label: 'Biograf�a',[m
+     headline: 'Liderazgo urbano',[m
+ [m
+     paragraphs: [[m
+[31m-      'Vanessa Velasco Bernal es la Secretaria Distrital del Hábitat de Bogotá, donde lidera la política de vivienda y desarrollo urbano de la ciudad. Arquitecta y urbanista con más de 20 años de experiencia, ha trabajado en América Latina, el Sudeste Asiático y el Caribe diseñando políticas que conectan vivienda, gestión del suelo, movilidad e inclusión económica.',[m
+[32m+[m[32m      'Vanessa Velasco Bernal es la Secretaria Distrital del H�bitat de Bogot�, donde lidera la pol�tica de vivienda y desarrollo urbano de la ciudad. Arquitecta y urbanista con m�s de 20 a�os de experiencia, ha trabajado en Am�rica Latina, el Sudeste Asi�tico y el Caribe dise�ando pol�ticas que conectan vivienda, gesti�n del suelo, movilidad e inclusi�n econ�mica.',[m
+ [m
+[31m-      'Antes de liderar la Secretaría Distrital del Hábitat de Bogotá, trabajó cerca de siete años como especialista urbana en el Banco Mundial, coliderando operaciones en Colombia, Ecuador, Perú, México, Jamaica, Corea e Indonesia, incluyendo un programa de desarrollo territorial por USD 500 millones para Colombia y un proyecto de vivienda resiliente por USD 235 millones en Ecuador. En 2022 fue invitada a dictar la Doryan Winkelman Lecture del programa MSRED de Columbia University.',[m
+[32m+[m[32m      'Antes de liderar la Secretar�a Distrital del H�bitat de Bogot�, trabaj� cerca de siete a�os como especialista urbana en el Banco Mundial, coliderando operaciones en Colombia, Ecuador, Per�, M�xico, Jamaica, Corea e Indonesia, incluyendo un programa de desarrollo territorial por USD 500 millones para Colombia y un proyecto de vivienda resiliente por USD 235 millones en Ecuador. En 2022 fue invitada a dictar la Doryan Winkelman Lecture del programa MSRED de Columbia University.',[m
+ [m
+[31m-      'Su marco de pensamiento entiende la vivienda no como una intervención sectorial aislada, sino como una plataforma para la inclusión económica, la movilidad social y el crecimiento urbano sostenible frente al cambio climático. Esta visión ha sido desarrollada en el Foro Urbano Mundial, en espacios de ONU-Hábitat y en publicaciones con el Banco Mundial.',[m
+[32m+[m[32m      'Su marco de pensamiento entiende la vivienda no como una intervenci�n sectorial aislada, sino como una plataforma para la inclusi�n econ�mica, la movilidad social y el crecimiento urbano sostenible frente al cambio clim�tico. Esta visi�n ha sido desarrollada en el Foro Urbano Mundial, en espacios de ONU-H�bitat y en publicaciones con el Banco Mundial.',[m
+ [m
+[31m-      'Cuenta con una maestría en Administración y Planeación Urbana de la University of Seoul, una maestría en Urbanismo de la Universitat Politècnica de Catalunya en Barcelona y formación complementaria en Wharton y Universität Wien. Preside las juntas directivas de RenoBo y de la Empresa de Acueducto y Alcantarillado de Bogotá, y es miembro de la Junta Directiva del Instituto de Desarrollo Urbano.',[m
+[32m+[m[32m      'Cuenta con una maestr�a en Administraci�n y Planeaci�n Urbana de la University of Seoul, una maestr�a en Urbanismo de la Universitat Polit�cnica de Catalunya en Barcelona y formaci�n complementaria en Wharton y Universit�t Wien. Preside las juntas directivas de RenoBo y de la Empresa de Acueducto y Alcantarillado de Bogot�, y es miembro de la Junta Directiva del Instituto de Desarrollo Urbano.',[m
+     ],[m
+   },[m
+ [m
+[36m@@ -185,20 +183,20 @@[m [mexport const pageContent = {[m
+         count: 37,[m
+         prefix: '',[m
+         suffix: 'K+',[m
+[31m-        label: 'Subsidios entregados · Plan Integrado de Vivienda',[m
+[32m+[m[32m        label: 'Subsidios entregados � Plan Integrado de Vivienda',[m
+       },[m
+       {[m
+         value: 'USD 344M',[m
+         count: 344,[m
+         prefix: 'USD ',[m
+         suffix: 'M',[m
+[31m-        label: 'Inversión liderada · SDHT Bogotá',[m
+[32m+[m[32m        label: 'Inversi�n liderada � SDHT Bogot�',[m
+       },[m
+       {[m
+[31m-        value: '20+ años',[m
+[32m+[m[32m        value: '20+ a�os',[m
+         count: 20,[m
+         prefix: '',[m
+[31m-        suffix: '+ años',[m
+[32m+[m[32m        suffix: '+ a�os',[m
+         label: 'Experiencia en desarrollo urbano',[m
+       },[m
+       {[m
+[36m@@ -206,14 +204,14 @@[m [mexport const pageContent = {[m
+         count: 7,[m
+         prefix: '',[m
+         suffix: '',[m
+[31m-        label: 'Países · Operaciones del Banco Mundial',[m
+[32m+[m[32m        label: 'Pa�ses � Operaciones del Banco Mundial',[m
+       },[m
+       {[m
+         value: 'WUF 13',[m
+         count: null,[m
+         prefix: '',[m
+         suffix: '',[m
+[31m-        label: 'Bakú 2026 · Liderazgo de panel · ONU-Hábitat',[m
+[32m+[m[32m        label: 'Bak� 2026 � Liderazgo de panel � ONU-H�bitat',[m
+       },[m
+     ],[m
+   },[m
+[36m@@ -229,60 +227,60 @@[m [mexport const pageContent = {[m
+   experience: {[m
+ [m
+     timelineTitle: {[m
+[31m-      first: 'De Bogotá',[m
+[31m-      second: 'al mundo',[m
+[32m+[m[32m      first: 'De Bogot�',[m
+[32m+[m[32m      second: 'para el mundo',[m
+     },[m
+     timeline: [[m
+       {[m
+[31m-        period: '2001–06',[m
+[31m-        role: 'Docencia y planeación urbana',[m
+[32m+[m[32m        period: '2001�06',[m
+[32m+[m[32m        role: 'Docencia y planeaci�n urbana',[m
+         detail:[m
+[31m-          'Durante los primeros años de su carrera, Vanessa combinó la práctica de la planeación urbana con la docencia en la Pontificia Universidad Javeriana y la Universidad Nacional de Colombia. Su trabajo se concentró en diseño urbano, planeación regional y en la relación entre Bogotá y su creciente borde metropolitano, incluyendo investigaciones que contribuyeron a una estrategia de ordenamiento para el límite occidental de Bogotá-Región.',[m
+[32m+[m[32m          'Durante los primeros a�os de su carrera, Vanessa combin� la pr�ctica de la planeaci�n urbana con la docencia en la Pontificia Universidad Javeriana y la Universidad Nacional de Colombia. Su trabajo se concentr� en dise�o urbano, planeaci�n regional y en la relaci�n entre Bogot� y su creciente borde metropolitano, incluyendo investigaciones que contribuyeron a una estrategia de ordenamiento para el l�mite occidental de Bogot�-Regi�n.',[m
+       },[m
+       {[m
+[31m-        period: '2007–13',[m
+[31m-        role: 'Liderazgo urbano en el sector público',[m
+[32m+[m[32m        period: '2007�13',[m
+[32m+[m[32m        role: 'Liderazgo urbano en el sector p�blico',[m
+         detail:[m
+[31m-          'En el sector público colombiano, Vanessa trabajó en regeneración basada en el patrimonio, gestión del suelo y renovación urbana a gran escala. En el Ministerio de Cultura coordinó proyectos apoyados por el BID para la recuperación de diez centros históricos. Posteriormente, como Directora Técnica de la Empresa de Renovación Urbana de Bogotá (ERU), contribuyó al desarrollo de proyectos como Estación Central, integrando vivienda asequible, usos mixtos, espacio público y conservación patrimonial.',[m
+[32m+[m[32m          'En el sector p�blico colombiano, Vanessa trabaj� en regeneraci�n basada en el patrimonio, gesti�n del suelo y renovaci�n urbana a gran escala. En el Ministerio de Cultura coordin� proyectos apoyados por el BID para la recuperaci�n de diez centros hist�ricos. Posteriormente, como Directora T�cnica de la Empresa de Renovaci�n Urbana de Bogot� (ERU), contribuy� al desarrollo de proyectos como Estaci�n Central, integrando vivienda asequible, usos mixtos, espacio p�blico y conservaci�n patrimonial.',[m
+       },[m
+       {[m
+[31m-        period: '2013–15',[m
+[32m+[m[32m        period: '2013�15',[m
+         role: 'Corea del Sur',[m
+         detail:[m
+[31m-          'En Corea del Sur, Vanessa cursó una maestría en Administración y Planeación Urbana en la University of Seoul y trabajó como consultora de desarrollo urbano para Korea Land & Housing Corporation (LH). Esta etapa amplió su experiencia en mercados de suelo, política urbana y captura de valor, conectando los desafíos de planeación latinoamericanos con enfoques internacionales de vivienda y desarrollo urbano.',[m
+[32m+[m[32m          'En Corea del Sur, Vanessa curs� una maestr�a en Administraci�n y Planeaci�n Urbana en la University of Seoul y trabaj� como consultora de desarrollo urbano para Korea Land & Housing Corporation (LH). Esta etapa ampli� su experiencia en mercados de suelo, pol�tica urbana y captura de valor, conectando los desaf�os de planeaci�n latinoamericanos con enfoques internacionales de vivienda y desarrollo urbano.',[m
+       },[m
+       {[m
+[31m-        period: '2015–23',[m
+[32m+[m[32m        period: '2015�23',[m
+         role: 'Banco Mundial',[m
+         detail:[m
+[31m-          'En el Banco Mundial, Vanessa brindó apoyo operativo y analítico a proyectos urbanos en Colombia, Perú, Ecuador, México y Jamaica. Su portafolio incluyó política urbana y de vivienda, captura de valor del suelo, regeneración urbana, desarrollo orientado al transporte y desarrollo económico local. También participó en operaciones de vivienda resiliente e inclusiva y lideró o colideró trabajo técnico en iniciativas como Barrios Vitales de Bogotá.',[m
+[32m+[m[32m          'En el Banco Mundial, Vanessa brind� apoyo operativo y anal�tico a proyectos urbanos en Colombia, Per�, Ecuador, M�xico y Jamaica. Su portafolio incluy� pol�tica urbana y de vivienda, captura de valor del suelo, regeneraci�n urbana, desarrollo orientado al transporte y desarrollo econ�mico local. Tambi�n particip� en operaciones de vivienda resiliente e inclusiva y lider� o colider� trabajo t�cnico en iniciativas como Barrios Vitales de Bogot�.',[m
+       },[m
+       {[m
+[31m-        period: '2024–Actualidad',[m
+[31m-        role: 'Secretaria Distrital del Hábitat de Bogotá',[m
+[32m+[m[32m        period: '2024�Actualidad',[m
+[32m+[m[32m        role: 'Secretaria Distrital del H�bitat de Bogot�',[m
+         detail:[m
+[31m-          'Desde enero de 2024, como Secretaria Distrital del Hábitat de Bogotá, Vanessa lidera la agenda de vivienda y revitalización urbana de la ciudad. Su trabajo articula vivienda asequible, mejoramiento de vivienda, gestión del suelo, revitalización de barrios, servicios públicos y resiliencia climática mediante programas como Mi Casa en Bogotá y Revitaliza tu Barrio, ampliando el acceso a vivienda y mejorando los entornos donde viven las personas.',[m
+[32m+[m[32m          'Desde enero de 2024, como Secretaria Distrital del H�bitat de Bogot�, Vanessa lidera la agenda de vivienda y revitalizaci�n urbana de la ciudad. Su trabajo articula vivienda asequible, mejoramiento de vivienda, gesti�n del suelo, revitalizaci�n de barrios, servicios p�blicos y resiliencia clim�tica mediante programas como Mi Casa en Bogot� y Revitaliza tu Barrio, ampliando el acceso a vivienda y mejorando los entornos donde viven las personas.',[m
+       },[m
+     ],[m
+ [m
+     worldBank: {[m
+[31m-      label: 'Trayectoria previa · Grupo Banco Mundial',[m
+[32m+[m[32m      label: 'Trayectoria previa � Grupo Banco Mundial',[m
+ [m
+[31m-      headline: '2015 - 2024\nImpacto multipaís',[m
+[32m+[m[32m      headline: '2015 - 2024\nImpacto multipa�s',[m
+ [m
+       intro:[m
+[31m-        'Entre 2015 y 2024, Vanessa Velasco participó en trabajo analítico y operativo en América Latina, el Caribe y el Sudeste Asiático, especializándose en vivienda, captura de valor del suelo, regeneración urbana, desarrollo territorial y desarrollo orientado al transporte.',[m
+[32m+[m[32m        'Entre 2015 y 2024, Vanessa Velasco particip� en trabajo anal�tico y operativo en Am�rica Latina, el Caribe y el Sudeste Asi�tico, especializ�ndose en vivienda, captura de valor del suelo, regeneraci�n urbana, desarrollo territorial y desarrollo orientado al transporte.',[m
+ [m
+[31m-      interactionHint: '06 proyectos · Selecciona para explorar',[m
+[32m+[m[32m      interactionHint: '06 proyectos � Selecciona para explorar',[m
+ [m
+       projects: [[m
+         {[m
+           geography: 'Colombia',[m
+ [m
+[31m-          name: 'Política de Desarrollo Territorial',[m
+[32m+[m[32m          name: 'Pol�tica de Desarrollo Territorial',[m
+ [m
+           description:[m
+[31m-            'Colideró el apoyo a la política nacional de desarrollo territorial de Colombia, incluyendo estructuración de bonos y diseño institucional.',[m
+[32m+[m[32m            'Colider� el apoyo a la pol�tica nacional de desarrollo territorial de Colombia, incluyendo estructuraci�n de bonos y dise�o institucional.',[m
+ [m
+           amount: 'USD 500M',[m
+ [m
+[36m@@ -293,12 +291,12 @@[m [mexport const pageContent = {[m
+         },[m
+ [m
+         {[m
+[31m-          geography: 'Colombia · Barranquilla + Medellín',[m
+[32m+[m[32m          geography: 'Colombia � Barranquilla + Medell�n',[m
+ [m
+           name: 'Distritos de Financiamiento por Incremento Tributario',[m
+ [m
+           description:[m
+[31m-            'Lideró la implementación de instrumentos TIF para el Malecón del Río en Barranquilla, el Corredor de la 80 y el Distrito de Innovación de Medellín, incluyendo instrumentos de captura de valor del suelo y esquemas para emisión de bonos.',[m
+[32m+[m[32m            'Lider� la implementaci�n de instrumentos TIF para el Malec�n del R�o en Barranquilla, el Corredor de la 80 y el Distrito de Innovaci�n de Medell�n, incluyendo instrumentos de captura de valor del suelo y esquemas para emisi�n de bonos.',[m
+ [m
+           file: {[m
+             label: 'Ver documento',[m
+[36m@@ -307,12 +305,12 @@[m [mexport const pageContent = {[m
+         },[m
+ [m
+         {[m
+[31m-          geography: 'Colombia · Bogotá + Medellín',[m
+[32m+[m[32m          geography: 'Colombia � Bogot� + Medell�n',[m
+ [m
+           name: 'Desarrollo Orientado al Transporte',[m
+ [m
+           description:[m
+[31m-            'Colideró estrategias de desarrollo orientado al transporte para la Línea 1 del Metro de Bogotá, Regiotram de Occidente, el Corredor de la Carrera 80 en Medellín y la regeneración urbana de la Estación Calle 26.',[m
+[32m+[m[32m            'Colider� estrategias de desarrollo orientado al transporte para la L�nea 1 del Metro de Bogot�, Regiotram de Occidente, el Corredor de la Carrera 80 en Medell�n y la regeneraci�n urbana de la Estaci�n Calle 26.',[m
+ [m
+           file: {[m
+             label: 'Ver documento',[m
+[36m@@ -326,7 +324,7 @@[m [mexport const pageContent = {[m
+           name: 'Vivienda Inclusiva y Resiliente',[m
+ [m
+           description:[m
+[31m-            'Colideró financiamiento y asistencia técnica para mejoramiento de vivienda, mejoramiento urbano, infraestructura para la cohesión social y vivienda en alquiler dirigida a poblaciones vulnerables.',[m
+[32m+[m[32m            'Colider� financiamiento y asistencia t�cnica para mejoramiento de vivienda, mejoramiento urbano, infraestructura para la cohesi�n social y vivienda en alquiler dirigida a poblaciones vulnerables.',[m
+ [m
+           amount: 'USD 235M',[m
+ [m
+[36m@@ -337,12 +335,12 @@[m [mexport const pageContent = {[m
+         },[m
+ [m
+         {[m
+[31m-          geography: 'Perú',[m
+[32m+[m[32m          geography: 'Per�',[m
+ [m
+           name: 'Captura de Valor del Suelo y Catastro',[m
+ [m
+           description:[m
+[31m-            'Lideró el desarrollo de instrumentos de captura de valor. Participó en el sistema catastral y en políticas de desarrollo territorial, así como en estudios analíticos para áreas de desarrollo orientado al transporte de la Línea 2 del Metro de Lima.',[m
+[32m+[m[32m            'Lider� el desarrollo de instrumentos de captura de valor. Particip� en el sistema catastral y en pol�ticas de desarrollo territorial, as� como en estudios anal�ticos para �reas de desarrollo orientado al transporte de la L�nea 2 del Metro de Lima.',[m
+ [m
+           file: {[m
+             label: 'Ver documento',[m
+[36m@@ -351,12 +349,12 @@[m [mexport const pageContent = {[m
+         },[m
+ [m
+         {[m
+[31m-          geography: 'México · Jamaica · Indonesia',[m
+[32m+[m[32m          geography: 'M�xico � Jamaica � Indonesia',[m
+ [m
+           name: 'Vivienda y Riesgo entre Regiones',[m
+ [m
+           description:[m
+[31m-            'Lideró asistencia técnica en vivienda asequible en México y definió un piloto de banco de suelo para vivienda en Mérida. Colideró un proyecto de riesgo de desastres en Jamaica y estudios de captura de valor del suelo para Indonesia.',[m
+[32m+[m[32m            'Lider� asistencia t�cnica en vivienda asequible en M�xico y defini� un piloto de banco de suelo para vivienda en M�rida. Colider� un proyecto de riesgo de desastres en Jamaica y estudios de captura de valor del suelo para Indonesia.',[m
+ [m
+           file: {[m
+             label: 'Ver documento',[m
+[36m@@ -365,16 +363,16 @@[m [mexport const pageContent = {[m
+         },[m
+       ],[m
+ [m
+[31m-      // Ambigüedad de fuente: el HTML dice "nearly seven years"[m
+[31m-      // y periodo 2017–2024, pero esta métrica dice "12 years".[m
+[32m+[m[32m      // Ambig�edad de fuente: el HTML dice "nearly seven years"[m
+[32m+[m[32m      // y periodo 2017�2024, pero esta m�trica dice "12 years".[m
+ [m
+       summaryMetrics: [[m
+         {[m
+           value: '7',[m
+[31m-          label: 'Países de operación',[m
+[32m+[m[32m          label: 'Pa�ses de operaci�n',[m
+         },[m
+         {[m
+[31m-          value: '12 años',[m
+[32m+[m[32m          value: '12 a�os',[m
+           label: 'Trayectoria en el Grupo Banco Mundial',[m
+         },[m
+         {[m
+[36m@@ -385,7 +383,7 @@[m [mexport const pageContent = {[m
+ [m
+       featuredLecture: {[m
+         text:[m
+[31m-          "The Doryan Winkelman '86 MSRED Real Estate Development Lecture — presentación de la experiencia de Colombia en desarrollo inmobiliario y urbano ante profesores, estudiantes y profesionales internacionales.",[m
+[32m+[m[32m          "The Doryan Winkelman '86 MSRED Real Estate Development Lecture � presentaci�n de la experiencia de Colombia en desarrollo inmobiliario y urbano ante profesores, estudiantes y profesionales internacionales.",[m
+ [m
+         institution: 'Columbia University',[m
+ [m
+[36m@@ -402,17 +400,17 @@[m [mexport const pageContent = {[m
+       institution: 'Pontificia Universidad Javeriana',[m
+     },[m
+     {[m
+[31m-      credential: 'MSc en Planeación Urbana',[m
+[32m+[m[32m      credential: 'MSc en Planeaci�n Urbana',[m
+       year: '2002',[m
+[31m-      institution: 'Universitat Politècnica de Catalunya, Barcelona',[m
+[32m+[m[32m      institution: 'Universitat Polit�cnica de Catalunya, Barcelona',[m
+     },[m
+     {[m
+[31m-      credential: 'Especialización en Mercados de Suelo',[m
+[32m+[m[32m      credential: 'Especializaci�n en Mercados de Suelo',[m
+       year: '2008',[m
+       institution: 'Universidad Nacional de Colombia',[m
+     },[m
+     {[m
+[31m-      credential: 'MA en Administración Urbana',[m
+[32m+[m[32m      credential: 'MA en Administraci�n Urbana',[m
+       year: '2015',[m
+       institution: 'University of Seoul',[m
+     },[m
+[36m@@ -424,12 +422,12 @@[m [mexport const pageContent = {[m
+     {[m
+       credential: 'Housing School Program',[m
+       year: '2024',[m
+[31m-      institution: 'Universität Wien',[m
+[32m+[m[32m      institution: 'Universit�t Wien',[m
+     },[m
+   ],[m
+ [m
+   boards: {[m
+[31m-    label: 'Juntas directivas activas · desde 2024',[m
+[32m+[m[32m    label: 'Juntas directivas activas � desde 2024',[m
+ [m
+     items: [[m
+       {[m
+[36m@@ -440,59 +438,59 @@[m [mexport const pageContent = {[m
+       {[m
+         organization: 'RenoBo',[m
+         role: 'Presidenta',[m
+[31m-        fullName: 'Agencia de Renovación y Desarrollo Urbano de Bogotá',[m
+[32m+[m[32m        fullName: 'Agencia de Renovaci�n y Desarrollo Urbano de Bogot�',[m
+       },[m
+       {[m
+         organization: 'EAAB',[m
+         role: 'Presidenta',[m
+[31m-        fullName: 'Empresa de Acueducto y Alcantarillado de Bogotá',[m
+[32m+[m[32m        fullName: 'Empresa de Acueducto y Alcantarillado de Bogot�',[m
+       },[m
+     ],[m
+   },[m
+ [m
+   policyWork: {[m
+[31m-    label: 'Política pública',[m
+[32m+[m[32m    label: 'Pol�tica p�blica',[m
+ [m
+     headline:[m
+[31m-      'La vivienda como plataforma para la transformación urbana',[m
+[32m+[m[32m      'La vivienda como plataforma para la transformaci�n urbana',[m
+ [m
+     framing:[m
+[31m-      'La política de vivienda no puede abordarse de manera aislada. Debe articularse con la gestión del suelo, los sistemas de movilidad, el acceso a servicios públicos, la sostenibilidad ambiental y la protección social, posicionando la vivienda como un catalizador de oportunidades y no como una intervención independiente.',[m
+[32m+[m[32m      'La pol�tica de vivienda no puede abordarse de manera aislada. Debe articularse con la gesti�n del suelo, los sistemas de movilidad, el acceso a servicios p�blicos, la sostenibilidad ambiental y la protecci�n social, posicionando la vivienda como un catalizador de oportunidades y no como una intervenci�n independiente.',[m
+ [m
+     programs: [[m
+       {[m
+[31m-        category: 'Política principal de vivienda',[m
+[32m+[m[32m        category: 'Pol�tica principal de vivienda',[m
+ [m
+[31m-        name: 'Mi Casa en Bogotá',[m
+[32m+[m[32m        name: 'Mi Casa en Bogot�',[m
+ [m
+         description:[m
+[31m-          'Una política distrital integral de vivienda que aborda el 61% del déficit habitacional de la ciudad mediante 8 programas diferenciados dirigidos tanto a la demanda como a la oferta a lo largo de la cadena de valor de la vivienda. La inversión se triplicó frente a administraciones anteriores.',[m
+[32m+[m[32m          'Una pol�tica distrital integral de vivienda que aborda el 61% del d�ficit habitacional de la ciudad mediante 8 programas diferenciados dirigidos tanto a la demanda como a la oferta a lo largo de la cadena de valor de la vivienda. La inversi�n se triplic� frente a administraciones anteriores.',[m
+ [m
+         images: [[m
+           {[m
+             src: '/images/projects/micasa1.jpg',[m
+[31m-            alt: 'Mi Casa en Bogotá',[m
+[32m+[m[32m            alt: 'Mi Casa en Bogot�',[m
+             position: '20% center',[m
+           },[m
+           {[m
+             src: '/images/projects/micasa2.jpeg',[m
+[31m-            alt: 'Mi Casa en Bogotá',[m
+[32m+[m[32m            alt: 'Mi Casa en Bogot�',[m
+           },[m
+           {[m
+             src: '/images/projects/micasa3.jpeg',[m
+[31m-            alt: 'Mi Casa en Bogotá',[m
+[32m+[m[32m            alt: 'Mi Casa en Bogot�',[m
+             position: '70% center',[m
+           },[m
+           {[m
+             src: '/images/projects/micasa4.jpeg',[m
+[31m-            alt: 'Mi Casa en Bogotá',[m
+[32m+[m[32m            alt: 'Mi Casa en Bogot�',[m
+             position: '90% center',[m
+           },[m
+         ],[m
+ [m
+         link: {[m
+           label: 'Explorar proyecto',[m
+[31m-          href: 'https://habitatbogota.gov.co/view/mi-casa-bogota-en',[m
+[32m+[m[32m          href: 'https://habitatbogota.gov.co/view/mi-casa-bogota',[m
+         },[m
+ [m
+         stats: [[m
+[36m@@ -502,7 +500,7 @@[m [mexport const pageContent = {[m
+           },[m
+           {[m
+             value: 'USD 250M',[m
+[31m-            label: 'Inversión a 2027',[m
+[32m+[m[32m            label: 'Inversi�n a 2027',[m
+           },[m
+           {[m
+             value: '8',[m
+[36m@@ -512,12 +510,12 @@[m [mexport const pageContent = {[m
+       },[m
+ [m
+       {[m
+[31m-        category: 'Estrategia de revitalización urbana',[m
+[32m+[m[32m        category: 'Estrategia de revitalizaci�n urbana',[m
+ [m
+         name: 'Revitaliza tu Barrio',[m
+ [m
+         description:[m
+[31m-          'Una estrategia de revitalización de 75 barrios en 20 zonas, basada en principios de construcción sostenible, cohesión social y proximidad estratégica a corredores de Metro, BRT y Metrocable. Las intervenciones se coordinan en áreas de influencia de 400 metros alrededor de las redes de movilidad.',[m
+[32m+[m[32m          'Una estrategia de revitalizaci�n de 75 barrios en 20 zonas, basada en principios de construcci�n sostenible, cohesi�n social y proximidad estrat�gica a corredores de Metro, BRT y Metrocable. Las intervenciones se coordinan en �reas de influencia de 400 metros alrededor de las redes de movilidad.',[m
+ [m
+         images: [[m
+           {[m
+[36m@@ -543,7 +541,7 @@[m [mexport const pageContent = {[m
+ [m
+         link: {[m
+           label: 'Explorar proyecto',[m
+[31m-          href: 'https://habitatbogota.gov.co/view/revitalizacion-en',[m
+[32m+[m[32m          href: 'https://habitatbogota.gov.co/view/Revitalizacion',[m
+         },[m
+ [m
+         stats: [[m
+[36m@@ -553,11 +551,11 @@[m [mexport const pageContent = {[m
+           },[m
+           {[m
+             value: 'USD 94M',[m
+[31m-            label: 'Inversión a 2027',[m
+[32m+[m[32m            label: 'Inversi�n a 2027',[m
+           },[m
+           {[m
+             value: '18',[m
+[31m-            label: 'Áreas de revitalización',[m
+[32m+[m[32m            label: '�reas de revitalizaci�n',[m
+           },[m
+         ],[m
+       },[m
+[36m@@ -567,32 +565,32 @@[m [mexport const pageContent = {[m
+       {[m
+         value: '37,000+',[m
+         label:[m
+[31m-          'Familias con soluciones habitacionales en 24 meses — superando cuatro años completos de cualquier administración anterior',[m
+[32m+[m[32m          'Familias con soluciones habitacionales en 24 meses � superando cuatro a�os completos de cualquier administraci�n anterior',[m
+       },[m
+       {[m
+         value: '60%',[m
+         label:[m
+[31m-          'De los subsidios benefician a hogares de menores ingresos que reciben hasta 1,5 salarios mínimos',[m
+[32m+[m[32m          'De los subsidios benefician a hogares de menores ingresos que reciben hasta 1,5 salarios m�nimos',[m
+       },[m
+       {[m
+         value: '52%',[m
+         label:[m
+[31m-          'De los créditos de vivienda fueron desembolsados a mujeres · el acceso femenino a propiedad de vivienda aumentó 19% en 2025',[m
+[32m+[m[32m          'De los cr�ditos de vivienda fueron desembolsados a mujeres � el acceso femenino a propiedad de vivienda aument� 19% en 2025',[m
+       },[m
+       {[m
+         value: '89,769',[m
+         label:[m
+[31m-          'Empleos directos generados · +33.248 indirectos · el sector construcción creció 30% anual',[m
+[32m+[m[32m          'Empleos directos generados � +33.248 indirectos � el sector construcci�n creci� 30% anual',[m
+       },[m
+       {[m
+[31m-        value: '265K m²',[m
+[32m+[m[32m        value: '265K m�',[m
+         label:[m
+[31m-          'De espacio público y equipamientos sociales mejorados · aproximadamente 1 millón de personas beneficiadas',[m
+[32m+[m[32m          'De espacio p�blico y equipamientos sociales mejorados � aproximadamente 1 mill�n de personas beneficiadas',[m
+       },[m
+       {[m
+[31m-        value: '3×',[m
+[32m+[m[32m        value: '3�',[m
+         label:[m
+[31m-          'La inversión pública en vivienda se triplicó durante la actual administración frente a gobiernos anteriores',[m
+[32m+[m[32m          'La inversi�n p�blica en vivienda se triplic� durante la actual administraci�n frente a gobiernos anteriores',[m
+       },[m
+     ],[m
+   },[m
+[36m@@ -600,54 +598,54 @@[m [mexport const pageContent = {[m
+   publications: {[m
+     label: 'Publicaciones',[m
+ [m
+[31m-    headline: 'Política pública por escrito',[m
+[32m+[m[32m    headline: 'Pol�tica p�blica por escrito',[m
+ [m
+     featured: {[m
+[31m-      label: 'Destacado · Foro Urbano Mundial 13 · 2026',[m
+[32m+[m[32m      label: 'Destacado � Foro Urbano Mundial 13 � 2026',[m
+ [m
+       title:[m
+[31m-        'Mi Casa en Bogotá: la vivienda como motor de transformación económica y social en el Sur Global',[m
+[32m+[m[32m        'Mi Casa en Bogot�: la vivienda como motor de transformaci�n econ�mica y social en el Sur Global',[m
+ [m
+       meta:[m
+[31m-        'Nota conceptual · Secretaría Distrital del Hábitat de Bogotá · Mayo de 2026',[m
+[32m+[m[32m        'Nota conceptual � Secretar�a Distrital del H�bitat de Bogot� � Mayo de 2026',[m
+ [m
+       excerpt:[m
+[31m-        'El modelo de vivienda de Bogotá presentado como un enfoque integral de acceso, desarrollo urbano y transformación económica y social en el Sur Global.',[m
+[32m+[m[32m        'El modelo de vivienda de Bogot� presentado como un enfoque integral de acceso, desarrollo urbano y transformaci�n econ�mica y social en el Sur Global.',[m
+ [m
+       file: {[m
+[31m-        label: 'Ver nota técnica',[m
+[32m+[m[32m        label: 'Ver nota t�cnica',[m
+         href: 'https://habitatbogota.gov.co/view/mi-casa-bogota-en',[m
+       },[m
+     },[m
+ [m
+     filters: [[m
+       'Todos',[m
+[31m-      'Informes e investigación',[m
+[31m-      'Política y notas técnicas',[m
+[31m-      'Opinión y artículos',[m
+[32m+[m[32m      'Informes e investigaci�n',[m
+[32m+[m[32m      'Pol�tica y notas t�cnicas',[m
+[32m+[m[32m      'Opini�n y art�culos',[m
+       'Medios internacionales',[m
+[31m-      'Boletín',[m
+[32m+[m[32m      'Bolet�n',[m
+     ],[m
+ [m
+     items: [[m
+       /* =======================================================[m
+[31m-         INFORMES E INVESTIGACIÓN[m
+[32m+[m[32m         INFORMES E INVESTIGACI�N[m
+          ======================================================= */[m
+ [m
+       {[m
+         type: 'Informe final',[m
+ [m
+         source:[m
+[31m-          'Grupo Banco Mundial · City Climate Finance Gap Fund · 2023',[m
+[32m+[m[32m          'Grupo Banco Mundial � City Climate Finance Gap Fund � 2023',[m
+ [m
+         title:[m
+[31m-          'Barrios Vitales bajos en carbono de Bogotá: estudio de caso de la estrategia Barrios Vitales',[m
+[32m+[m[32m          'Barrios Vitales bajos en carbono de Bogot�: estudio de caso de la estrategia Barrios Vitales',[m
+ [m
+         excerpt:[m
+[31m-          'Un modelo a escala barrial que conecta movilidad sostenible, espacio público y desarrollo bajo en carbono para impulsar una transformación urbana más accesible y resiliente.',[m
+[32m+[m[32m          'Un modelo a escala barrial que conecta movilidad sostenible, espacio p�blico y desarrollo bajo en carbono para impulsar una transformaci�n urbana m�s accesible y resiliente.',[m
+ [m
+         categories: [[m
+[31m-          'Informes e investigación',[m
+[32m+[m[32m          'Informes e investigaci�n',[m
+         ],[m
+ [m
+         file: {[m
+[36m@@ -660,16 +658,16 @@[m [mexport const pageContent = {[m
+         type: 'Informe final',[m
+ [m
+         source:[m
+[31m-          'Grupo Banco Mundial · PPIAF · 2022',[m
+[32m+[m[32m          'Grupo Banco Mundial � PPIAF � 2022',[m
+ [m
+         title:[m
+[31m-          'Uso de la captura de valor del suelo para financiar la renovación urbana: casos piloto de Medellín y Barranquilla',[m
+[32m+[m[32m          'Uso de la captura de valor del suelo para financiar la renovaci�n urbana: casos piloto de Medell�n y Barranquilla',[m
+ [m
+         excerpt:[m
+[31m-          'Un marco práctico para aplicar financiamiento por incremento tributario y captura de valor del suelo a la regeneración urbana, basado en casos piloto de Medellín y Barranquilla.',[m
+[32m+[m[32m          'Un marco pr�ctico para aplicar financiamiento por incremento tributario y captura de valor del suelo a la regeneraci�n urbana, basado en casos piloto de Medell�n y Barranquilla.',[m
+ [m
+         categories: [[m
+[31m-          'Informes e investigación',[m
+[32m+[m[32m          'Informes e investigaci�n',[m
+         ],[m
+ [m
+         file: {[m
+[36m@@ -682,16 +680,16 @@[m [mexport const pageContent = {[m
+         type: 'Informe',[m
+ [m
+         source:[m
+[31m-          'Grupo Banco Mundial · Fedesarrollo · Septiembre de 2021',[m
+[32m+[m[32m          'Grupo Banco Mundial � Fedesarrollo � Septiembre de 2021',[m
+ [m
+         title:[m
+[31m-          'Encontrar un equilibrio: hacia una política integral de vivienda para una Colombia pos-COVID',[m
+[32m+[m[32m          'Encontrar un equilibrio: hacia una pol�tica integral de vivienda para una Colombia pos-COVID',[m
+ [m
+         excerpt:[m
+[31m-          'Una evaluación integral de la política de vivienda de Colombia, con recomendaciones sobre asequibilidad, mejoramiento de vivienda, resiliencia y una mayor coordinación institucional.',[m
+[32m+[m[32m          'Una evaluaci�n integral de la pol�tica de vivienda de Colombia, con recomendaciones sobre asequibilidad, mejoramiento de vivienda, resiliencia y una mayor coordinaci�n institucional.',[m
+ [m
+         categories: [[m
+[31m-          'Informes e investigación',[m
+[32m+[m[32m          'Informes e investigaci�n',[m
+         ],[m
+ [m
+         file: {[m
+[36m@@ -701,49 +699,49 @@[m [mexport const pageContent = {[m
+       },[m
+ [m
+       /* =======================================================[m
+[31m-         POLÍTICA Y NOTAS TÉCNICAS[m
+[32m+[m[32m         POL�TICA Y NOTAS T�CNICAS[m
+          ======================================================= */[m
+ [m
+       {[m
+[31m-        type: 'Presentación de política pública',[m
+[32m+[m[32m        type: 'Presentaci�n de pol�tica p�blica',[m
+ [m
+         source:[m
+[31m-          'Secretaría Distrital del Hábitat de Bogotá · Septiembre de 2026',[m
+[32m+[m[32m          'Secretar�a Distrital del H�bitat de Bogot� � Septiembre de 2026',[m
+ [m
+         title:[m
+[31m-          'Bogotá: un plan de vivienda construido alrededor de trayectorias reales',[m
+[32m+[m[32m          'Bogot�: un plan de vivienda construido alrededor de trayectorias reales',[m
+ [m
+         excerpt:[m
+[31m-          'Una mirada basada en datos sobre cómo Bogotá conecta suelo, oferta de vivienda, financiación y capacidad de los hogares dentro de una misma trayectoria habitacional.',[m
+[32m+[m[32m          'Una mirada basada en datos sobre c�mo Bogot� conecta suelo, oferta de vivienda, financiaci�n y capacidad de los hogares dentro de una misma trayectoria habitacional.',[m
+ [m
+         categories: [[m
+[31m-          'Política y notas técnicas',[m
+[32m+[m[32m          'Pol�tica y notas t�cnicas',[m
+         ],[m
+ [m
+         file: {[m
+[31m-          label: 'Ver presentación',[m
+[32m+[m[32m          label: 'Ver presentaci�n',[m
+           href: 'https://es.linkedin.com/posts/vanessa-alexandra-velasco-bernal-4614b55b_bogot%C3%A1-un-plan-de-vivienda-basado-en-trayectorias-activity-7502725257980698624-Z1J_',[m
+         },[m
+       },[m
+ [m
+       {[m
+[31m-        type: 'Nota técnica',[m
+[32m+[m[32m        type: 'Nota t�cnica',[m
+ [m
+         source:[m
+[31m-          'Grupo Banco Mundial · Ministerio de Vivienda de Colombia · Enero de 2020',[m
+[32m+[m[32m          'Grupo Banco Mundial � Ministerio de Vivienda de Colombia � Enero de 2020',[m
+ [m
+         title:[m
+[31m-          'Recomendaciones para implementar instrumentos de gestión del suelo y financiación urbana en Colombia',[m
+[32m+[m[32m          'Recomendaciones para implementar instrumentos de gesti�n del suelo y financiaci�n urbana en Colombia',[m
+ [m
+         excerpt:[m
+[31m-          'Orientaciones para ciudades colombianas sobre gestión del suelo, captura de valor e instrumentos financieros capaces de movilizar recursos para infraestructura y renovación urbana.',[m
+[32m+[m[32m          'Orientaciones para ciudades colombianas sobre gesti�n del suelo, captura de valor e instrumentos financieros capaces de movilizar recursos para infraestructura y renovaci�n urbana.',[m
+ [m
+         categories: [[m
+[31m-          'Política y notas técnicas',[m
+[32m+[m[32m          'Pol�tica y notas t�cnicas',[m
+         ],[m
+ [m
+         file: {[m
+[31m-          label: 'Ver nota técnica',[m
+[32m+[m[32m          label: 'Ver nota t�cnica',[m
+           href: 'https://minvivienda.gov.co/node/39882',[m
+         },[m
+       },[m
+[36m@@ -752,16 +750,16 @@[m [mexport const pageContent = {[m
+         type: 'Documento ejecutivo',[m
+ [m
+         source:[m
+[31m-          'Grupo Banco Mundial · PPIAF · Junio de 2020',[m
+[32m+[m[32m          'Grupo Banco Mundial � PPIAF � Junio de 2020',[m
+ [m
+         title:[m
+           'Instrumentos innovadores para financiar el desarrollo urbano en ciudades colombianas',[m
+ [m
+         excerpt:[m
+[31m-          'Una revisión de mecanismos de financiación basados en suelo diseñados para ayudar a las ciudades colombianas a financiar infraestructura, regeneración urbana y un desarrollo más inclusivo.',[m
+[32m+[m[32m          'Una revisi�n de mecanismos de financiaci�n basados en suelo dise�ados para ayudar a las ciudades colombianas a financiar infraestructura, regeneraci�n urbana y un desarrollo m�s inclusivo.',[m
+ [m
+         categories: [[m
+[31m-          'Política y notas técnicas',[m
+[32m+[m[32m          'Pol�tica y notas t�cnicas',[m
+         ],[m
+ [m
+         file: {[m
+[36m@@ -771,23 +769,23 @@[m [mexport const pageContent = {[m
+       },[m
+ [m
+       /* =======================================================[m
+[31m-         OPINIÓN Y ARTÍCULOS[m
+[32m+[m[32m         OPINI�N Y ART�CULOS[m
+          ======================================================= */[m
+ [m
+       {[m
+[31m-        type: 'Columna de opinión',[m
+[32m+[m[32m        type: 'Columna de opini�n',[m
+ [m
+         source:[m
+[31m-          'La República · Julio de 2026',[m
+[32m+[m[32m          'La Rep�blica � Julio de 2026',[m
+ [m
+         title:[m
+           'Vivienda social, una plataforma de oportunidades',[m
+ [m
+         excerpt:[m
+[31m-          'Cómo la política de vivienda de Bogotá conecta subsidios, ahorro, financiación y coordinación público-privada para convertir el acceso a la vivienda en una oportunidad económica y social.',[m
+[32m+[m[32m          'C�mo la pol�tica de vivienda de Bogot� conecta subsidios, ahorro, financiaci�n y coordinaci�n p�blico-privada para convertir el acceso a la vivienda en una oportunidad econ�mica y social.',[m
+ [m
+         categories: [[m
+[31m-          'Opinión y artículos',[m
+[32m+[m[32m          'Opini�n y art�culos',[m
+         ],[m
+ [m
+         file: {[m
+[36m@@ -797,19 +795,19 @@[m [mexport const pageContent = {[m
+       },[m
+ [m
+       {[m
+[31m-        type: 'Columna de opinión',[m
+[32m+[m[32m        type: 'Columna de opini�n',[m
+ [m
+         source:[m
+[31m-          'La República · Abril de 2026',[m
+[32m+[m[32m          'La Rep�blica � Abril de 2026',[m
+ [m
+         title:[m
+[31m-          'Vivienda: el impulso que mueve la economía y transforma vidas en Bogotá',[m
+[32m+[m[32m          'Vivienda: el impulso que mueve la econom�a y transforma vidas en Bogot�',[m
+ [m
+         excerpt:[m
+[31m-          'Por qué invertir en vivienda genera empleo, moviliza capital privado y amplía la movilidad social, y cómo Mi Casa en Bogotá contribuye a sostener el sector.',[m
+[32m+[m[32m          'Por qu� invertir en vivienda genera empleo, moviliza capital privado y ampl�a la movilidad social, y c�mo Mi Casa en Bogot� contribuye a sostener el sector.',[m
+ [m
+         categories: [[m
+[31m-          'Opinión y artículos',[m
+[32m+[m[32m          'Opini�n y art�culos',[m
+         ],[m
+ [m
+         file: {[m
+[36m@@ -819,19 +817,19 @@[m [mexport const pageContent = {[m
+       },[m
+ [m
+       {[m
+[31m-        type: 'Columna de opinión',[m
+[32m+[m[32m        type: 'Columna de opini�n',[m
+ [m
+         source:[m
+[31m-          'El Tiempo · Abril de 2026',[m
+[32m+[m[32m          'El Tiempo � Abril de 2026',[m
+ [m
+         title:[m
+           'Vivienda: el motor que Colombia no puede apagar',[m
+ [m
+         excerpt:[m
+[31m-          'Una defensa de la vivienda como motor nacional de empleo, crecimiento económico y bienestar de los hogares durante un periodo desafiante para el sector.',[m
+[32m+[m[32m          'Una defensa de la vivienda como motor nacional de empleo, crecimiento econ�mico y bienestar de los hogares durante un periodo desafiante para el sector.',[m
+ [m
+         categories: [[m
+[31m-          'Opinión y artículos',[m
+[32m+[m[32m          'Opini�n y art�culos',[m
+         ],[m
+ [m
+         file: {[m
+[36m@@ -841,19 +839,19 @@[m [mexport const pageContent = {[m
+       },[m
+ [m
+       {[m
+[31m-        type: 'Columna de opinión',[m
+[32m+[m[32m        type: 'Columna de opini�n',[m
+ [m
+         source:[m
+[31m-          'La República · Marzo de 2026 · ES',[m
+[32m+[m[32m          'La Rep�blica � Marzo de 2026 � ES',[m
+ [m
+         title:[m
+[31m-          'Para seguir produciendo resultados, Bogotá necesita reglas claras en vivienda',[m
+[32m+[m[32m          'Para seguir produciendo resultados, Bogot� necesita reglas claras en vivienda',[m
+ [m
+         excerpt:[m
+[31m-          'Por qué la certeza regulatoria es esencial para mantener la producción de vivienda social, proteger a las familias y preservar la viabilidad financiera de nuevos proyectos habitacionales.',[m
+[32m+[m[32m          'Por qu� la certeza regulatoria es esencial para mantener la producci�n de vivienda social, proteger a las familias y preservar la viabilidad financiera de nuevos proyectos habitacionales.',[m
+ [m
+         categories: [[m
+[31m-          'Opinión y artículos',[m
+[32m+[m[32m          'Opini�n y art�culos',[m
+         ],[m
+ [m
+         file: {[m
+[36m@@ -863,19 +861,19 @@[m [mexport const pageContent = {[m
+       },[m
+ [m
+       {[m
+[31m-        type: 'Columna de opinión',[m
+[32m+[m[32m        type: 'Columna de opini�n',[m
+ [m
+         source:[m
+[31m-          'Semana · Febrero de 2026 · ES',[m
+[32m+[m[32m          'Semana � Febrero de 2026 � ES',[m
+ [m
+         title:[m
+[31m-          'El plan de vivienda de Bogotá transforma vidas y mueve la economía de la ciudad',[m
+[32m+[m[32m          'El plan de vivienda de Bogot� transforma vidas y mueve la econom�a de la ciudad',[m
+ [m
+         excerpt:[m
+[31m-          'Cómo los niveles récord de iniciación de vivienda, la inversión en vivienda social y un mayor apoyo a los hogares se traducen en empleo, actividad económica y mejores posibilidades de acceso a vivienda.',[m
+[32m+[m[32m          'C�mo los niveles r�cord de iniciaci�n de vivienda, la inversi�n en vivienda social y un mayor apoyo a los hogares se traducen en empleo, actividad econ�mica y mejores posibilidades de acceso a vivienda.',[m
+ [m
+         categories: [[m
+[31m-          'Opinión y artículos',[m
+[32m+[m[32m          'Opini�n y art�culos',[m
+         ],[m
+ [m
+         file: {[m
+[36m@@ -885,45 +883,45 @@[m [mexport const pageContent = {[m
+       },[m
+ [m
+       {[m
+[31m-        type: 'Artículo',[m
+[32m+[m[32m        type: 'Art�culo',[m
+ [m
+         source:[m
+[31m-          'Grupo Banco Mundial · Julio de 2023',[m
+[32m+[m[32m          'Grupo Banco Mundial � Julio de 2023',[m
+ [m
+         title:[m
+           'Fortaleciendo la vivienda y el desarrollo urbano en Colombia',[m
+ [m
+         excerpt:[m
+[31m-          'Cinco prioridades para ampliar la vivienda resiliente, el mejoramiento de barrios y la construcción sostenible en la Colombia urbana y rural.',[m
+[32m+[m[32m          'Cinco prioridades para ampliar la vivienda resiliente, el mejoramiento de barrios y la construcci�n sostenible en la Colombia urbana y rural.',[m
+ [m
+         categories: [[m
+[31m-          'Opinión y artículos',[m
+[32m+[m[32m          'Opini�n y art�culos',[m
+         ],[m
+ [m
+         file: {[m
+[31m-          label: 'Leer artículo',[m
+[32m+[m[32m          label: 'Leer art�culo',[m
+           href: 'https://blogs.worldbank.org/es/latinamerica/vivienda-desarrollo-urbano-colombia',[m
+         },[m
+       },[m
+ [m
+       {[m
+[31m-        type: 'Artículo',[m
+[32m+[m[32m        type: 'Art�culo',[m
+ [m
+         source:[m
+[31m-          'Grupo Banco Mundial · Julio de 2021',[m
+[32m+[m[32m          'Grupo Banco Mundial � Julio de 2021',[m
+ [m
+         title:[m
+[31m-          'Cómo podemos ayudar a las ciudades latinoamericanas a financiar el desarrollo urbano',[m
+[32m+[m[32m          'C�mo podemos ayudar a las ciudades latinoamericanas a financiar el desarrollo urbano',[m
+ [m
+         excerpt:[m
+[31m-          'Una introducción al financiamiento por incremento tributario y a su potencial para movilizar inversión destinada a infraestructura y renovación urbana en ciudades latinoamericanas.',[m
+[32m+[m[32m          'Una introducci�n al financiamiento por incremento tributario y a su potencial para movilizar inversi�n destinada a infraestructura y renovaci�n urbana en ciudades latinoamericanas.',[m
+ [m
+         categories: [[m
+[31m-          'Opinión y artículos',[m
+[32m+[m[32m          'Opini�n y art�culos',[m
+         ],[m
+ [m
+         file: {[m
+[31m-          label: 'Leer artículo',[m
+[32m+[m[32m          label: 'Leer art�culo',[m
+           href: 'https://blogs.worldbank.org/es/ppps/como-podemos-ayudar-financiar-el-desarrollo-urbano-en-las-ciudades-latinoamericanas',[m
+         },[m
+       },[m
+[36m@@ -936,13 +934,13 @@[m [mexport const pageContent = {[m
+         type: 'Entrevista',[m
+ [m
+         source:[m
+[31m-          'URBANET · 25 de agosto de 2026 · EN',[m
+[32m+[m[32m          'URBANET � 25 de agosto de 2026 � EN',[m
+ [m
+         title:[m
+[31m-          'La estrategia de vivienda de Bogotá para una transformación urbana inclusiva',[m
+[32m+[m[32m          'La estrategia de vivienda de Bogot� para una transformaci�n urbana inclusiva',[m
+ [m
+         excerpt:[m
+[31m-          'Una conversación sobre cómo Bogotá conecta vivienda, revitalización urbana, movilidad y servicios públicos para ampliar el acceso y las oportunidades.',[m
+[32m+[m[32m          'Una conversaci�n sobre c�mo Bogot� conecta vivienda, revitalizaci�n urbana, movilidad y servicios p�blicos para ampliar el acceso y las oportunidades.',[m
+ [m
+         categories: [[m
+           'Medios internacionales',[m
+[36m@@ -955,23 +953,23 @@[m [mexport const pageContent = {[m
+       },[m
+ [m
+       {[m
+[31m-        type: 'Artículo internacional',[m
+[32m+[m[32m        type: 'Art�culo internacional',[m
+ [m
+         source:[m
+[31m-          'Reuters · 3 de agosto de 2026 · EN',[m
+[32m+[m[32m          'Reuters � 3 de agosto de 2026 � EN',[m
+ [m
+         title:[m
+[31m-          'Cómo Bogotá ofrece un modelo para un crecimiento urbano resiliente e inteligente frente al clima',[m
+[32m+[m[32m          'C�mo Bogot� ofrece un modelo para un crecimiento urbano resiliente e inteligente frente al clima',[m
+ [m
+         excerpt:[m
+[31m-          'Cobertura internacional del enfoque integral de Bogotá para el crecimiento resiliente frente al clima mediante vivienda, infraestructura y revitalización barrial.',[m
+[32m+[m[32m          'Cobertura internacional del enfoque integral de Bogot� para el crecimiento resiliente frente al clima mediante vivienda, infraestructura y revitalizaci�n barrial.',[m
+ [m
+         categories: [[m
+           'Medios internacionales',[m
+         ],[m
+ [m
+         file: {[m
+[31m-          label: 'Leer artículo',[m
+[32m+[m[32m          label: 'Leer art�culo',[m
+           href: 'https://www.reuters.com/sustainability/society-equity/how-bogota-offers-blueprint-climate-smart-resilient-urban-growth--ecmii-2026-08-03/',[m
+         },[m
+       },[m
+[36m@@ -980,13 +978,13 @@[m [mexport const pageContent = {[m
+         type: 'Entrevista',[m
+ [m
+         source:[m
+[31m-          'Streetsblog · 29 de julio de 2026 · EN',[m
+[32m+[m[32m          'Streetsblog � 29 de julio de 2026 � EN',[m
+ [m
+         title:[m
+[31m-          'Carta desde Bogotá: cómo una gran capital mundial pone primero la vivienda, el transporte y el espacio público',[m
+[32m+[m[32m          'Carta desde Bogot�: c�mo una gran capital mundial pone primero la vivienda, el transporte y el espacio p�blico',[m
+ [m
+         excerpt:[m
+[31m-          'Una entrevista sobre el modelo de Bogotá para conectar vivienda asequible, transporte, espacio público, servicios públicos y participación comunitaria.',[m
+[32m+[m[32m          'Una entrevista sobre el modelo de Bogot� para conectar vivienda asequible, transporte, espacio p�blico, servicios p�blicos y participaci�n comunitaria.',[m
+ [m
+         categories: [[m
+           'Medios internacionales',[m
+[36m@@ -1002,13 +1000,13 @@[m [mexport const pageContent = {[m
+         type: 'Podcast',[m
+ [m
+         source:[m
+[31m-          'CoMotion · 17 de junio de 2026 · EN',[m
+[32m+[m[32m          'CoMotion � 17 de junio de 2026 � EN',[m
+ [m
+         title:[m
+           'Fast Forward Podcast',[m
+ [m
+         excerpt:[m
+[31m-          'Una conversación con Vanessa Velasco sobre la agenda de vivienda y transformación urbana de Bogotá.',[m
+[32m+[m[32m          'Una conversaci�n con Vanessa Velasco sobre la agenda de vivienda y transformaci�n urbana de Bogot�.',[m
+ [m
+         categories: [[m
+           'Medios internacionales',[m
+[36m@@ -1021,159 +1019,159 @@[m [mexport const pageContent = {[m
+       },[m
+ [m
+       {[m
+[31m-        type: 'Artículo internacional',[m
+[32m+[m[32m        type: 'Art�culo internacional',[m
+ [m
+         source:[m
+[31m-          'Cities Alliance · 17 de junio de 2026 · EN',[m
+[32m+[m[32m          'Cities Alliance � 17 de junio de 2026 � EN',[m
+ [m
+         title:[m
+[31m-          'Bogotá: conectando vivienda, cuidado y autonomía económica de las mujeres',[m
+[32m+[m[32m          'Bogot�: conectando vivienda, cuidado y autonom�a econ�mica de las mujeres',[m
+ [m
+         excerpt:[m
+[31m-          'Cómo Bogotá conecta la política de vivienda con los sistemas de cuidado y la inclusión financiera para fortalecer la autonomía económica de las mujeres.',[m
+[32m+[m[32m          'C�mo Bogot� conecta la pol�tica de vivienda con los sistemas de cuidado y la inclusi�n financiera para fortalecer la autonom�a econ�mica de las mujeres.',[m
+ [m
+         categories: [[m
+           'Medios internacionales',[m
+         ],[m
+ [m
+         file: {[m
+[31m-          label: 'Leer artículo',[m
+[32m+[m[32m          label: 'Leer art�culo',[m
+           href: 'https://www.citiesalliance.org/newsroom/news/urban-news/bogota-connecting-housing-care-and-womens-economic-autonomy',[m
+         },[m
+       },[m
+ [m
+       {[m
+[31m-        type: 'Artículo de autoría',[m
+[32m+[m[32m        type: 'Art�culo de autor�a',[m
+ [m
+         source:[m
+[31m-          'WRI TheCityFix · 9 de junio de 2026 · EN',[m
+[32m+[m[32m          'WRI TheCityFix � 9 de junio de 2026 � EN',[m
+ [m
+         title:[m
+[31m-          'La visión de Bogotá para un futuro urbano resiliente frente al clima',[m
+[32m+[m[32m          'La visi�n de Bogot� para un futuro urbano resiliente frente al clima',[m
+ [m
+         excerpt:[m
+[31m-          'El enfoque integral de Bogotá posiciona la vivienda, los servicios públicos y la revitalización de barrios como herramientas de resiliencia climática, inclusión y equidad social.',[m
+[32m+[m[32m          'El enfoque integral de Bogot� posiciona la vivienda, los servicios p�blicos y la revitalizaci�n de barrios como herramientas de resiliencia clim�tica, inclusi�n y equidad social.',[m
+ [m
+         categories: [[m
+           'Medios internacionales',[m
+         ],[m
+ [m
+         file: {[m
+[31m-          label: 'Leer artículo',[m
+[32m+[m[32m          label: 'Leer art�culo',[m
+           href: 'https://thecityfix.com/blog/bogot%C3%A1s-vision-climate-resilient-urban-future/',[m
+         },[m
+       },[m
+ [m
+       {[m
+[31m-        type: 'Artículo de prensa',[m
+[32m+[m[32m        type: 'Art�culo de prensa',[m
+ [m
+         source:[m
+[31m-          'Forbes Colombia · 21 de mayo de 2026 · ES',[m
+[32m+[m[32m          'Forbes Colombia � 21 de mayo de 2026 � ES',[m
+ [m
+         title:[m
+[31m-          'ONU-Hábitat destaca modelo de vivienda de Bogotá que prevé inversiones por US$350 millones a 2027',[m
+[32m+[m[32m          'ONU-H�bitat destaca modelo de vivienda de Bogot� que prev� inversiones por US$350 millones a 2027',[m
+ [m
+         excerpt:[m
+[31m-          'Cobertura de Mi Casa en Bogotá y su integración de vivienda, empleo, movilidad y regeneración urbana, presentada en el WUF13.',[m
+[32m+[m[32m          'Cobertura de Mi Casa en Bogot� y su integraci�n de vivienda, empleo, movilidad y regeneraci�n urbana, presentada en el WUF13.',[m
+ [m
+         categories: [[m
+           'Medios internacionales',[m
+         ],[m
+ [m
+         file: {[m
+[31m-          label: 'Leer artículo',[m
+[32m+[m[32m          label: 'Leer art�culo',[m
+           href: 'https://forbes.co/actualidad/onu-habitat-destaca-modelo-de-vivienda-de-bogota-que-preve-inversiones-por-us350-millones-a-2027',[m
+         },[m
+       },[m
+ [m
+       {[m
+[31m-        type: 'Artículo internacional',[m
+[32m+[m[32m        type: 'Art�culo internacional',[m
+ [m
+         source:[m
+[31m-          'Cities Today · 26 de abril de 2026 · EN',[m
+[32m+[m[32m          'Cities Today � 26 de abril de 2026 � EN',[m
+ [m
+         title:[m
+[31m-          'Cómo Bogotá utiliza datos compartidos para conectar vivienda, movilidad y clima',[m
+[32m+[m[32m          'C�mo Bogot� utiliza datos compartidos para conectar vivienda, movilidad y clima',[m
+ [m
+         excerpt:[m
+[31m-          'Cómo los datos compartidos permiten a Bogotá coordinar vivienda, movilidad y acción climática dentro del ecosistema de desarrollo urbano.',[m
+[32m+[m[32m          'C�mo los datos compartidos permiten a Bogot� coordinar vivienda, movilidad y acci�n clim�tica dentro del ecosistema de desarrollo urbano.',[m
+ [m
+         categories: [[m
+           'Medios internacionales',[m
+         ],[m
+ [m
+         file: {[m
+[31m-          label: 'Leer artículo',[m
+[32m+[m[32m          label: 'Leer art�culo',[m
+           href: 'https://cities-today.com/how-bogota-is-using-shared-data-to-link-housing-mobility-and-climate/',[m
+         },[m
+       },[m
+ [m
+       /* =======================================================[m
+[31m-         BOLETÍN[m
+[32m+[m[32m         BOLET�N[m
+          ======================================================= */[m
+ [m
+       {[m
+[31m-        type: 'Boletín',[m
+[32m+[m[32m        type: 'Bolet�n',[m
+ [m
+         source:[m
+[31m-          'LinkedIn · Septiembre de 2026 · EN',[m
+[32m+[m[32m          'LinkedIn � Septiembre de 2026 � EN',[m
+ [m
+         title:[m
+[31m-          'La vivienda más allá del hogar: el enfoque integral de Bogotá',[m
+[32m+[m[32m          'La vivienda m�s all� del hogar: el enfoque integral de Bogot�',[m
+ [m
+         excerpt:[m
+[31m-          'Una mirada curada al modelo de vivienda de Bogotá y a las ideas que están dando forma a ciudades más inclusivas, conectadas y resilientes.',[m
+[32m+[m[32m          'Una mirada curada al modelo de vivienda de Bogot� y a las ideas que est�n dando forma a ciudades m�s inclusivas, conectadas y resilientes.',[m
+ [m
+         categories: [[m
+[31m-          'Boletín',[m
+[32m+[m[32m          'Bolet�n',[m
+         ],[m
+ [m
+         file: {[m
+[31m-          label: 'Leer boletín',[m
+[32m+[m[32m          label: 'Leer bolet�n',[m
+           href: 'https://www.linkedin.com/pulse/housing-beyond-home-bogot%C3%A1s-integrated-approach-velasco-bernal-4vwce/',[m
+         },[m
+       },[m
+ [m
+       {[m
+[31m-        type: 'Boletín',[m
+[32m+[m[32m        type: 'Bolet�n',[m
+ [m
+         source:[m
+[31m-          'LinkedIn · Agosto de 2026 · EN',[m
+[32m+[m[32m          'LinkedIn � Agosto de 2026 � EN',[m
+ [m
+         title:[m
+[31m-          'Más allá de construir nuevas viviendas: ampliando las herramientas de política habitacional',[m
+[32m+[m[32m          'M�s all� de construir nuevas viviendas: ampliando las herramientas de pol�tica habitacional',[m
+ [m
+         excerpt:[m
+[31m-          'Por qué la política de vivienda necesita múltiples caminos: mejorar las viviendas existentes, fortalecer la capacidad financiera de las familias y coordinar la acción pública y privada.',[m
+[32m+[m[32m          'Por qu� la pol�tica de vivienda necesita m�ltiples caminos: mejorar las viviendas existentes, fortalecer la capacidad financiera de las familias y coordinar la acci�n p�blica y privada.',[m
+ [m
+         categories: [[m
+[31m-          'Boletín',[m
+[32m+[m[32m          'Bolet�n',[m
+         ],[m
+ [m
+         file: {[m
+[31m-          label: 'Leer boletín',[m
+[32m+[m[32m          label: 'Leer bolet�n',[m
+           href: 'https://www.linkedin.com/pulse/beyond-building-new-homes-expanding-housing-toolkit-velasco-bernal-lusle/',[m
+         },[m
+       },[m
+ [m
+       {[m
+[31m-        type: 'Boletín',[m
+[32m+[m[32m        type: 'Bolet�n',[m
+ [m
+         source:[m
+[31m-          'LinkedIn · Julio de 2026 · EN',[m
+[32m+[m[32m          'LinkedIn � Julio de 2026 � EN',[m
+ [m
+         title:[m
+[31m-          'El modelo urbano de Bogotá: la vivienda como plataforma de transformación',[m
+[32m+[m[32m          'El modelo urbano de Bogot�: la vivienda como plataforma de transformaci�n',[m
+ [m
+         excerpt:[m
+[31m-          'Por qué la vivienda funciona mejor cuando se planea junto con movilidad, cuidado, espacio público, resiliencia climática y oportunidades económicas.',[m
+[32m+[m[32m          'Por qu� la vivienda funciona mejor cuando se planea junto con movilidad, cuidado, espacio p�blico, resiliencia clim�tica y oportunidades econ�micas.',[m
+ [m
+         categories: [[m
+[31m-          'Boletín',[m
+[32m+[m[32m          'Bolet�n',[m
+         ],[m
+ [m
+         file: {[m
+[31m-          label: 'Leer boletín',[m
+[32m+[m[32m          label: 'Leer bolet�n',[m
+           href: 'https://www.linkedin.com/pulse/bogot%C3%A1s-urban-model-housing-platform-transformation-velasco-bernal-giife/',[m
+         },[m
+       },[m
+[36m@@ -1194,15 +1192,15 @@[m [mexport const pageContent = {[m
+         place: 'Santiago',[m
+ [m
+         organization:[m
+[31m-          'Seminario Internacional · Regeneración Urbana en Chile',[m
+[32m+[m[32m          'Seminario Internacional � Regeneraci�n Urbana en Chile',[m
+ [m
+         name:[m
+[31m-          'Caminos hacia la regeneración urbana en Chile',[m
+[32m+[m[32m          'Caminos hacia la regeneraci�n urbana en Chile',[m
+ [m
+         meta: [[m
+           'Santiago, Chile',[m
+[31m-          'Presentó el caso de regeneración urbana del río Magdalena en Barranquilla.',[m
+[31m-          'Diálogo internacional sobre regeneración urbana y construcción de ciudad en América Latina.',[m
+[32m+[m[32m          'Present� el caso de regeneraci�n urbana del r�o Magdalena en Barranquilla.',[m
+[32m+[m[32m          'Di�logo internacional sobre regeneraci�n urbana y construcci�n de ciudad en Am�rica Latina.',[m
+         ],[m
+ [m
+         tag: 'Conferencista',[m
+[36m@@ -1220,12 +1218,12 @@[m [mexport const pageContent = {[m
+           'Foro de las Ciudades de Madrid',[m
+ [m
+         name:[m
+[31m-          'Planeación urbana, regeneración y vivienda',[m
+[32m+[m[32m          'Planeaci�n urbana, regeneraci�n y vivienda',[m
+ [m
+         meta: [[m
+[31m-          'Madrid, España',[m
+[32m+[m[32m          'Madrid, Espa�a',[m
+           'Conferencista oficial en el Foro de las Ciudades de Madrid.',[m
+[31m-          'Participación enfocada en planeación urbana, regeneración, vivienda y experiencias urbanas iberoamericanas.',[m
+[32m+[m[32m          'Participaci�n enfocada en planeaci�n urbana, regeneraci�n, vivienda y experiencias urbanas iberoamericanas.',[m
+         ],[m
+ [m
+         tag: 'Conferencista',[m
+[36m@@ -1243,12 +1241,12 @@[m [mexport const pageContent = {[m
+           'Smart City Expo World Congress',[m
+ [m
+         name:[m
+[31m-          'Transformar nuestros barrios: ¿cómo involucrar a las personas y a los líderes políticos?',[m
+[32m+[m[32m          'Transformar nuestros barrios: �c�mo involucrar a las personas y a los l�deres pol�ticos?',[m
+ [m
+         meta: [[m
+[31m-          'Barcelona, España',[m
+[32m+[m[32m          'Barcelona, Espa�a',[m
+           'Panel con representantes de C40, BID, Roma y Barcelona.',[m
+[31m-          'Discusión sobre transformación barrial, gobernanza y apoyo ciudadano al cambio urbano.',[m
+[32m+[m[32m          'Discusi�n sobre transformaci�n barrial, gobernanza y apoyo ciudadano al cambio urbano.',[m
+         ],[m
+ [m
+         tag: 'Panelista',[m
+[36m@@ -1263,15 +1261,15 @@[m [mexport const pageContent = {[m
+         place: 'El Cairo',[m
+ [m
+         organization:[m
+[31m-          'ONU-Hábitat · Foro Urbano Mundial 12',[m
+[32m+[m[32m          'ONU-H�bitat � Foro Urbano Mundial 12',[m
+ [m
+         name:[m
+[31m-          'Barrios verdes, prósperos y resilientes frente al clima',[m
+[32m+[m[32m          'Barrios verdes, pr�speros y resilientes frente al clima',[m
+ [m
+         meta: [[m
+           'El Cairo, Egipto',[m
+[31m-          'Panelista · “Barrios verdes y prósperos en América Latina y alrededor del mundo”.',[m
+[31m-          'Panelista · “Ciudades liderando soluciones innovadoras hacia la resiliencia climática en contextos de migración”.',[m
+[32m+[m[32m          'Panelista � �Barrios verdes y pr�speros en Am�rica Latina y alrededor del mundo�.',[m
+[32m+[m[32m          'Panelista � �Ciudades liderando soluciones innovadoras hacia la resiliencia clim�tica en contextos de migraci�n�.',[m
+         ],[m
+ [m
+         tag: 'Panelista',[m
+[36m@@ -1289,12 +1287,12 @@[m [mexport const pageContent = {[m
+           'World Bank Land Conference 2025',[m
+ [m
+         name:[m
+[31m-          'Vivienda y desarrollo urbano resiliente e inclusivo en Bogotá',[m
+[32m+[m[32m          'Vivienda y desarrollo urbano resiliente e inclusivo en Bogot�',[m
+ [m
+         meta: [[m
+           'Washington, D.C., Estados Unidos',[m
+[31m-          'World Bank Land Conference y Taller Regional para América Latina y el Caribe.',[m
+[31m-          'Presentó el enfoque de Bogotá para una vivienda y un desarrollo urbano resilientes e inclusivos.',[m
+[32m+[m[32m          'World Bank Land Conference y Taller Regional para Am�rica Latina y el Caribe.',[m
+[32m+[m[32m          'Present� el enfoque de Bogot� para una vivienda y un desarrollo urbano resilientes e inclusivos.',[m
+         ],[m
+ [m
+         tag: 'Panelista',[m
+[36m@@ -1309,15 +1307,15 @@[m [mexport const pageContent = {[m
+         place: 'Guangzhou',[m
+ [m
+         organization:[m
+[31m-          'GPSC Regional City Academy for Asia · Infra4Dev',[m
+[32m+[m[32m          'GPSC Regional City Academy for Asia � Infra4Dev',[m
+ [m
+         name:[m
+           'Captura de valor del suelo, infraestructura urbana y resiliencia',[m
+ [m
+         meta: [[m
+           'Guangzhou, China',[m
+[31m-          'Panelista sobre captura de valor del suelo, infraestructura urbana, resiliencia y planeación.',[m
+[31m-          'Presentó la experiencia de Lagos de Torca en Bogotá como caso de desarrollo urbano.',[m
+[32m+[m[32m          'Panelista sobre captura de valor del suelo, infraestructura urbana, resiliencia y planeaci�n.',[m
+[32m+[m[32m          'Present� la experiencia de Lagos de Torca en Bogot� como caso de desarrollo urbano.',[m
+         ],[m
+ [m
+         tag: 'Panelista',[m
+[36m@@ -1329,22 +1327,22 @@[m [mexport const pageContent = {[m
+       {[m
+         year: '2025',[m
+ [m
+[31m-        place: 'Bogotá',[m
+[32m+[m[32m        place: 'Bogot�',[m
+ [m
+         organization:[m
+[31m-          'ONU-Hábitat · Día Mundial de las Ciudades 2025',[m
+[32m+[m[32m          'ONU-H�bitat � D�a Mundial de las Ciudades 2025',[m
+ [m
+         name:[m
+           'Ciudades inteligentes centradas en las personas',[m
+ [m
+         meta: [[m
+[31m-          'Bogotá, Colombia',[m
+[31m-          'Participó como panelista, conferencista principal y moderadora.',[m
+[31m-          'Las conversaciones se enfocaron en vivienda asequible, revitalización urbana y ciudades inteligentes centradas en las personas.',[m
+[32m+[m[32m          'Bogot�, Colombia',[m
+[32m+[m[32m          'Particip� como panelista, conferencista principal y moderadora.',[m
+[32m+[m[32m          'Las conversaciones se enfocaron en vivienda asequible, revitalizaci�n urbana y ciudades inteligentes centradas en las personas.',[m
+         ],[m
+ [m
+         tag:[m
+[31m-          'Panelista · Conferencista · Moderadora',[m
+[32m+[m[32m          'Panelista � Conferencista � Moderadora',[m
+ [m
+         href:[m
+           'https://habitatbogota.gov.co/prensa/noticias/bogota-lidero-dialogo-internacional-sobre-ciudades-inteligentes-centradas-las-personas',[m
+[36m@@ -1353,22 +1351,22 @@[m [mexport const pageContent = {[m
+       {[m
+         year: '2026',[m
+ [m
+[31m-        place: 'Bakú',[m
+[32m+[m[32m        place: 'Bak�',[m
+ [m
+         organization:[m
+[31m-          'ONU-Hábitat · Foro Urbano Mundial 13',[m
+[32m+[m[32m          'ONU-H�bitat � Foro Urbano Mundial 13',[m
+ [m
+         name:[m
+[31m-          'Mi Casa en Bogotá y transformación urbana',[m
+[32m+[m[32m          'Mi Casa en Bogot� y transformaci�n urbana',[m
+ [m
+         meta: [[m
+[31m-          'Bakú, Azerbaiyán',[m
+[31m-          'Lideró el panel enfocado en Mi Casa en Bogotá.',[m
+[31m-          'Participó en nueve sesiones adicionales sobre vivienda, urbanismo sensible al clima, movilidad, biodiversidad, equipamientos públicos y revitalización urbana.',[m
+[32m+[m[32m          'Bak�, Azerbaiy�n',[m
+[32m+[m[32m          'Lider� el panel enfocado en Mi Casa en Bogot�.',[m
+[32m+[m[32m          'Particip� en nueve sesiones adicionales sobre vivienda, urbanismo sensible al clima, movilidad, biodiversidad, equipamientos p�blicos y revitalizaci�n urbana.',[m
+         ],[m
+ [m
+         tag:[m
+[31m-          'Líder de panel · Conferencista',[m
+[32m+[m[32m          'L�der de panel � Conferencista',[m
+ [m
+         href:[m
+           'https://bogota.gov.co/mi-ciudad/habitat/participacion-de-bogota-13deg-foro-urbano-mundial-wuf13',[m
+[36m@@ -1387,9 +1385,9 @@[m [mexport const pageContent = {[m
+ [m
+         meta: [[m
+           'Singapur',[m
+[31m-          'Panelista · “¿Son las ciudades buenas para nuestra salud?”',[m
+[31m-          'Panelista · “Habitabilidad urbana del futuro: el giro hiperlocal”.',[m
+[31m-          'Panelista · “Donde la vivienda se encuentra con el clima: soluciones para las ciudades”.',[m
+[32m+[m[32m          'Panelista � ��Son las ciudades buenas para nuestra salud?�',[m
+[32m+[m[32m          'Panelista � �Habitabilidad urbana del futuro: el giro hiperlocal�.',[m
+[32m+[m[32m          'Panelista � �Donde la vivienda se encuentra con el clima: soluciones para las ciudades�.',[m
+         ],[m
+ [m
+         tag: 'Panelista',[m
+[36m@@ -1401,18 +1399,18 @@[m [mexport const pageContent = {[m
+       {[m
+         year: '2026',[m
+ [m
+[31m-        place: 'Medellín',[m
+[32m+[m[32m        place: 'Medell�n',[m
+ [m
+         organization:[m
+[31m-          'Climate Week Medellín · CAF',[m
+[32m+[m[32m          'Climate Week Medell�n � CAF',[m
+ [m
+         name:[m
+[31m-          'BiodiverCiudades: experiencias de éxito',[m
+[32m+[m[32m          'BiodiverCiudades: experiencias de �xito',[m
+ [m
+         meta: [[m
+[31m-          'Medellín, Colombia',[m
+[31m-          'Conferencista sobre planeación urbana, regeneración, biodiversidad y adaptación climática.',[m
+[31m-          'Presentó experiencias urbanas que conectan construcción de ciudad y resiliencia ambiental.',[m
+[32m+[m[32m          'Medell�n, Colombia',[m
+[32m+[m[32m          'Conferencista sobre planeaci�n urbana, regeneraci�n, biodiversidad y adaptaci�n clim�tica.',[m
+[32m+[m[32m          'Present� experiencias urbanas que conectan construcci�n de ciudad y resiliencia ambiental.',[m
+         ],[m
+ [m
+         tag: 'Conferencista',[m
+[36m@@ -1427,18 +1425,18 @@[m [mexport const pageContent = {[m
+         place: 'Barcelona',[m
+ [m
+         organization:[m
+[31m-          'Smart City Expo World Congress · HOWS Barcelona',[m
+[32m+[m[32m          'Smart City Expo World Congress � HOWS Barcelona',[m
+ [m
+         name:[m
+[31m-          'Lugar, personas y política: regenerar barrios para vivir y pertenecer',[m
+[32m+[m[32m          'Lugar, personas y pol�tica: regenerar barrios para vivir y pertenecer',[m
+ [m
+         meta: [[m
+[31m-          'Barcelona, España · 3–5 de noviembre de 2026',[m
+[31m-          'Participación programada en panel · 5 de noviembre.',[m
+[31m-          'Conversación sobre regeneración barrial, lugar, personas y política urbana.',[m
+[32m+[m[32m          'Barcelona, Espa�a � 3�5 de noviembre de 2026',[m
+[32m+[m[32m          'Participaci�n programada en panel � 5 de noviembre.',[m
+[32m+[m[32m          'Conversaci�n sobre regeneraci�n barrial, lugar, personas y pol�tica urbana.',[m
+         ],[m
+ [m
+[31m-        tag: 'Próximo · Panelista',[m
+[32m+[m[32m        tag: 'Pr�ximo � Panelista',[m
+ [m
+         href:[m
+           'https://www.smartcityexpo.com/speakers/maita-fernandez-armesto-sanchez/',[m
+[36m@@ -1447,18 +1445,18 @@[m [mexport const pageContent = {[m
+       {[m
+         year: '2026',[m
+ [m
+[31m-        place: 'Los Ángeles',[m
+[32m+[m[32m        place: 'Los �ngeles',[m
+ [m
+         organization: 'CoMotion LA',[m
+ [m
+         name: 'CoMotion LA 2026',[m
+ [m
+         meta: [[m
+[31m-          'Los Ángeles, Estados Unidos · 18–19 de noviembre de 2026',[m
+[31m-          'Participación programada en el encuentro internacional de movilidad urbana.',[m
+[32m+[m[32m          'Los �ngeles, Estados Unidos � 18�19 de noviembre de 2026',[m
+[32m+[m[32m          'Participaci�n programada en el encuentro internacional de movilidad urbana.',[m
+         ],[m
+ [m
+[31m-        tag: 'Próximo',[m
+[32m+[m[32m        tag: 'Pr�ximo',[m
+ [m
+         href:[m
+           'https://www.comotionglobal.com/los-angeles26',[m
+[36m@@ -1476,7 +1474,7 @@[m [mexport const pageContent = {[m
+         outlet: 'Cities Today',[m
+ [m
+         title:[m
+[31m-          'Cómo Bogotá utiliza datos compartidos para conectar vivienda, movilidad y clima',[m
+[32m+[m[32m          'C�mo Bogot� utiliza datos compartidos para conectar vivienda, movilidad y clima',[m
+ [m
+         date: '26 abr 2026',[m
+ [m
+[36m@@ -1490,7 +1488,7 @@[m [mexport const pageContent = {[m
+         outlet: 'Forbes',[m
+ [m
+         title:[m
+[31m-          'ONU-Hábitat destaca modelo de vivienda de Bogotá que prevé inversiones por US$350 millones a 2027',[m
+[32m+[m[32m          'ONU-H�bitat destaca modelo de vivienda de Bogot� que prev� inversiones por US$350 millones a 2027',[m
+ [m
+         date: '21 may 2026',[m
+ [m
+[36m@@ -1501,10 +1499,10 @@[m [mexport const pageContent = {[m
+       },[m
+ [m
+       {[m
+[31m-        outlet: 'WRI · TheCityFix',[m
+[32m+[m[32m        outlet: 'WRI � TheCityFix',[m
+ [m
+         title:[m
+[31m-          'La visión de Bogotá para un futuro urbano resiliente frente al clima',[m
+[32m+[m[32m          'La visi�n de Bogot� para un futuro urbano resiliente frente al clima',[m
+ [m
+         date: '9 jun 2026',[m
+ [m
+[36m@@ -1518,7 +1516,7 @@[m [mexport const pageContent = {[m
+         outlet: 'Cities Alliance',[m
+ [m
+         title:[m
+[31m-          'Bogotá: conectando vivienda, cuidado y autonomía económica de las mujeres',[m
+[32m+[m[32m          'Bogot�: conectando vivienda, cuidado y autonom�a econ�mica de las mujeres',[m
+ [m
+         date: '17 jun 2026',[m
+ [m
+[36m@@ -1529,7 +1527,7 @@[m [mexport const pageContent = {[m
+       },[m
+ [m
+       {[m
+[31m-        outlet: 'CoMotion · Fast Forward',[m
+[32m+[m[32m        outlet: 'CoMotion � Fast Forward',[m
+ [m
+         title:[m
+           'Construir a escala barrial con Vanessa Velasco',[m
+[36m@@ -1546,7 +1544,7 @@[m [mexport const pageContent = {[m
+         outlet: 'Streetsblog',[m
+ [m
+         title:[m
+[31m-          'Carta desde Bogotá: cómo una gran capital mundial pone primero la vivienda, el transporte y el espacio público',[m
+[32m+[m[32m          'Carta desde Bogot�: c�mo una gran capital mundial pone primero la vivienda, el transporte y el espacio p�blico',[m
+ [m
+         date: '29 jul 2026',[m
+ [m
+[36m@@ -1560,7 +1558,7 @@[m [mexport const pageContent = {[m
+         outlet: 'Reuters',[m
+ [m
+         title:[m
+[31m-          'Cómo Bogotá ofrece un modelo para un crecimiento urbano resiliente e inteligente frente al clima',[m
+[32m+[m[32m          'C�mo Bogot� ofrece un modelo para un crecimiento urbano resiliente e inteligente frente al clima',[m
+ [m
+         date: '3 ago 2026',[m
+ [m
+[36m@@ -1574,7 +1572,7 @@[m [mexport const pageContent = {[m
+         outlet: 'Urbanet',[m
+ [m
+         title:[m
+[31m-          'La política de vivienda debe centrarse en las personas, no en los productos',[m
+[32m+[m[32m          'La pol�tica de vivienda debe centrarse en las personas, no en los productos',[m
+ [m
+         date: '25 ago 2026',[m
+ [m
+[36m@@ -1587,7 +1585,7 @@[m [mexport const pageContent = {[m
+ [m
+     action: {[m
+       description:[m
+[31m-        'Consultas de prensa, entrevistas y coordinación con medios.',[m
+[32m+[m[32m        'Consultas de prensa, entrevistas y coordinaci�n con medios.',[m
+ [m
+       label:[m
+         'Solicitar una entrevista',[m
+[36m@@ -1613,15 +1611,15 @@[m [mexport const pageContent = {[m
+ [m
+         {[m
+           name: 'email',[m
+[31m-          label: 'Correo electrónico',[m
+[32m+[m[32m          label: 'Correo electr�nico',[m
+           placeholder: 'correo@ejemplo.com',[m
+           type: 'email',[m
+         },[m
+ [m
+         {[m
+           name: 'organization',[m
+[31m-          label: 'Organización',[m
+[31m-          placeholder: 'Medio de comunicación, institución',[m
+[32m+[m[32m          label: 'Organizaci�n',[m
+[32m+[m[32m          placeholder: 'Medio de comunicaci�n, instituci�n',[m
+           type: 'text',[m
+         },[m
+ [m
+[36m@@ -1632,8 +1630,8 @@[m [mexport const pageContent = {[m
+ [m
+           options: [[m
+             'Consulta de prensa',[m
+[31m-            'Colaboración académica',[m
+[31m-            'Invitación como conferencista',[m
+[32m+[m[32m            'Colaboraci�n acad�mica',[m
+[32m+[m[32m            'Invitaci�n como conferencista',[m
+             'Otro',[m
+           ],[m
+         },[m
+[36m@@ -1655,7 +1653,7 @@[m [mexport const pageContent = {[m
+         'Mensaje enviado correctamente.',[m
+ [m
+       errorMessage:[m
+[31m-        'No pudimos enviar el mensaje. Inténtalo nuevamente.',[m
+[32m+[m[32m        'No pudimos enviar el mensaje. Int�ntalo nuevamente.',[m
+     },[m
+ [m
+     media: {[m
+[36m@@ -1663,7 +1661,7 @@[m [mexport const pageContent = {[m
+         'Prensa y comunicaciones',[m
+ [m
+       text:[m
+[31m-        'Las consultas de prensa, solicitudes de entrevista y coordinación con medios son gestionadas por el equipo de comunicaciones de la Secretaría Distrital del Hábitat.',[m
+[32m+[m[32m        'Las consultas de prensa, solicitudes de entrevista y coordinaci�n con medios son gestionadas por el equipo de comunicaciones de la Secretar�a Distrital del H�bitat.',[m
+     },[m
+ [m
+     socials: {[m
+[36m@@ -1694,7 +1692,7 @@[m [mexport const pageContent = {[m
+       label: 'Institucional',[m
+ [m
+       name:[m
+[31m-        'Secretaría Distrital del Hábitat',[m
+[32m+[m[32m        'Secretar�a Distrital del H�bitat',[m
+ [m
+       website: {[m
+         label:[m
+[36m@@ -1733,10 +1731,12 @@[m [mexport const pageContent = {[m
+ [m
+     bottom: {[m
+       signature:[m
+[31m-        'Vanessa Velasco · 2026',[m
+[32m+[m[32m        'Vanessa Velasco � 2026',[m
+ [m
+       backToTop:[m
+         'Volver al inicio',[m
+     },[m
+   },[m
+ }[m
+[41m+[m
+[41m+[m
+[1mdiff --git a/src/data/pageContent.js b/src/data/pageContent.js[m
+[1mindex 72bc2ee..8643ec7 100644[m
+[1m--- a/src/data/pageContent.js[m
+[1m+++ b/src/data/pageContent.js[m
+[36m@@ -1,9 +1,9 @@[m
+[31m-﻿// Fuente factual inicial: source/vanessavelasco_v7 (3) (1).html.[m
+[32m+[m[32m// Fuente factual inicial: source/vanessavelasco_v7 (3) (1).html.[m
+ // El HTML se usa como contenido, no como referencia visual.[m
+ export const pageContent = {[m
+   source: {[m
+     file: 'source/vanessavelasco_v7 (3) (1).html',[m
+[31m-    note: 'Fuente HTML original suministrada para extracción factual inicial.',[m
+[32m+[m[32m    note: 'Fuente HTML original suministrada para extracci�n factual inicial.',[m
+   },[m
+ [m
+   siteTitle: 'Vanessa Velasco',[m
+[36m@@ -64,7 +64,7 @@[m [mexport const pageContent = {[m
+ [m
+   // Adaptador temporal para la interfaz base actual; proviene del hero del HTML.[m
+   intro: {[m
+[31m-    eyebrow: 'Habitat Chief Secretary · Bogotá',[m
+[32m+[m[32m    eyebrow: 'Habitat Chief Secretary � Bogot�',[m
+     title: 'Vanessa Velasco',[m
+     description:[m
+       '"Housing as a driver of economic and social transformation in the Global South"',[m
+[36m@@ -73,24 +73,23 @@[m [mexport const pageContent = {[m
+   profile: {[m
+     fullName: 'Vanessa Velasco Bernal',[m
+     displayName: 'Vanessa Velasco',[m
+[31m-    location: 'Bogotá, Colombia',[m
+[31m-    currentRole: 'Habitat Chief Secretary · Bogotá',[m
+[32m+[m[32m    location: 'Bogot�, Colombia',[m
+[32m+[m[32m    currentRole: 'Habitat Chief Secretary � Bogot�',[m
+ [m
+     title:[m
+[31m-      'Secretaria Distrital del Hábitat de Bogotá · Board Member · IDU · RenoBo · EAAB',[m
+[32m+[m[32m      'Secretaria Distrital del H�bitat de Bogot� � Board Member � IDU � RenoBo � EAAB',[m
+ [m
+[31m-    footerTitle: 'Habitat Chief Secretary of Bogotá',[m
+[32m+[m[32m    footerTitle: 'Habitat Chief Secretary of Bogot�',[m
+ [m
+     languages: ['EN', 'ES'],[m
+ [m
+[31m-    areasLabel: 'Áreas de trabajo',[m
+[32m+[m[32m    areasLabel: '�reas de trabajo',[m
+     educationLabel: 'Education',[m
+ [m
+     pressKit: {[m
+[31m-      label: 'Download press kit',[m
+[31m-      href: '/press-kit/Vanessa-Velasco-Press-Kit.zip',[m
+[31m-      download: 'Vanessa-Velasco-Press-Kit.zip',[m
+[31m-    },[m
+[32m+[m[32m      label: 'Press kit',[m
+[32m+[m[32m      href: '/press-kit/',[m
+[32m+[m[32m          },[m
+ [m
+     areas: [[m
+     {[m
+[36m@@ -118,14 +117,14 @@[m [mexport const pageContent = {[m
+       href: '#publicaciones',[m
+     },[m
+     {[m
+[31m-      label: 'South–South cooperation',[m
+[32m+[m[32m      label: 'South�South cooperation',[m
+       href: '#agenda',[m
+     },[m
+   ],[m
+   },[m
+ [m
+   hero: {[m
+[31m-    eyebrow: 'Habitat Chief Secretary · Bogotá',[m
+[32m+[m[32m    eyebrow: 'Habitat Chief Secretary � Bogot�',[m
+ [m
+     name: {[m
+       first: 'Vanessa',[m
+[36m@@ -134,8 +133,8 @@[m [mexport const pageContent = {[m
+     },[m
+ [m
+     roles: [[m
+[31m-      'Secretaria Distrital del Hábitat de Bogotá',[m
+[31m-      'Board Member · IDU · RenoBo · EAAB',[m
+[32m+[m[32m      'Secretaria Distrital del H�bitat de Bogot�',[m
+[32m+[m[32m      'Board Member � IDU � RenoBo � EAAB',[m
+     ],[m
+ [m
+     tagline:[m
+[36m@@ -143,8 +142,8 @@[m [mexport const pageContent = {[m
+ [m
+     image: {[m
+       src: '/images/vanessa-velasco-hero.jpg',[m
+[31m-      alt: 'Vanessa Velasco Bernal — Habitat Chief Secretary of Bogotá',[m
+[31m-      locationLabel: 'Bogotá, Colombia',[m
+[32m+[m[32m      alt: 'Vanessa Velasco Bernal � Habitat Chief Secretary of Bogot�',[m
+[32m+[m[32m      locationLabel: 'Bogot�, Colombia',[m
+       isPlaceholder: false,[m
+     },[m
+ [m
+[36m@@ -155,9 +154,8 @@[m [mexport const pageContent = {[m
+       },[m
+       {[m
+         label: 'Press kit',[m
+[31m-        href: '/press-kit/Vanessa-Velasco-Press-Kit.zip',[m
+[31m-        download: 'Vanessa-Velasco-Press-Kit.zip',[m
+[31m-      },[m
+[32m+[m[32m        href: '/press-kit/',[m
+[32m+[m[32m              },[m
+     ],[m
+   },[m
+ [m
+[36m@@ -165,10 +163,10 @@[m [mexport const pageContent = {[m
+     label: 'Biography',[m
+     headline: 'Urban leader',[m
+     paragraphs: [[m
+[31m-      "Vanessa Velasco Bernal is the Habitat Chief Secretary of Bogotá, where she leads the city's housing and urban development policy. An architect and urban planner with over 20 years of experience, she has worked across Latin America, Southeast Asia, and the Caribbean designing policies that connect housing, land management, mobility, and economic inclusion.",[m
+[31m-      "Before leading Bogotá's Secretariat, she spent nearly seven years as an Urban Specialist at the World Bank, co-leading operations in Colombia, Ecuador, Peru, Mexico, Jamaica, Korea, and Indonesia — including a USD 500M territorial development program for Colombia and a USD 235M resilient housing project in Ecuador. In 2022 she was invited to deliver the Doryan Winkelman Lecture at Columbia University's MSRED program.",[m
+[31m-      'Her intellectual framework positions housing not as a sectoral intervention but as a platform for economic inclusion, social mobility, and climate-sustainable urban growth — a thesis she has advanced at the World Urban Forum, through UN-Habitat, and in publications with the World Bank.',[m
+[31m-      "She holds a Master's in Urban Administration and Planning from the University of Seoul, a Master's in Urban Planning from UPC Barcelona, and completed programs at Wharton and Universität Wien. She chairs the boards of RenoBo and the Empresa de Acueducto y Alcantarillado de Bogotá, and serves as Board Member of the Instituto de Desarrollo Urbano.",[m
+[32m+[m[32m      "Vanessa Velasco Bernal is the Habitat Chief Secretary of Bogot�, where she leads the city's housing and urban development policy. An architect and urban planner with over 20 years of experience, she has worked across Latin America, Southeast Asia, and the Caribbean designing policies that connect housing, land management, mobility, and economic inclusion.",[m
+[32m+[m[32m      "Before leading Bogot�'s Secretariat, she spent nearly seven years as an Urban Specialist at the World Bank, co-leading operations in Colombia, Ecuador, Peru, Mexico, Jamaica, Korea, and Indonesia � including a USD 500M territorial development program for Colombia and a USD 235M resilient housing project in Ecuador. In 2022 she was invited to deliver the Doryan Winkelman Lecture at Columbia University's MSRED program.",[m
+[32m+[m[32m      'Her intellectual framework positions housing not as a sectoral intervention but as a platform for economic inclusion, social mobility, and climate-sustainable urban growth � a thesis she has advanced at the World Urban Forum, through UN-Habitat, and in publications with the World Bank.',[m
+[32m+[m[32m      "She holds a Master's in Urban Administration and Planning from the University of Seoul, a Master's in Urban Planning from UPC Barcelona, and completed programs at Wharton and Universit�t Wien. She chairs the boards of RenoBo and the Empresa de Acueducto y Alcantarillado de Bogot�, and serves as Board Member of the Instituto de Desarrollo Urbano.",[m
+     ],[m
+   },[m
+ [m
+[36m@@ -181,14 +179,14 @@[m [mexport const pageContent = {[m
+         count: 37,[m
+         prefix: '',[m
+         suffix: 'K+',[m
+[31m-        label: 'Subsidios entregados · Plan Integrado de Vivienda',[m
+[32m+[m[32m        label: 'Subsidios entregados � Plan Integrado de Vivienda',[m
+       },[m
+       {[m
+         value: 'USD 344M',[m
+         count: 344,[m
+         prefix: 'USD ',[m
+         suffix: 'M',[m
+[31m-        label: 'Investment led · SDHT Bogotá',[m
+[32m+[m[32m        label: 'Investment led � SDHT Bogot�',[m
+       },[m
+       {[m
+         value: '20+ yrs',[m
+[36m@@ -202,14 +200,14 @@[m [mexport const pageContent = {[m
+         count: 7,[m
+         prefix: '',[m
+         suffix: '',[m
+[31m-        label: 'Countries · World Bank operations',[m
+[32m+[m[32m        label: 'Countries � World Bank operations',[m
+       },[m
+       {[m
+         value: 'WUF 13',[m
+         count: null,[m
+         prefix: '',[m
+         suffix: '',[m
+[31m-        label: 'Baku 2026 · Panel lead · UN-Habitat',[m
+[32m+[m[32m        label: 'Baku 2026 � Panel lead � UN-Habitat',[m
+       },[m
+     ],[m
+   },[m
+[36m@@ -225,50 +223,50 @@[m [mexport const pageContent = {[m
+   experience: {[m
+ [m
+     timelineTitle: {[m
+[31m-      first: 'From Bogotá',[m
+[32m+[m[32m      first: 'From Bogot�',[m
+       second: 'to the world',[m
+     },[m
+ [m
+     timeline: [[m
+       {[m
+[31m-        period: '2001–06',[m
+[32m+[m[32m        period: '2001�06',[m
+         role: 'Teaching & Urban Planning',[m
+         detail:[m
+[31m-          'During the early stages of her career, Vanessa combined urban planning practice with teaching at Pontificia Universidad Javeriana and Universidad Nacional de Colombia. Her work focused on urban design, regional planning and the relationship between Bogotá and its expanding metropolitan edge, including research that informed a planning strategy for the western boundary of the Bogotá–Region.',[m
+[32m+[m[32m          'During the early stages of her career, Vanessa combined urban planning practice with teaching at Pontificia Universidad Javeriana and Universidad Nacional de Colombia. Her work focused on urban design, regional planning and the relationship between Bogot� and its expanding metropolitan edge, including research that informed a planning strategy for the western boundary of the Bogot�Region.',[m
+       },[m
+       {[m
+[31m-        period: '2007–13',[m
+[32m+[m[32m        period: '2007�13',[m
+         role: 'Public-Sector Urban Leadership',[m
+         detail:[m
+[31m-          'In Colombia’s public sector, Vanessa worked on heritage-led regeneration, land management and large-scale urban renewal. At the Ministry of Culture, she coordinated IDB-supported projects for the recovery of ten historic centers. Later, as Technical Director of Bogotá’s Urban Renewal Company (ERU), she helped advance projects such as Estación Central, combining affordable housing, mixed uses, public space and heritage preservation.',[m
+[32m+[m[32m          'In Colombia�s public sector, Vanessa worked on heritage-led regeneration, land management and large-scale urban renewal. At the Ministry of Culture, she coordinated IDB-supported projects for the recovery of ten historic centers. Later, as Technical Director of Bogot�s Urban Renewal Company (ERU), she helped advance projects such as Estaci�n Central, combining affordable housing, mixed uses, public space and heritage preservation.',[m
+       },[m
+       {[m
+[31m-        period: '2013–15',[m
+[32m+[m[32m        period: '2013�15',[m
+         role: 'South Korea',[m
+         detail:[m
+[31m-          'In South Korea, Vanessa completed a Master’s in Urban Administration and Planning at the University of Seoul and worked as an urban development consultant with Korea Land & Housing Corporation (LH). This period broadened her expertise in land markets, urban policy and land value capture, connecting Latin American planning challenges with international approaches to housing and urban development.',[m
+[32m+[m[32m          'In South Korea, Vanessa completed a Master�s in Urban Administration and Planning at the University of Seoul and worked as an urban development consultant with Korea Land & Housing Corporation (LH). This period broadened her expertise in land markets, urban policy and land value capture, connecting Latin American planning challenges with international approaches to housing and urban development.',[m
+       },[m
+       {[m
+[31m-        period: '2015–23',[m
+[32m+[m[32m        period: '2015�23',[m
+         role: 'World Bank',[m
+         detail:[m
+[31m-          'At the World Bank, Vanessa provided operational and analytical support to urban projects in Colombia, Peru, Ecuador, Mexico and Jamaica. Her portfolio covered urban and housing policy, land value capture, urban regeneration, transit-oriented development and local economic development. She also contributed to resilient and inclusive housing operations and led or co-led technical work on initiatives such as Bogotá’s Vital Neighborhoods.',[m
+[32m+[m[32m          'At the World Bank, Vanessa provided operational and analytical support to urban projects in Colombia, Peru, Ecuador, Mexico and Jamaica. Her portfolio covered urban and housing policy, land value capture, urban regeneration, transit-oriented development and local economic development. She also contributed to resilient and inclusive housing operations and led or co-led technical work on initiatives such as Bogot�s Vital Neighborhoods.',[m
+       },[m
+       {[m
+[31m-        period: '2024–Present',[m
+[31m-        role: 'Secretary of Habitat of Bogotá',[m
+[32m+[m[32m        period: '2024�Present',[m
+[32m+[m[32m        role: 'Secretary of Habitat of Bogot�',[m
+         detail:[m
+[31m-          'Since January 2024, as Bogotá’s Secretary of Habitat, Vanessa has led the city’s housing and urban revitalization agenda. Her work brings together affordable housing, home improvement, land management, neighborhood revitalization, public services and climate resilience through programs such as Mi Casa en Bogotá and Revitaliza tu Barrio, expanding access to housing and improving the environments where people live.',[m
+[32m+[m[32m          'Since January 2024, as Bogot�s Secretary of Habitat, Vanessa has led the city�s housing and urban revitalization agenda. Her work brings together affordable housing, home improvement, land management, neighborhood revitalization, public services and climate resilience through programs such as Mi Casa en Bogot� and Revitaliza tu Barrio, expanding access to housing and improving the environments where people live.',[m
+       },[m
+     ],[m
+ [m
+     worldBank: {[m
+[31m-      label: 'Prior Work · World Bank Group',[m
+[32m+[m[32m      label: 'Prior Work � World Bank Group',[m
+       headline: '2015 - 2024\nMulti-country impact',[m
+       intro:[m
+         "From 2015 to 2024, Vanessa Velasco contributed to analytical and operational work across Latin America, the Caribbean, and Southeast Asia, specializing in housing, land value capture, urban regeneration, territorial development, and transit-oriented development.",[m
+ [m
+[31m-      interactionHint: '06 projects · Select to explore',[m
+[32m+[m[32m      interactionHint: '06 projects � Select to explore',[m
+ [m
+       projects: [[m
+         {[m
+[36m@@ -283,20 +281,20 @@[m [mexport const pageContent = {[m
+           }[m
+         },[m
+         {[m
+[31m-          geography: 'Colombia · Barranquilla + Medellín',[m
+[32m+[m[32m          geography: 'Colombia � Barranquilla + Medell�n',[m
+           name: 'Tax Increment Finance Districts',[m
+           description:[m
+[31m-            'Led TIF implementation for Malecón del Río Barranquilla, Corredor de la 80, and Innovation District Medellín. Land value capture instruments and bond-issuance frameworks.',[m
+[32m+[m[32m            'Led TIF implementation for Malec�n del R�o Barranquilla, Corredor de la 80, and Innovation District Medell�n. Land value capture instruments and bond-issuance frameworks.',[m
+           file: {[m
+             label: 'View document',[m
+             href: '/documents/2.pdf'[m
+           }[m
+         },[m
+         {[m
+[31m-          geography: 'Colombia · Bogotá + Medellín',[m
+[32m+[m[32m          geography: 'Colombia � Bogot� + Medell�n',[m
+           name: 'Transit-Oriented Development',[m
+           description:[m
+[31m-            'Co-led TOD strategy for Metro Bogotá Línea 1, Regiotram de Occidente, Corredor Carrera 80 Medellín, and Estación Calle 26 urban regeneration.',[m
+[32m+[m[32m            'Co-led TOD strategy for Metro Bogot� L�nea 1, Regiotram de Occidente, Corredor Carrera 80 Medell�n, and Estaci�n Calle 26 urban regeneration.',[m
+           file: {[m
+             label: 'View document',[m
+             href: '/documents/1.pdf'[m
+[36m@@ -324,17 +322,17 @@[m [mexport const pageContent = {[m
+           }[m
+         },[m
+         {[m
+[31m-          geography: 'Mexico · Jamaica · Indonesia',[m
+[32m+[m[32m          geography: 'Mexico � Jamaica � Indonesia',[m
+           name: 'Housing & Risk Across Regions',[m
+           description:[m
+[31m-            'Led affordable housing technical assistance in Mexico; defined housing land bank pilot in Mérida. Co-led disaster risk project in Jamaica. LVC analytical studies for Indonesia.',[m
+[32m+[m[32m            'Led affordable housing technical assistance in Mexico; defined housing land bank pilot in M�rida. Co-led disaster risk project in Jamaica. LVC analytical studies for Indonesia.',[m
+           file: {[m
+             label: 'View document',[m
+             href: 'https://documents1.worldbank.org/curated/en/911381540835286885/pdf/131472-WP-SPANISH-PUBLIC-MigracindesdeVenezuelaaColombia.pdf'[m
+           }[m
+         },[m
+       ],[m
+[31m-      // Ambigüedad de fuente: el HTML dice "nearly seven years" y periodo 2017–2024, pero esta métrica dice "12 years".[m
+[32m+[m[32m      // Ambig�edad de fuente: el HTML dice "nearly seven years" y periodo 2017�2024, pero esta m�trica dice "12 years".[m
+       summaryMetrics: [[m
+         {[m
+           value: '7',[m
+[36m@@ -351,7 +349,7 @@[m [mexport const pageContent = {[m
+       ],[m
+       featuredLecture: {[m
+         text:[m
+[31m-          '"The Doryan Winkelman \'86 MSRED Real Estate Development Lecture — presenting the experience of Colombia at real estate and urban development before faculty, students, and global practitioners."',[m
+[32m+[m[32m          '"The Doryan Winkelman \'86 MSRED Real Estate Development Lecture � presenting the experience of Colombia at real estate and urban development before faculty, students, and global practitioners."',[m
+         institution: 'Columbia University',[m
+         location: 'New York',[m
+         date: 'June 2022',[m
+[36m@@ -367,7 +365,7 @@[m [mexport const pageContent = {[m
+     {[m
+       credential: 'MSc Urban Planning',[m
+       year: '2002',[m
+[31m-      institution: 'Universitat Politècnica de Catalunya, Barcelona',[m
+[32m+[m[32m      institution: 'Universitat Polit�cnica de Catalunya, Barcelona',[m
+     },[m
+     {[m
+       credential: 'Specialist Land Markets',[m
+[36m@@ -387,12 +385,12 @@[m [mexport const pageContent = {[m
+     {[m
+       credential: 'Housing School Program',[m
+       year: '2024',[m
+[31m-      institution: 'Universität Wien',[m
+[32m+[m[32m      institution: 'Universit�t Wien',[m
+     },[m
+   ],[m
+ [m
+   boards: {[m
+[31m-    label: 'Active Boards · since 2024',[m
+[32m+[m[32m    label: 'Active Boards � since 2024',[m
+     items: [[m
+       {[m
+         organization: 'IDU',[m
+[36m@@ -402,12 +400,12 @@[m [mexport const pageContent = {[m
+       {[m
+         organization: 'RenoBo',[m
+         role: 'Chairperson',[m
+[31m-        fullName: 'Urban Redevelopment Agency of Bogotá',[m
+[32m+[m[32m        fullName: 'Urban Redevelopment Agency of Bogot�',[m
+       },[m
+       {[m
+         organization: 'EAAB',[m
+         role: 'Chairperson',[m
+[31m-        fullName: 'Empresa de Acueducto y Alcantarillado de Bogotá',[m
+[32m+[m[32m        fullName: 'Empresa de Acueducto y Alcantarillado de Bogot�',[m
+       },[m
+     ],[m
+   },[m
+[36m@@ -416,31 +414,31 @@[m [mexport const pageContent = {[m
+     label: 'Policy Work',[m
+     headline: 'Housing as a platform for urban transformation',[m
+     framing:[m
+[31m-      'Housing policy cannot be addressed in isolation. It must be articulated with land management, mobility systems, access to public services, environmental sustainability, and social protection — positioning housing as a catalyst for opportunity rather than a standalone intervention.',[m
+[32m+[m[32m      'Housing policy cannot be addressed in isolation. It must be articulated with land management, mobility systems, access to public services, environmental sustainability, and social protection � positioning housing as a catalyst for opportunity rather than a standalone intervention.',[m
+     programs: [[m
+       {[m
+         category: 'Flagship housing policy',[m
+[31m-        name: 'My House in Bogotá',[m
+[32m+[m[32m        name: 'My House in Bogot�',[m
+         description:[m
+           "An integrated district housing policy addressing 61% of the city's housing deficit through 8 differentiated programs targeting both demand and supply across the housing value chain. Investment tripled compared to previous administrations.",[m
+         images: [[m
+           {[m
+             src: '/images/projects/micasa1.jpg',[m
+[31m-            alt: 'Mi Casa en Bogotá',[m
+[32m+[m[32m            alt: 'Mi Casa en Bogot�',[m
+             position: '20% center',[m
+           },[m
+           {[m
+             src: '/images/projects/micasa2.jpeg',[m
+[31m-            alt: 'Mi Casa en Bogotá',[m
+[32m+[m[32m            alt: 'Mi Casa en Bogot�',[m
+           },[m
+           {[m
+             src: '/images/projects/micasa3.jpeg',[m
+[31m-            alt: 'Mi Casa en Bogotá',[m
+[32m+[m[32m            alt: 'Mi Casa en Bogot�',[m
+             position: '70% center',[m
+           },[m
+           {[m
+             src: '/images/projects/micasa4.jpeg',[m
+[31m-            alt: 'Mi Casa en Bogotá',[m
+[32m+[m[32m            alt: 'Mi Casa en Bogot�',[m
+             position: '90% center',[m
+           },[m
+         ],[m
+[36m@@ -513,7 +511,7 @@[m [mexport const pageContent = {[m
+       {[m
+         value: '37,000+',[m
+         label:[m
+[31m-          'Families with housing solutions in 24 months — exceeding 4 full years of any prior administration',[m
+[32m+[m[32m          'Families with housing solutions in 24 months � exceeding 4 full years of any prior administration',[m
+       },[m
+       {[m
+         value: '60%',[m
+[36m@@ -523,20 +521,20 @@[m [mexport const pageContent = {[m
+       {[m
+         value: '52%',[m
+         label:[m
+[31m-          'Of housing loans disbursed to women · female homeownership access up 19% in 2025',[m
+[32m+[m[32m          'Of housing loans disbursed to women � female homeownership access up 19% in 2025',[m
+       },[m
+       {[m
+         value: '89,769',[m
+         label:[m
+[31m-          'Direct jobs generated · +33,248 indirect · construction sector grew 30% annually',[m
+[32m+[m[32m          'Direct jobs generated � +33,248 indirect � construction sector grew 30% annually',[m
+       },[m
+       {[m
+[31m-        value: '265K m²',[m
+[32m+[m[32m        value: '265K m�',[m
+         label:[m
+[31m-          'Public space and social facilities improved · approximately 1 million people benefited',[m
+[32m+[m[32m          'Public space and social facilities improved � approximately 1 million people benefited',[m
+       },[m
+       {[m
+[31m-        value: '3×',[m
+[32m+[m[32m        value: '3�',[m
+         label:[m
+           'Public housing investment tripled under current administration vs. previous governments',[m
+       },[m
+[36m@@ -549,16 +547,16 @@[m [mexport const pageContent = {[m
+   headline: 'Policy in writing',[m
+ [m
+   featured: {[m
+[31m-    label: 'Featured · World Urban Forum 13 · 2026',[m
+[32m+[m[32m    label: 'Featured � World Urban Forum 13 � 2026',[m
+ [m
+     title:[m
+[31m-      'Mi Casa en Bogotá: Housing as a Driver of Economic and Social Transformation in the Global South',[m
+[32m+[m[32m      'Mi Casa en Bogot�: Housing as a Driver of Economic and Social Transformation in the Global South',[m
+ [m
+     meta:[m
+[31m-      'Concept Note · Bogotá District Secretariat for Habitat · May 2026',[m
+[32m+[m[32m      'Concept Note � Bogot� District Secretariat for Habitat � May 2026',[m
+ [m
+     excerpt:[m
+[31m-      "Bogotá's housing model presented as an integrated approach to access, urban development and economic and social transformation in the Global South.",[m
+[32m+[m[32m      "Bogot�'s housing model presented as an integrated approach to access, urban development and economic and social transformation in the Global South.",[m
+ [m
+     file: {[m
+       label: 'View technical note',[m
+[36m@@ -584,10 +582,10 @@[m [mexport const pageContent = {[m
+       type: 'Final Report',[m
+ [m
+       source:[m
+[31m-        'World Bank Group · City Climate Finance Gap Fund · 2023',[m
+[32m+[m[32m        'World Bank Group � City Climate Finance Gap Fund � 2023',[m
+ [m
+       title:[m
+[31m-        "Bogotá Low-Carbon Vital Neighborhoods: Case Study of Bogotá's Vital Neighborhoods Strategy",[m
+[32m+[m[32m        "Bogot� Low-Carbon Vital Neighborhoods: Case Study of Bogot�'s Vital Neighborhoods Strategy",[m
+ [m
+       excerpt:[m
+         'A neighborhood-scale model connecting sustainable mobility, public space and low-carbon development to support more accessible and resilient urban transformation.',[m
+[36m@@ -606,13 +604,13 @@[m [mexport const pageContent = {[m
+       type: 'Final Report',[m
+ [m
+       source:[m
+[31m-        'World Bank Group · PPIAF · 2022',[m
+[32m+[m[32m        'World Bank Group � PPIAF � 2022',[m
+ [m
+       title:[m
+[31m-        'Using Land Value Capture to Finance Urban Redevelopment: Medellín and Barranquilla Pilot Cases',[m
+[32m+[m[32m        'Using Land Value Capture to Finance Urban Redevelopment: Medell�n and Barranquilla Pilot Cases',[m
+ [m
+       excerpt:[m
+[31m-        'A practical framework for applying tax increment financing and land value capture to urban regeneration, based on pilot cases in Medellín and Barranquilla.',[m
+[32m+[m[32m        'A practical framework for applying tax increment financing and land value capture to urban regeneration, based on pilot cases in Medell�n and Barranquilla.',[m
+ [m
+       categories: [[m
+         'Reports and Research',[m
+[36m@@ -628,7 +626,7 @@[m [mexport const pageContent = {[m
+       type: 'Report',[m
+ [m
+       source:[m
+[31m-        'World Bank Group · Fedesarrollo · September 2021',[m
+[32m+[m[32m        'World Bank Group � Fedesarrollo � September 2021',[m
+ [m
+       title:[m
+         'Striking a Balance: Toward a Comprehensive Housing Policy for a Post-COVID Colombia',[m
+[36m@@ -655,13 +653,13 @@[m [mexport const pageContent = {[m
+       type: 'Policy Presentation',[m
+ [m
+       source:[m
+[31m-        'Bogotá District Secretariat for Habitat · September 2026',[m
+[32m+[m[32m        'Bogot� District Secretariat for Habitat � September 2026',[m
+ [m
+       title:[m
+[31m-        'Bogotá: A Housing Plan Built Around Real-Life Pathways',[m
+[32m+[m[32m        'Bogot�: A Housing Plan Built Around Real-Life Pathways',[m
+ [m
+       excerpt:[m
+[31m-        'A data-led overview of how Bogotá connects land, housing supply, financing and household capacity within a single housing pathway.',[m
+[32m+[m[32m        'A data-led overview of how Bogot� connects land, housing supply, financing and household capacity within a single housing pathway.',[m
+ [m
+       categories: [[m
+         'Policy and Technical Notes',[m
+[36m@@ -677,7 +675,7 @@[m [mexport const pageContent = {[m
+       type: 'Technical Note',[m
+ [m
+       source:[m
+[31m-        'World Bank Group · Ministry of Housing Colombia · January 2020',[m
+[32m+[m[32m        'World Bank Group � Ministry of Housing Colombia � January 2020',[m
+ [m
+       title:[m
+         'Recommendations for Implementing Land Management and Urban Finance Instruments in Colombia',[m
+[36m@@ -699,7 +697,7 @@[m [mexport const pageContent = {[m
+       type: 'Executive Document',[m
+ [m
+       source:[m
+[31m-        'World Bank Group · PPIAF · June 2020',[m
+[32m+[m[32m        'World Bank Group � PPIAF � June 2020',[m
+ [m
+       title:[m
+         'Innovative Instruments to Finance Urban Development in Colombian Cities',[m
+[36m@@ -726,13 +724,13 @@[m [mexport const pageContent = {[m
+       type: 'Opinion Column',[m
+ [m
+       source:[m
+[31m-        'La República · July 2026',[m
+[32m+[m[32m        'La Rep�blica � July 2026',[m
+ [m
+       title:[m
+         'Vivienda social, una plataforma de oportunidades',[m
+ [m
+       excerpt:[m
+[31m-        "How Bogotá's housing policy connects subsidies, savings, financing and public-private coordination to turn access to housing into economic and social opportunity.",[m
+[32m+[m[32m        "How Bogot�'s housing policy connects subsidies, savings, financing and public-private coordination to turn access to housing into economic and social opportunity.",[m
+ [m
+       categories: [[m
+         'Opinion and Articles',[m
+[36m@@ -748,13 +746,13 @@[m [mexport const pageContent = {[m
+       type: 'Opinion Column',[m
+ [m
+       source:[m
+[31m-        'La República · April 2026',[m
+[32m+[m[32m        'La Rep�blica � April 2026',[m
+ [m
+       title:[m
+[31m-        'Vivienda: el impulso que mueve la economía y transforma vidas en Bogotá',[m
+[32m+[m[32m        'Vivienda: el impulso que mueve la econom�a y transforma vidas en Bogot�',[m
+ [m
+       excerpt:[m
+[31m-        'Why investing in housing creates jobs, mobilizes private capital and expands social mobility, and how Mi Casa en Bogotá is helping sustain the sector.',[m
+[32m+[m[32m        'Why investing in housing creates jobs, mobilizes private capital and expands social mobility, and how Mi Casa en Bogot� is helping sustain the sector.',[m
+ [m
+       categories: [[m
+         'Opinion and Articles',[m
+[36m@@ -770,7 +768,7 @@[m [mexport const pageContent = {[m
+       type: 'Opinion Column',[m
+ [m
+       source:[m
+[31m-        'El Tiempo · April 2026',[m
+[32m+[m[32m        'El Tiempo � April 2026',[m
+ [m
+       title:[m
+         'Vivienda: el motor que Colombia no puede apagar',[m
+[36m@@ -792,10 +790,10 @@[m [mexport const pageContent = {[m
+       type: 'Opinion Column',[m
+ [m
+       source:[m
+[31m-        'La República · March 2026 · ES',[m
+[32m+[m[32m        'La Rep�blica � March 2026 � ES',[m
+ [m
+       title:[m
+[31m-        'Para seguir produciendo resultados, Bogotá necesita reglas claras en vivienda',[m
+[32m+[m[32m        'Para seguir produciendo resultados, Bogot� necesita reglas claras en vivienda',[m
+ [m
+       excerpt:[m
+         'Why regulatory certainty is essential to sustain social-housing production, protect families and maintain the financial viability of new housing projects.',[m
+[36m@@ -814,10 +812,10 @@[m [mexport const pageContent = {[m
+       type: 'Opinion Column',[m
+ [m
+       source:[m
+[31m-        'Semana · February 2026 · ES',[m
+[32m+[m[32m        'Semana � February 2026 � ES',[m
+ [m
+       title:[m
+[31m-        'El plan de vivienda de Bogotá transforma vidas y mueve la economía de la ciudad',[m
+[32m+[m[32m        'El plan de vivienda de Bogot� transforma vidas y mueve la econom�a de la ciudad',[m
+ [m
+       excerpt:[m
+         'How record housing starts, social-housing investment and stronger household support are translating into employment, economic activity and better access to housing.',[m
+[36m@@ -836,7 +834,7 @@[m [mexport const pageContent = {[m
+       type: 'Article',[m
+ [m
+       source:[m
+[31m-        'World Bank Group · July 2023',[m
+[32m+[m[32m        'World Bank Group � July 2023',[m
+ [m
+       title:[m
+         'Strengthening Housing and Urban Development in Colombia',[m
+[36m@@ -858,7 +856,7 @@[m [mexport const pageContent = {[m
+       type: 'Article',[m
+ [m
+       source:[m
+[31m-        'World Bank Group · July 2021',[m
+[32m+[m[32m        'World Bank Group � July 2021',[m
+ [m
+       title:[m
+         'How Can We Help Latin American Cities Finance Urban Development',[m
+[36m@@ -885,13 +883,13 @@[m [mexport const pageContent = {[m
+       type: 'Interview',[m
+ [m
+       source:[m
+[31m-        'URBANET · August 25, 2026 · EN',[m
+[32m+[m[32m        'URBANET � August 25, 2026 � EN',[m
+ [m
+       title:[m
+[31m-        "Bogotá's Housing Strategy for Inclusive Urban Transformation",[m
+[32m+[m[32m        "Bogot�'s Housing Strategy for Inclusive Urban Transformation",[m
+ [m
+       excerpt:[m
+[31m-        'A conversation on how Bogotá connects housing, urban revitalization, mobility and public services to expand access and opportunity.',[m
+[32m+[m[32m        'A conversation on how Bogot� connects housing, urban revitalization, mobility and public services to expand access and opportunity.',[m
+ [m
+       categories: [[m
+         'International Media',[m
+[36m@@ -907,13 +905,13 @@[m [mexport const pageContent = {[m
+       type: 'International Article',[m
+ [m
+       source:[m
+[31m-        'Reuters · August 3, 2026 · EN',[m
+[32m+[m[32m        'Reuters � August 3, 2026 � EN',[m
+ [m
+       title:[m
+[31m-        'How Bogotá Offers a Blueprint for Climate-Smart, Resilient Urban Growth',[m
+[32m+[m[32m        'How Bogot� Offers a Blueprint for Climate-Smart, Resilient Urban Growth',[m
+ [m
+       excerpt:[m
+[31m-        "International coverage of Bogotá's integrated approach to climate-smart growth through housing, infrastructure and neighborhood revitalization.",[m
+[32m+[m[32m        "International coverage of Bogot�'s integrated approach to climate-smart growth through housing, infrastructure and neighborhood revitalization.",[m
+ [m
+       categories: [[m
+         'International Media',[m
+[36m@@ -929,13 +927,13 @@[m [mexport const pageContent = {[m
+       type: 'Interview',[m
+ [m
+       source:[m
+[31m-        'Streetsblog · July 29, 2026 · EN',[m
+[32m+[m[32m        'Streetsblog � July 29, 2026 � EN',[m
+ [m
+       title:[m
+[31m-        'Letter From Bogotá: How a Great World Capital Puts Housing, Transit and Public Space First',[m
+[32m+[m[32m        'Letter From Bogot�: How a Great World Capital Puts Housing, Transit and Public Space First',[m
+ [m
+       excerpt:[m
+[31m-        "An interview on Bogotá's model for linking affordable housing, transit, public space, public services and community participation.",[m
+[32m+[m[32m        "An interview on Bogot�'s model for linking affordable housing, transit, public space, public services and community participation.",[m
+ [m
+       categories: [[m
+         'International Media',[m
+[36m@@ -951,13 +949,13 @@[m [mexport const pageContent = {[m
+       type: 'Podcast',[m
+ [m
+       source:[m
+[31m-        'CoMotion · June 17, 2026 · EN',[m
+[32m+[m[32m        'CoMotion � June 17, 2026 � EN',[m
+ [m
+       title:[m
+         'Fast Forward Podcast',[m
+ [m
+       excerpt:[m
+[31m-        "A conversation with Vanessa Velasco on Bogotá's housing and urban transformation agenda.",[m
+[32m+[m[32m        "A conversation with Vanessa Velasco on Bogot�'s housing and urban transformation agenda.",[m
+ [m
+       categories: [[m
+         'International Media',[m
+[36m@@ -973,13 +971,13 @@[m [mexport const pageContent = {[m
+       type: 'International Article',[m
+ [m
+       source:[m
+[31m-        'Cities Alliance · June 17, 2026 · EN',[m
+[32m+[m[32m        'Cities Alliance � June 17, 2026 � EN',[m
+ [m
+       title:[m
+[31m-        "Bogotá: Connecting Housing, Care and Women's Economic Autonomy",[m
+[32m+[m[32m        "Bogot�: Connecting Housing, Care and Women's Economic Autonomy",[m
+ [m
+       excerpt:[m
+[31m-        "How Bogotá connects housing policy with care systems and financial inclusion to strengthen women's economic autonomy.",[m
+[32m+[m[32m        "How Bogot� connects housing policy with care systems and financial inclusion to strengthen women's economic autonomy.",[m
+ [m
+       categories: [[m
+         'International Media',[m
+[36m@@ -995,13 +993,13 @@[m [mexport const pageContent = {[m
+       type: 'Authored Article',[m
+ [m
+       source:[m
+[31m-        'WRI TheCityFix · June 9, 2026 · EN',[m
+[32m+[m[32m        'WRI TheCityFix � June 9, 2026 � EN',[m
+ [m
+       title:[m
+[31m-        "Bogotá's Vision for a Climate-Resilient Urban Future",[m
+[32m+[m[32m        "Bogot�'s Vision for a Climate-Resilient Urban Future",[m
+ [m
+       excerpt:[m
+[31m-        "Bogotá's integrated approach positions housing, public services and neighborhood revitalization as tools for climate resilience, inclusion and social equity.",[m
+[32m+[m[32m        "Bogot�'s integrated approach positions housing, public services and neighborhood revitalization as tools for climate resilience, inclusion and social equity.",[m
+ [m
+       categories: [[m
+         'International Media',[m
+[36m@@ -1017,13 +1015,13 @@[m [mexport const pageContent = {[m
+       type: 'Media Article',[m
+ [m
+       source:[m
+[31m-        'Forbes Colombia · May 21, 2026 · ES',[m
+[32m+[m[32m        'Forbes Colombia � May 21, 2026 � ES',[m
+ [m
+       title:[m
+[31m-        'ONU-Hábitat destaca modelo de vivienda de Bogotá que prevé inversiones por US$350 millones a 2027',[m
+[32m+[m[32m        'ONU-H�bitat destaca modelo de vivienda de Bogot� que prev� inversiones por US$350 millones a 2027',[m
+ [m
+       excerpt:[m
+[31m-        'Coverage of Mi Casa en Bogotá and its integration of housing, employment, mobility and urban regeneration, presented at WUF13.',[m
+[32m+[m[32m        'Coverage of Mi Casa en Bogot� and its integration of housing, employment, mobility and urban regeneration, presented at WUF13.',[m
+ [m
+       categories: [[m
+         'International Media',[m
+[36m@@ -1039,13 +1037,13 @@[m [mexport const pageContent = {[m
+       type: 'International Article',[m
+ [m
+       source:[m
+[31m-        'Cities Today · April 26, 2026 · EN',[m
+[32m+[m[32m        'Cities Today � April 26, 2026 � EN',[m
+ [m
+       title:[m
+[31m-        'How Bogotá Is Using Shared Data to Link Housing, Mobility and Climate',[m
+[32m+[m[32m        'How Bogot� Is Using Shared Data to Link Housing, Mobility and Climate',[m
+ [m
+       excerpt:[m
+[31m-        'How shared data helps Bogotá coordinate housing, mobility and climate action across the urban-development ecosystem.',[m
+[32m+[m[32m        'How shared data helps Bogot� coordinate housing, mobility and climate action across the urban-development ecosystem.',[m
+ [m
+       categories: [[m
+         'International Media',[m
+[36m@@ -1066,13 +1064,13 @@[m [mexport const pageContent = {[m
+       type: 'Newsletter',[m
+ [m
+       source:[m
+[31m-        'LinkedIn · September 2026 · EN',[m
+[32m+[m[32m        'LinkedIn � September 2026 � EN',[m
+ [m
+       title:[m
+[31m-        "Housing Beyond the Home: Bogotá's Integrated Approach",[m
+[32m+[m[32m        "Housing Beyond the Home: Bogot�'s Integrated Approach",[m
+ [m
+       excerpt:[m
+[31m-        "A curated overview of Bogotá's housing model and the ideas shaping more inclusive, connected and resilient cities.",[m
+[32m+[m[32m        "A curated overview of Bogot�'s housing model and the ideas shaping more inclusive, connected and resilient cities.",[m
+ [m
+       categories: [[m
+         'Newsletter',[m
+[36m@@ -1088,7 +1086,7 @@[m [mexport const pageContent = {[m
+       type: 'Newsletter',[m
+ [m
+       source:[m
+[31m-        'LinkedIn · August 2026 · EN',[m
+[32m+[m[32m        'LinkedIn � August 2026 � EN',[m
+ [m
+       title:[m
+         'Beyond Building New Homes: Expanding the Housing Toolkit',[m
+[36m@@ -1110,10 +1108,10 @@[m [mexport const pageContent = {[m
+       type: 'Newsletter',[m
+ [m
+       source:[m
+[31m-        'LinkedIn · July 2026 · EN',[m
+[32m+[m[32m        'LinkedIn � July 2026 � EN',[m
+ [m
+       title:[m
+[31m-        "Bogotá's Urban Model: Housing as a Platform for Transformation",[m
+[32m+[m[32m        "Bogot�'s Urban Model: Housing as a Platform for Transformation",[m
+ [m
+       excerpt:[m
+         'Why housing works best when planned with mobility, care, public space, climate resilience and economic opportunity.',[m
+[36m@@ -1140,7 +1138,7 @@[m [mexport const pageContent = {[m
+       {[m
+         year: '2022',[m
+         place: 'Santiago',[m
+[31m-        organization: 'International Seminar · Urban Regeneration in Chile',[m
+[32m+[m[32m        organization: 'International Seminar � Urban Regeneration in Chile',[m
+         name: 'Paths Towards Urban Regeneration in Chile',[m
+ [m
+         meta: [[m
+[36m@@ -1195,13 +1193,13 @@[m [mexport const pageContent = {[m
+       {[m
+         year: '2024',[m
+         place: 'Cairo',[m
+[31m-        organization: 'UN-Habitat · World Urban Forum 12',[m
+[32m+[m[32m        organization: 'UN-Habitat � World Urban Forum 12',[m
+         name: 'Green, Thriving and Climate-Resilient Neighbourhoods',[m
+ [m
+         meta: [[m
+           'Cairo, Egypt',[m
+[31m-          'Panelist · “Green and Thriving Neighbourhoods in Latin America and around the World.”',[m
+[31m-          'Panelist · “Cities Leading Innovative Solutions Towards Climate Resilience in Migration Contexts.”',[m
+[32m+[m[32m          'Panelist � �Green and Thriving Neighbourhoods in Latin America and around the World.�',[m
+[32m+[m[32m          'Panelist � �Cities Leading Innovative Solutions Towards Climate Resilience in Migration Contexts.�',[m
+         ],[m
+ [m
+         tag: 'Panelist',[m
+[36m@@ -1214,12 +1212,12 @@[m [mexport const pageContent = {[m
+         year: '2025',[m
+         place: 'Washington, D.C.',[m
+         organization: 'World Bank Land Conference 2025',[m
+[31m-        name: 'Resilient and Inclusive Housing and Urban Development in Bogotá',[m
+[32m+[m[32m        name: 'Resilient and Inclusive Housing and Urban Development in Bogot�',[m
+ [m
+         meta: [[m
+           'Washington, D.C., USA',[m
+           'World Bank Land Conference and Regional Workshop for Latin America and the Caribbean.',[m
+[31m-          'Presented Bogotá’s approach to resilient and inclusive housing and urban development.',[m
+[32m+[m[32m          'Presented Bogot�s approach to resilient and inclusive housing and urban development.',[m
+         ],[m
+ [m
+         tag: 'Panelist',[m
+[36m@@ -1231,13 +1229,13 @@[m [mexport const pageContent = {[m
+       {[m
+         year: '2025',[m
+         place: 'Guangzhou',[m
+[31m-        organization: 'GPSC Regional City Academy for Asia · Infra4Dev',[m
+[32m+[m[32m        organization: 'GPSC Regional City Academy for Asia � Infra4Dev',[m
+         name: 'Land Value Capture, Urban Infrastructure and Resilience',[m
+ [m
+         meta: [[m
+           'Guangzhou, China',[m
+           'Panelist on land value capture, urban infrastructure, resilience and planning.',[m
+[31m-          'Presented Bogotá’s Lagos de Torca experience as an urban development case.',[m
+[32m+[m[32m          'Presented Bogot�s Lagos de Torca experience as an urban development case.',[m
+         ],[m
+ [m
+         tag: 'Panelist',[m
+[36m@@ -1248,17 +1246,17 @@[m [mexport const pageContent = {[m
+ [m
+       {[m
+         year: '2025',[m
+[31m-        place: 'Bogotá',[m
+[31m-        organization: 'UN-Habitat · World Cities Day 2025',[m
+[32m+[m[32m        place: 'Bogot�',[m
+[32m+[m[32m        organization: 'UN-Habitat � World Cities Day 2025',[m
+         name: 'People-Centered Smart Cities',[m
+ [m
+         meta: [[m
+[31m-          'Bogotá, Colombia',[m
+[32m+[m[32m          'Bogot�, Colombia',[m
+           'Participated as panelist, keynote speaker and moderator.',[m
+           'Conversations focused on affordable housing, urban revitalization and people-centered smart cities.',[m
+         ],[m
+ [m
+[31m-        tag: 'Panelist · Keynote · Moderator',[m
+[32m+[m[32m        tag: 'Panelist � Keynote � Moderator',[m
+ [m
+         href:[m
+           'https://habitatbogota.gov.co/prensa/noticias/bogota-lidero-dialogo-internacional-sobre-ciudades-inteligentes-centradas-las-personas',[m
+[36m@@ -1267,16 +1265,16 @@[m [mexport const pageContent = {[m
+       {[m
+         year: '2026',[m
+         place: 'Baku',[m
+[31m-        organization: 'UN-Habitat · World Urban Forum 13',[m
+[31m-        name: 'Mi Casa en Bogotá and Urban Transformation',[m
+[32m+[m[32m        organization: 'UN-Habitat � World Urban Forum 13',[m
+[32m+[m[32m        name: 'Mi Casa en Bogot� and Urban Transformation',[m
+ [m
+         meta: [[m
+           'Baku, Azerbaijan',[m
+[31m-          'Led the panel focused on Mi Casa en Bogotá.',[m
+[32m+[m[32m          'Led the panel focused on Mi Casa en Bogot�.',[m
+           'Participated in nine additional sessions on housing, climate-responsive urbanism, mobility, biodiversity, public facilities and urban revitalization.',[m
+         ],[m
+ [m
+[31m-        tag: 'Panel Lead · Speaker',[m
+[32m+[m[32m        tag: 'Panel Lead � Speaker',[m
+ [m
+         href:[m
+           'https://bogota.gov.co/mi-ciudad/habitat/participacion-de-bogota-13deg-foro-urbano-mundial-wuf13',[m
+[36m@@ -1290,9 +1288,9 @@[m [mexport const pageContent = {[m
+ [m
+         meta: [[m
+           'Singapore',[m
+[31m-          'Panelist · “Are Cities Good for Your Health?”',[m
+[31m-          'Panelist · “Future Urban Liveability: The Hyperlocal Shift.”',[m
+[31m-          'Panelist · “Where Housing Meets Climate: Solutions for Cities.”',[m
+[32m+[m[32m          'Panelist � �Are Cities Good for Your Health?�',[m
+[32m+[m[32m          'Panelist � �Future Urban Liveability: The Hyperlocal Shift.�',[m
+[32m+[m[32m          'Panelist � �Where Housing Meets Climate: Solutions for Cities.�',[m
+         ],[m
+ [m
+         tag: 'Panelist',[m
+[36m@@ -1303,12 +1301,12 @@[m [mexport const pageContent = {[m
+ [m
+       {[m
+         year: '2026',[m
+[31m-        place: 'Medellín',[m
+[31m-        organization: 'Climate Week Medellín · CAF',[m
+[31m-        name: 'BiodiverCiudades: experiencias de éxito',[m
+[32m+[m[32m        place: 'Medell�n',[m
+[32m+[m[32m        organization: 'Climate Week Medell�n � CAF',[m
+[32m+[m[32m        name: 'BiodiverCiudades: experiencias de �xito',[m
+ [m
+         meta: [[m
+[31m-          'Medellín, Colombia',[m
+[32m+[m[32m          'Medell�n, Colombia',[m
+           'Speaker on urban planning, regeneration, biodiversity and climate adaptation.',[m
+           'Presented urban experiences linking city-making and environmental resilience.',[m
+         ],[m
+[36m@@ -1322,17 +1320,17 @@[m [mexport const pageContent = {[m
+       {[m
+         year: '2026',[m
+         place: 'Barcelona',[m
+[31m-        organization: 'Smart City Expo World Congress · HOWS Barcelona',[m
+[32m+[m[32m        organization: 'Smart City Expo World Congress � HOWS Barcelona',[m
+         name:[m
+           'Place, People, Policy: Regenerating Neighbourhoods to Live and Belong In',[m
+ [m
+         meta: [[m
+[31m-          'Barcelona, Spain · November 3–5, 2026',[m
+[31m-          'Scheduled panel participation · November 5.',[m
+[32m+[m[32m          'Barcelona, Spain � November 3�5, 2026',[m
+[32m+[m[32m          'Scheduled panel participation � November 5.',[m
+           'Conversation on neighborhood regeneration, place, people and urban policy.',[m
+         ],[m
+ [m
+[31m-        tag: 'Upcoming · Panelist',[m
+[32m+[m[32m        tag: 'Upcoming � Panelist',[m
+ [m
+         href:[m
+           'https://www.smartcityexpo.com/speakers/maita-fernandez-armesto-sanchez/',[m
+[36m@@ -1345,7 +1343,7 @@[m [mexport const pageContent = {[m
+         name: 'CoMotion LA 2026',[m
+ [m
+         meta: [[m
+[31m-          'Los Angeles, USA · November 18–19, 2026',[m
+[32m+[m[32m          'Los Angeles, USA � November 18�19, 2026',[m
+           'Scheduled participation in the international urban mobility gathering.',[m
+         ],[m
+ [m
+[36m@@ -1375,7 +1373,7 @@[m [mexport const pageContent = {[m
+       {[m
+         outlet: 'Forbes',[m
+         title:[m
+[31m-          'ONU-Hábitat destaca modelo de vivienda de Bogotá que prevé inversiones por US$350 millones a 2027',[m
+[32m+[m[32m          'ONU-H�bitat destaca modelo de vivienda de Bogot� que prev� inversiones por US$350 millones a 2027',[m
+         date: 'May 21, 2026',[m
+         language: 'ES',[m
+         href:[m
+[36m@@ -1383,9 +1381,9 @@[m [mexport const pageContent = {[m
+       },[m
+ [m
+       {[m
+[31m-        outlet: 'WRI · TheCityFix',[m
+[32m+[m[32m        outlet: 'WRI � TheCityFix',[m
+         title:[m
+[31m-          'Bogotá’s Vision for a Climate-Resilient Urban Future',[m
+[32m+[m[32m          'Bogot�s Vision for a Climate-Resilient Urban Future',[m
+         date: 'Jun 9, 2026',[m
+         language: 'EN',[m
+         href:[m
+[36m@@ -1395,7 +1393,7 @@[m [mexport const pageContent = {[m
+       {[m
+         outlet: 'Cities Alliance',[m
+         title:[m
+[31m-          'Bogota: Connecting Housing, Care and Women’s Economic Autonomy',[m
+[32m+[m[32m          'Bogota: Connecting Housing, Care and Women�s Economic Autonomy',[m
+         date: 'Jun 17, 2026',[m
+         language: 'EN',[m
+         href:[m
+[36m@@ -1403,7 +1401,7 @@[m [mexport const pageContent = {[m
+       },[m
+ [m
+       {[m
+[31m-        outlet: 'CoMotion · Fast Forward',[m
+[32m+[m[32m        outlet: 'CoMotion � Fast Forward',[m
+         title:[m
+           'Building at the Neighborhood Level with Vanessa Velasco',[m
+         date: 'Jun 17, 2026',[m
+[36m@@ -1415,7 +1413,7 @@[m [mexport const pageContent = {[m
+       {[m
+         outlet: 'Streetsblog',[m
+         title:[m
+[31m-          'Letter From Bogotá: How A Great World Capital Puts Housing, Transit and Public Space First',[m
+[32m+[m[32m          'Letter From Bogot�: How A Great World Capital Puts Housing, Transit and Public Space First',[m
+         date: 'Jul 29, 2026',[m
+         language: 'EN',[m
+         href:[m
+[36m@@ -1535,7 +1533,7 @@[m [mexport const pageContent = {[m
+ [m
+     institutional: {[m
+       label: 'Institutional',[m
+[31m-      name: 'Secretaría Distrital del Hábitat',[m
+[32m+[m[32m      name: 'Secretar�a Distrital del H�bitat',[m
+ [m
+       website: {[m
+         label: 'habitatbogota.gov.co',[m
+[36m@@ -1564,8 +1562,10 @@[m [mexport const pageContent = {[m
+     },[m
+ [m
+     bottom: {[m
+[31m-      signature: 'Vanessa Velasco · 2026',[m
+[32m+[m[32m      signature: 'Vanessa Velasco � 2026',[m
+       backToTop: 'Return to the beginning',[m
+     },[m
+   },[m
+ }[m
+[41m+[m
+[41m+[m
