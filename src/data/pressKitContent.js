@@ -102,6 +102,98 @@ export const pressKitContent = {
 
         articles: [
             {
+            id: 'world-cities-day-2026',
+
+            title:
+                "Bogotá Brings its Urban Revitalization Model to UN-Habitat's World Cities Day",
+
+            highlights: [
+                "Bogotá heads to World Cities Day 2026 after winning the 2025 UN-Habitat Shanghai Award for revitalizing the area around the San Cristóbal cable car, an initiative that integrates mobility, housing and public space. In Fuzhou, Vanessa Velasco Bernal, Bogotá's District Secretary of Habitat, will join two panels to explain how the city uses data to decide where to invest and transform the neighborhoods that need it most.",
+            ],
+
+            sections: [
+                {
+                paragraphs: [
+                    "Bogotá, October 30, 2026. Bogotá will be one of the leading voices at World Cities Day 2026, UN-Habitat's main global gathering, held this year in Fuzhou, China, from October 31 to November 2 under the theme Regenerating the City: Adequate Housing for All.",
+
+                    "Vanessa Velasco Bernal, Bogotá's District Secretary of Habitat, will join mayors and experts from Asia, Europe, Africa and Latin America to present the city's approach: shifting from outward expansion to revitalizing the established city.",
+
+                    "The invitation comes at a time when up to 3.4 billion people worldwide lack access to adequate housing, according to UN-Habitat, and cities are seeking alternatives to urban expansion. Bogotá brings its own model, measurable results and international recognition.",
+                ],
+                },
+
+                {
+                title: "Bogotá's Agenda in Fuzhou",
+
+                bullets: [
+                    "Regenerating the City Dialogue — Saturday, October 31, 3:45 a.m. Bogotá time. Participants: Mayor Wu Xiande of Fuzhou (China); Mayor Marcin Krupa of Katowice (Poland); Mayor Emmanuel Serunjoji of Kawempe, Kampala (Uganda); and Mayor Fahad Al-Buliheshi of Medina (Saudi Arabia). Moderated by Stephen Jackson, UN Resident Coordinator in China.",
+
+                    "Urban Planning for Regeneration: Governance, Frameworks and Delivery for Adequate Housing — Saturday, October 31, 9:30 p.m. Bogotá time (Sunday, November 1 in Fuzhou). Participants: Mayor Aleida Alavez of Iztapalapa (Mexico); Adrienne Acioly of the City of Rotterdam (the Netherlands); and Joseph Kimani, Executive Director of Slum Dwellers International. Moderated by Shubhagato Dasgupta of UN-Habitat.",
+                ],
+
+                afterParagraphs: [
+                    "In the first panel, the Secretary will discuss what Bogotá has learned from linking affordable housing with transport, public space, services and climate resilience. In the second, she will explain how the city coordinates housing, planning, transport and infrastructure to transform entire neighborhoods rather than build isolated homes.",
+                ],
+                },
+
+                {
+                title: 'What Bogotá Will Share with the World',
+
+                bullets: [
+                    '1. One decision: Stop expanding outward. Bogotá has no remaining land to build social housing without affecting its strategic ecosystems. That is why it chose to revitalize the city that already exists, where transport, services and opportunities are already in place.',
+
+                    "2. One tool: Use data to guide decisions. The Urban Revitalization Index assesses 1,002 cadastral sectors using 60 indicators of livability, functionality and climate adaptation. Using this index, the city prioritized 24% of its urban land across 20 revitalization areas. In just one year, inequality among the city's sectors, measured by the Index's Gini coefficient, fell by 9%.",
+
+                    '3. One principle: Bring everything to the same neighborhood. In revitalization areas, sidewalks, parks, sustainable drainage and housing come together. More than 5,500 housing subsidies have been granted there, as part of the more than 39,000 allocated under the Mi Casa en Bogotá program during this administration.',
+
+                    '4. One forward-looking move: Plan ahead for the Metro. Decree 229 of 2026 set the rules for developing housing, commercial uses and public space around 13 of the 16 stations on the first Metro line, before it begins operating in 2028. There are already 88 housing projects in the surrounding area, with more than 20,000 units; six in ten are social interest housing (VIS).',
+
+                    '5. One safeguard: Revitalize without displacement. The Residents Policy under the Land Use Plan stipulates that no urban renewal project may worsen the conditions of people who already live in the area.',
+                ],
+                },
+
+                {
+                title: 'Why Bogotá is a Global Reference',
+
+                paragraphs: [
+                    "Bogotá's participation in Fuzhou builds on a series of international recognitions for the city's urban development and housing work:",
+                ],
+
+                bullets: [
+                    'Host of World Cities Day 2025. A year ago, Bogotá hosted the same UN-Habitat global gathering.',
+
+                    "Winner of UN-Habitat's 2025 Shanghai Award. Bogotá won in the Adequate Housing for Diverse Needs category for its integrated San Cristóbal cable car project, which links mobility, housing and public space in the city's southeast.",
+
+                    'Finalist for the 2026 World Smart City Awards. Mi Casa en Bogotá is one of four global finalists in the Housing category, selected from 533 submissions from 68 countries. The winner will be announced on November 4 in Barcelona.',
+
+                    'A leader in sustainable social housing. Between 2024 and August 2026, Bogotá certified nearly 6.9 million square meters under the EDGE sustainable construction standard, 82% of which corresponds to social interest housing.',
+                ],
+                },
+
+                {
+                title: 'Housing Goes Beyond the Front Door',
+
+                paragraphs: [
+                    "“Bogotá made a decision few cities dare to make: to stop growing outward. Today we are revitalizing the city that already exists and using evidence to ensure investment goes where it is most needed, not where it is easiest. Well-located social housing is the most powerful climate policy a city has, and revitalization that displaces communities is not revitalization: it is gentrification,” said Vanessa Velasco Bernal, Bogotá's District Secretary for Habitat.",
+
+                    "The Secretary added that Bogotá's model can be replicated because it starts with a data-based diagnosis and advances in stages, from low-cost tactical interventions to neighborhood-scale projects, according to each city's capacity. “Bogotá is going to Fuzhou to learn from cities facing the same challenges and to offer a proven path for urban regeneration to deliver adequate housing,” she said.",
+                ],
+                },
+
+                {
+                title: 'About World Cities Day',
+
+                paragraphs: [
+                    "Designated by the United Nations and observed every October 31 since 2014, it is UN-Habitat's main global platform for exchange among national and local governments, international organizations, academia, the private sector and civil society. The 2026 edition is organized by China's Ministry of Housing and Urban-Rural Development, the People's Government of Fujian Province and UN-Habitat, with Fuzhou as host city.",
+                ],
+                },
+            ],
+
+            download:
+                'https://media.vanessavelasco.com/press-kit/download.php?file=comunicados/world-cities-day-bogota-en.pdf',
+            },
+
+            {
                 id: 'economic-impact',
 
                 title:
@@ -657,6 +749,99 @@ export const pressKitContent = {
             'Comunicados oficiales sobre vivienda, impacto económico y resiliencia climática en Bogotá.',
 
         articles: [
+            {
+            id: 'dia-mundial-ciudades-2026',
+
+            title:
+                'Bogotá lleva su modelo de revitalización al Día Mundial de las Ciudades de ONU-Hábitat',
+
+            highlights: [
+                'Tras recibir en 2025 el Shanghai Award de ONU-Hábitat por la revitalización del entorno del TransMiCable de San Cristóbal, Bogotá llevará a Fuzhou esa experiencia de integración entre movilidad, vivienda y espacio público. La secretaria distrital del Hábitat, Vanessa Velasco Bernal, participará en dos paneles para compartir cómo la ciudad usa datos para orientar inversiones y transformar los barrios que más lo necesitan.',
+            ],
+
+            sections: [
+                {
+                paragraphs: [
+                    'Bogotá, 30 de octubre de 2026. Bogotá será una de las voces protagonistas del Día Mundial de las Ciudades 2026, el principal encuentro global de ONU-Hábitat, que este año se celebra en Fuzhou, China, entre el 31 de octubre y el 2 de noviembre bajo el lema Regenerar la ciudad: vivienda adecuada para todos.',
+
+                    'La secretaria distrital del Hábitat, Vanessa Velasco Bernal, compartirá escenario con alcaldes y expertos de Asia, Europa, África y América Latina para presentar la apuesta de la ciudad: dejar de crecer hacia afuera y revitalizar la ciudad consolidada.',
+
+                    'La invitación llega en un momento en que hasta 3.400 millones de personas en el mundo no tienen acceso a una vivienda adecuada, según ONU-Hábitat, y las ciudades buscan alternativas a la expansión urbana. Bogotá llega con un modelo propio, resultados medibles y reconocimiento internacional.',
+                ],
+                },
+
+                {
+                title: 'La agenda de Bogotá en Fuzhou',
+
+                bullets: [
+                    'Regenerating the City Dialogue — Sábado 31 de octubre, 3:45 a. m., hora de Bogotá. Participan Wu Xiande, alcalde de Fuzhou (China); Marcin Krupa, alcalde de Katowice (Polonia); Emmanuel Serunjoji, alcalde de Kawempe, Kampala (Uganda), y Fahad Al-Buliheshi, alcalde de Medina (Arabia Saudí). Modera Stephen Jackson, Coordinador Residente de la ONU en China.',
+
+                    'Urban Planning for Regeneration: Governance, Frameworks and Delivery for Adequate Housing — Sábado 31 de octubre, 9:30 p. m., hora de Bogotá (domingo 1 de noviembre en Fuzhou). Participan Aleida Alavez, alcaldesa de Iztapalapa (México); Adrienne Acioly, de la Ciudad de Rotterdam (Países Bajos), y Joseph Kimani, director ejecutivo de Slum Dwellers International. Modera Shubhagato Dasgupta, de ONU-Hábitat.',
+                ],
+
+                afterParagraphs: [
+                    'En el primer panel, la secretaria responderá qué ha aprendido Bogotá al conectar la vivienda asequible con el transporte, el espacio público, los servicios y la resiliencia climática. En el segundo, explicará cómo la ciudad coordina vivienda, planeación, transporte e infraestructura para transformar barrios completos y no solo construir viviendas aisladas.',
+                ],
+                },
+
+                {
+                title: 'Lo que Bogotá le contará al mundo',
+
+                bullets: [
+                    '1. Una decisión: dejar de crecer hacia afuera. Bogotá ya no tiene suelo para construir vivienda social sin afectar sus ecosistemas estratégicos. Por eso decidió revitalizar la ciudad que ya existe, donde ya hay transporte, servicios y oportunidades.',
+
+                    '2. Un instrumento: decidir con datos. El Índice de Revitalización Urbana mide 1.002 sectores catastrales con 60 indicadores de habitabilidad, funcionalidad y adaptación climática. Con él, la ciudad priorizó el 24 % del suelo urbano en 20 polígonos de revitalización. En solo un año, la desigualdad entre los sectores de la ciudad, medida con el coeficiente de Gini del índice, se redujo 9 %.',
+
+                    '3. Un principio: que todo llegue junto al mismo barrio. En los polígonos de revitalización coinciden andenes, parques, drenaje sostenible y vivienda. Allí se han entregado más de 5.500 subsidios de vivienda, como parte de los más de 39.000 asignados por el plan Mi Casa en Bogotá durante esta administración.',
+
+                    '4. Una apuesta: anticiparse al Metro. Con el Decreto 229 de 2026, Bogotá definió las reglas para desarrollar vivienda, comercio y espacio público alrededor de 13 de las 16 estaciones de la Primera Línea del Metro, antes de que entre en operación en 2028. Hoy ya hay 88 proyectos de vivienda en su entorno, con más de 20.000 unidades, y 6 de cada 10 son vivienda de interés social.',
+
+                    '5. Una garantía: revitalizar sin desplazar. La Política de Moradores del Plan de Ordenamiento Territorial establece que ningún proyecto de renovación urbana puede desmejorar las condiciones de quienes ya viven en el territorio.',
+                ],
+                },
+
+                {
+                title: 'Por qué Bogotá es referente',
+
+                paragraphs: [
+                    'La participación en Fuzhou se suma a una serie de reconocimientos internacionales a la política de hábitat de la ciudad:',
+                ],
+
+                bullets: [
+                    'Anfitriona del Día Mundial de las Ciudades 2025. Hace un año, Bogotá fue sede de este mismo encuentro global de ONU-Hábitat.',
+
+                    'Shanghai Award de ONU-Hábitat. El proyecto integral del cable aéreo de San Cristóbal, que combina movilidad, vivienda y espacio público en el suroriente de la ciudad, fue reconocido en 2025 en la categoría de vivienda adecuada para necesidades diversas.',
+
+                    'Finalista de los World Smart City Awards 2026. Mi Casa en Bogotá es uno de los cuatro proyectos finalistas del mundo en la categoría de Vivienda, entre 533 postulaciones de 68 países. El ganador se conocerá el 4 de noviembre en Barcelona.',
+
+                    'Líder en vivienda social sostenible. Entre 2024 y agosto de 2026, Bogotá certificó cerca de 6,9 millones de metros cuadrados bajo el estándar de construcción sostenible EDGE, y el 82% corresponde a vivienda de interés social.',
+                ],
+                },
+
+                {
+                title: 'La vivienda no termina en la puerta de la casa',
+
+                paragraphs: [
+                    '“Bogotá tomó una decisión que pocas ciudades se atreven a tomar: dejar de crecer hacia afuera. Hoy revitalizamos la ciudad que ya existe y lo hacemos con evidencia, para que la inversión llegue donde más se necesita y no donde es más fácil. La vivienda social bien localizada es la política climática más poderosa que tiene una ciudad, y la revitalización que desplaza a sus comunidades no es revitalización: es gentrificación”, afirmó la secretaria distrital del Hábitat, Vanessa Velasco Bernal.',
+
+                    'La secretaria agregó que el modelo bogotano es replicable porque parte de un diagnóstico basado en datos y avanza por etapas, desde intervenciones tácticas de bajo costo hasta obras de barrio, de acuerdo con las capacidades de cada ciudad. “Bogotá va a Fuzhou a aprender de ciudades que enfrentan los mismos retos y a ofrecer un camino probado para que la regeneración urbana se traduzca en vivienda digna”, señaló.',
+                ],
+                },
+
+                {
+                title: 'Sobre el Día Mundial de las Ciudades',
+
+                paragraphs: [
+                    'Designado por las Naciones Unidas y celebrado cada 31 de octubre desde 2014, es la principal plataforma global de ONU-Hábitat para el intercambio entre gobiernos nacionales y locales, organismos internacionales, academia, sector privado y sociedad civil. La edición 2026 la organizan el Ministerio de Vivienda y Desarrollo Urbano-Rural de China, el Gobierno Popular de la Provincia de Fujian y ONU-Hábitat, con la ciudad de Fuzhou como anfitriona.',
+                ],
+                },
+            ],
+
+            download:
+                'https://media.vanessavelasco.com/press-kit/download.php?file=comunicados/world-cities-day-bogota-es.pdf',
+            },
+
+
             {
                 id: 'impacto-economico',
 
