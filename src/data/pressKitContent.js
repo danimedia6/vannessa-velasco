@@ -102,6 +102,92 @@ export const pressKitContent = {
 
         articles: [
             {
+            id: 'world-smart-city-award-2026',
+
+            title:
+                'Bogotá Wins the 2026 World Smart City Award with Mi Casa en Bogotá',
+
+            highlights: [
+                'The District’s housing program was recognized as the world’s best housing project, selected from 533 entries from 68 countries at the Smart City Expo World Congress in Barcelona.',
+            ],
+
+            sections: [
+                {
+                paragraphs: [
+                    'Barcelona / Bogotá, November 4, 2026. Bogotá won the Housing Project award at the 2026 World Smart City Awards today, presented during the Smart City Expo World Congress in Barcelona, Spain, one of the world’s leading events on urban innovation. The jury recognized Mi Casa en Bogotá, the District’s housing strategy, ahead of 533 entries from 68 countries and the finalist projects from Greece, Türkiye, and Brazil.',
+
+                    'The award recognizes an approach to housing policy that goes beyond providing homes: Mi Casa en Bogotá prioritizes households with the greatest needs, supports neighborhood renewal, and brings housing closer to the city’s mass transit systems.',
+                ],
+                },
+
+                {
+                title: 'Housing for Those Who Need It Most',
+
+                paragraphs: [
+                    'The program has focused its support on lower-income households and people who face the greatest barriers to owning a home:',
+                ],
+
+                bullets: [
+                    '3 out of 4 beneficiary families earn up to 2 minimum wages.',
+                    '64% of the subsidies have gone to women, many of them heads of household.',
+                    'More than 3,900 victims of armed conflict have moved into new homes.',
+                    '2,500 families have improved the conditions of their homes.',
+                ],
+                },
+
+                {
+                title: 'Neighborhoods in Transformation',
+
+                paragraphs: [
+                    'Mi Casa en Bogotá has also helped revitalize the built city and reduce disparities between areas:',
+                ],
+
+                bullets: [
+                    'The share of subsidies located in central neighborhoods or areas undergoing revitalization rose from 4% to 14%.',
+                    '24% of urban land is prioritized for revitalization.',
+                    'Streets in neighborhoods with housing projects have seen a 13% improvement.',
+                    'Inequality between neighborhoods fell by 9% in just one year.',
+                ],
+                },
+
+                {
+                title: 'Living Close to Everything',
+
+                paragraphs: [
+                    'The strategy connects housing with mobility so families can live close to the opportunities they need:',
+                ],
+
+                bullets: [
+                    'More than 6,300 subsidies have been awarded in areas served by the Metro, TransMilenio, and TransMiCable.',
+                    'Eighty-eight housing projects are planned around the Metro’s First Line; 6 out of 10 are social-interest housing (VIS).',
+                ],
+                },
+
+                {
+                paragraphs: [
+                    '“Competing with 533 projects from 68 countries and winning says a great deal about what we are doing in Bogotá. This recognition shows that housing policy can change lives and transform neighborhoods. Bogotá is now a global benchmark, and that inspires us to keep working even harder so every household can have a decent home.” — Vanessa Velasco, Bogotá District Secretary for Habitat.',
+                ],
+                },
+
+                {
+                title: 'A Recognition for the Entire City',
+
+                paragraphs: [
+                    'This award establishes Bogotá as an international benchmark in housing and urban development. The world is looking at Colombia’s capital and seeing families with decent homes, neighborhoods renewed, and a city delivering on its commitments.',
+                ],
+                },
+
+                {
+                title: 'About the World Smart City Awards',
+
+                paragraphs: [
+                    'The World Smart City Awards are presented each year at the Smart City Expo World Congress in Barcelona. They recognize projects and initiatives that transform cities and improve residents’ quality of life.',
+                ],
+                },
+            ],
+            },
+            
+            {
             id: 'world-cities-day-2026',
 
             title:
@@ -749,6 +835,92 @@ export const pressKitContent = {
             'Comunicados oficiales sobre vivienda, impacto económico y resiliencia climática en Bogotá.',
 
         articles: [
+            {
+            id: 'world-smart-city-award-2026',
+
+            title:
+                'Bogotá gana el World Smart City Award 2026 con Mi Casa en Bogotá',
+
+            highlights: [
+                'El programa de vivienda del Distrito fue reconocido como el mejor proyecto de vivienda del mundo, entre 533 postulaciones de 68 países, en el Smart City Expo World Congress de Barcelona.',
+            ],
+
+            sections: [
+                {
+                paragraphs: [
+                    'Barcelona / Bogotá, 4 nov 2026. Bogotá ganó hoy el premio Housing Project de los World Smart City Awards 2026, entregado en el marco del Smart City Expo World Congress en Barcelona (España), uno de los encuentros más importantes del mundo sobre innovación urbana. El jurado reconoció a Mi Casa en Bogotá, la estrategia de vivienda del Distrito, por encima de 533 postulaciones de 68 países y de los proyectos finalistas de Grecia, Turquía y Brasil.',
+
+                    'El galardón destaca una forma de hacer política de vivienda que va más allá de entregar techos: Mi Casa en Bogotá prioriza a los hogares que más lo necesitan, impulsa la renovación de barrios y acerca la vivienda a los sistemas de transporte masivo de la ciudad.',
+                ],
+                },
+
+                {
+                title: 'Vivienda para quien más la necesita',
+
+                paragraphs: [
+                    'El programa ha concentrado sus apoyos en los hogares de menores ingresos y en las poblaciones con mayores barreras para acceder a una casa propia:',
+                ],
+
+                bullets: [
+                    '3 de cada 4 familias beneficiadas ganan hasta 2 salarios mínimos.',
+                    '64 % de los subsidios han sido asignados a mujeres, muchas de ellas cabeza de hogar.',
+                    'Más de 3.900 víctimas del conflicto armado han estrenado vivienda.',
+                    '2.500 familias han mejorado las condiciones de su casa.',
+                ],
+                },
+
+                {
+                title: 'Barrios que se transforman',
+
+                paragraphs: [
+                    'Mi Casa en Bogotá también ha sido una herramienta para revitalizar la ciudad construida y reducir brechas entre territorios:',
+                ],
+
+                bullets: [
+                    'Los subsidios ubicados en barrios centrales o en proceso de revitalización pasaron del 4 % al 14 %.',
+                    '24 % del suelo urbano está priorizado para procesos de revitalización.',
+                    'Las calles de los barrios con proyectos de vivienda registran una mejora del 13 %.',
+                    'La desigualdad entre barrios se redujo 9 % en solo un año.',
+                ],
+                },
+
+                {
+                title: 'Vivir cerca de todo',
+
+                paragraphs: [
+                    'La estrategia conecta la vivienda con la movilidad, para que las familias vivan cerca de sus oportunidades:',
+                ],
+
+                bullets: [
+                    'Más de 6.300 subsidios se han asignado en entornos del Metro, TransMilenio y TransMiCable.',
+                    '88 proyectos de vivienda están planeados alrededor de la Primera Línea del Metro; 6 de cada 10 son vivienda de interés social (VIS).',
+                ],
+                },
+
+                {
+                paragraphs: [
+                    '“Competir con 533 proyectos de 68 países y ganar dice mucho de lo que estamos haciendo en Bogotá. Este reconocimiento demuestra que una política de vivienda puede cambiar vidas y transformar barrios. Hoy Bogotá es referente mundial, y eso nos compromete a seguir trabajando con más fuerza para que cada hogar tenga una vivienda digna.” — Vanessa Velasco, secretaria distrital del Hábitat.',
+                ],
+                },
+
+                {
+                title: 'Un reconocimiento para toda la ciudad',
+
+                paragraphs: [
+                    'Con este premio, Bogotá se posiciona como referente internacional en vivienda y desarrollo urbano. Hoy el mundo mira a la capital colombiana y lo que encuentra son familias con vivienda digna, barrios que renacen y una ciudad que cumple.',
+                ],
+                },
+
+                {
+                title: 'Sobre los World Smart City Awards',
+
+                paragraphs: [
+                    'Los World Smart City Awards se entregan cada año en el Smart City Expo World Congress, en Barcelona, y reconocen proyectos e iniciativas que transforman las ciudades para mejorar la calidad de vida de sus habitantes.',
+                ],
+                },
+            ],
+            },
+
             {
             id: 'dia-mundial-ciudades-2026',
 
