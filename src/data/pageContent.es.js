@@ -931,6 +931,49 @@ export const pageContent = {
          ======================================================= */
 
       {
+        type: 'Artículo internacional',
+
+        source:
+          'The New Barcelona Post · 6 de noviembre de 2026 · EN',
+
+        title:
+          '10 soluciones para reinventar las ciudades: 5 del mundo y 5 de Barcelona',
+
+        excerpt:
+          'Bogotá es destacada entre diez soluciones urbanas del mundo por integrar vivienda asequible y transporte público, y por planificar el desarrollo residencial alrededor de nuevas infraestructuras de movilidad.',
+
+        categories: [
+          'Medios internacionales',
+        ],
+
+        file: {
+          label: 'Leer artículo',
+          href: 'https://www.thenewbarcelonapost.com/en/10-solutions-to-reinvent-cities/',
+        },
+      },
+
+      {
+        type: 'Artículo internacional',
+
+        source:
+          'Habitat Insulae · 4 de noviembre de 2026 · ES',
+
+        title:
+          'Tokio triunfa en Smart City 2026 y Bogotá en vivienda',
+
+        excerpt:
+          'Cobertura del World Smart City Award recibido por Mi Casa en Bogotá, con énfasis en su enfoque integral de vivienda asequible, revitalización de barrios y acceso al transporte público.',
+
+        categories: [
+          'Medios internacionales',
+        ],
+
+        file: {
+          label: 'Leer artículo',
+          href: 'https://www.habitatinsulae.es/tokio-triunfa-en-smart-city-2026-y-bogota-en-vivienda/',
+        },
+      },   
+      {
         type: 'Entrevista',
 
         source:

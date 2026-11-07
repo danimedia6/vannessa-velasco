@@ -1,4 +1,4 @@
-// Fuente factual inicial: source/vanessavelasco_v7 (3) (1).html.
+﻿// Fuente factual inicial: source/vanessavelasco_v7 (3) (1).html.
 // El HTML se usa como contenido, no como referencia visual.
 export const pageContent = {
   source: {
@@ -879,6 +879,49 @@ export const pageContent = {
        INTERNATIONAL MEDIA
        ======================================================= */
 
+    {
+      type: 'International Article',
+
+      source:
+        'The New Barcelona Post · November 6, 2026 · EN',
+
+      title:
+        '10 Solutions to Reinvent Cities: 5 from Around the World and 5 from Barcelona',
+
+      excerpt:
+        "Bogotá is highlighted among ten urban solutions from around the world for linking affordable housing with public transport and planning residential development around new mobility infrastructure.",
+
+      categories: [
+        'International Media',
+      ],
+
+      file: {
+        label: 'Read article',
+        href: 'https://www.thenewbarcelonapost.com/en/10-solutions-to-reinvent-cities/',
+      },
+    },
+
+    {
+      type: 'International Article',
+
+      source:
+        'Habitat Insulae · November 4, 2026 · ES',
+
+      title:
+        'Tokio triunfa en Smart City 2026 y Bogotá en vivienda',
+
+      excerpt:
+        "Coverage of Bogotá's World Smart City Award for Mi Casa en Bogotá, highlighting its integrated approach to affordable housing, neighborhood revitalization and access to public transport.",
+
+      categories: [
+        'International Media',
+      ],
+
+      file: {
+        label: 'Read article',
+        href: 'https://www.habitatinsulae.es/tokio-triunfa-en-smart-city-2026-y-bogota-en-vivienda/',
+      },
+    },
     {
       type: 'Interview',
 
